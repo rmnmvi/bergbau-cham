@@ -12,7 +12,7 @@
     "build:html": "cp index.html dist/index.html && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/index.html && cp imprint.html dist/imprint.html 2>/dev/null && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/imprint.html 2>/dev/null || true && cp privacy.html dist/privacy.html 2>/dev/null && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/privacy.html 2>/dev/null || true && cp quote.html dist/quote.html 2>/dev/null && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/quote.html 2>/dev/null || true && cp robots.txt dist/robots.txt 2>/dev/null || true",
     "build:multilingual": "node build-multilingual.js",
     "copy:assets": "cp -r assets dist/",
-    "copy:html": "cp index.html privacy.html imprint.html dist/",
+    "copy:html": "cp index.html privacy.html imprint.html dist/ && ls -la dist/",
     "serve": "npx serve dist",
     "preview": "npm run build && npm run serve"
   },
