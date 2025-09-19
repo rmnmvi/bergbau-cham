@@ -1,10 +1,4 @@
 {
-  "buildCommand": "mkdir -p dist && npm run build",
-  "installCommand": "npm install",
-  "outputDirectory": "dist",
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 10
-    }
-  }
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }
