@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:css && mkdir -p dist && cp index.html dist/ && cp privacy.html dist/ && cp imprint.html dist/ && cp -r dist/assets dist/ 2>/dev/null || true",
+  "buildCommand": "mkdir -p dist && npm run build",
   "installCommand": "npm install",
   "outputDirectory": "dist",
   "functions": {
