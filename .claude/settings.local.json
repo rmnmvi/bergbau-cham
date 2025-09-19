@@ -5,7 +5,9 @@
       "Read(//Users/romanmarvi/dev/**)",
       "Bash(npm install)",
       "Bash(npm run build:css:*)",
-      "Bash(npx serve:*)"
+      "Bash(npx serve:*)",
+      "Bash(git push:*)",
+      "Bash(npx vercel:*)"
     ],
     "deny": [],
     "ask": []
