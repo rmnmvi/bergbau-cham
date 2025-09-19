@@ -1,0 +1,53 @@
+{
+  "name": "bergbau-cham",
+  "version": "1.0.0",
+  "description": "Bergbau Cham - Trusted Partner in Mining Operations",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm run build:css -- --watch",
+    "server": "node server.js",
+    "dev:server": "nodemon server.js",
+    "build": "npm run build:css && npm run build:multilingual",
+    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "build:html": "cp index.html dist/index.html && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/index.html && cp imprint.html dist/imprint.html 2>/dev/null && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/imprint.html 2>/dev/null || true && cp privacy.html dist/privacy.html 2>/dev/null && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/privacy.html 2>/dev/null || true && cp quote.html dist/quote.html 2>/dev/null && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' dist/quote.html 2>/dev/null || true && cp robots.txt dist/robots.txt 2>/dev/null || true",
+    "build:multilingual": "node build-multilingual.js",
+    "copy:assets": "cp -r assets dist/",
+    "serve": "npx serve dist",
+    "preview": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "bergbau",
+    "mining",
+    "extraction",
+    "resources"
+  ],
+  "author": "Bergbau Cham",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^4.6.2",
+    "cors": "^2.8.5",
+    "dns-lookup": "^0.1.0",
+    "dotenv": "^17.2.2",
+    "exiftool-vendored": "^30.5.0",
+    "express": "^4.18.2",
+    "geoip-lite": "^1.4.10",
+    "googleapis": "^159.0.0",
+    "multer": "^2.0.2",
+    "multiparty": "^4.2.3",
+    "node-mailjet": "^6.0.4",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@fontsource/open-sans": "^5.2.6",
+    "@playwright/test": "^1.55.0",
+    "autoprefixer": "^10.4.16",
+    "fs-extra": "^11.3.1",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.0.0",
+    "playwright": "^1.55.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  }
+}

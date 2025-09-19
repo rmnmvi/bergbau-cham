@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo create:*)",
+      "Read(//Users/romanmarvi/dev/**)",
+      "Bash(npm install)",
+      "Bash(npm run build:css:*)",
+      "Bash(npx serve:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

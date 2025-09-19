@@ -1,0 +1,73 @@
+/* Local Font Definitions */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../assets/fonts/OpenSans-Light.woff2') format('woff2'),
+       url('../assets/fonts/OpenSans-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+       url('../assets/fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/OpenSans-Medium.woff2') format('woff2'),
+       url('../assets/fonts/OpenSans-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+       url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+       url('../assets/fonts/OpenSans-Bold.woff') format('woff');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .hero-overlay {
+    background: linear-gradient(rgba(31, 41, 55, 0.7), rgba(31, 41, 55, 0.7));
+  }
+  
+  .btn-primary {
+    @apply bg-gold text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gold-light transition transform hover:scale-105;
+  }
+  
+  .section-padding {
+    @apply py-20;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-6;
+  }
+}
