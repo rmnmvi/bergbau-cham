@@ -1,16 +1,7 @@
 {
-  "buildCommand": "npm run build:css && mkdir -p dist && cp index.html dist/ && cp privacy.html dist/ && cp imprint.html dist/",
+  "buildCommand": "npm run build:css && mkdir -p dist && cp index.html dist/ && cp privacy.html dist/ && cp imprint.html dist/ && cp -r dist/assets dist/ 2>/dev/null || true",
   "installCommand": "npm install",
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/dist/$1"
-    }
-  ],
+  "outputDirectory": "dist",
   "functions": {
     "api/*.js": {
       "maxDuration": 10
