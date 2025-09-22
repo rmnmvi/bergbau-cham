@@ -116,6 +116,24 @@ partners:
       name: "WIRTGEN"
       description: "Road & Mineral Technologies"
 
+# Quote Form
+quote:
+  title: "Mining Equipment Quote Request"
+  description: "Get a personalized quote for mining equipment and machinery"
+
+  form:
+    step1:
+      title: "Equipment & Specifications"
+      description: "Provide complete information about your mining equipment requirements and specifications."
+
+    step2:
+      title: "Business & Contact Information"
+      description: "Tell us about your company and how we can reach you."
+
+    step3:
+      title: "Review & Submit"
+      description: "Review your information and submit your quote request."
+
 # Footer
 footer:
   copyright: "© 2025 Edelmetall Cham · Franz Thums"

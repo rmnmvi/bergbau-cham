@@ -116,6 +116,24 @@ partners:
       name: "WIRTGEN"
       description: "Technologies Route & Minéraux"
 
+# Quote Form
+quote:
+  title: "Demande de Devis pour Équipement Minier"
+  description: "Obtenez un devis personnalisé pour l'équipement et les machines minières"
+
+  form:
+    step1:
+      title: "Équipement et Spécifications"
+      description: "Fournissez des informations complètes sur vos exigences d'équipement minier et spécifications."
+
+    step2:
+      title: "Informations d'Entreprise et de Contact"
+      description: "Parlez-nous de votre entreprise et comment nous pouvons vous joindre."
+
+    step3:
+      title: "Révision et Soumission"
+      description: "Révisez vos informations et soumettez votre demande de devis."
+
 # Footer
 footer:
   copyright: "© 2025 Edelmetall Cham · Franz Thums"

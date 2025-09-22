@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <meta name="description" content="">
+    <title>{{quote.title}}</title>
+    <meta name="description" content="{{quote.description}}">
     
     <!-- Search Engine Blocking -->
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
@@ -185,8 +185,8 @@
                     <!-- Step 1: Product & Pricing Details -->
                     <div id="step1" class="form-step">
                         <div class="border-b border-gray-900/10 pb-12">
-                            <h2 class="text-base/7 font-semibold text-gray-900"></h2>
-                            <p class="mt-1 text-sm/6 text-gray-600"></p>
+                            <h2 class="text-base/7 font-semibold text-gray-900">{{quote.form.step1.title}}</h2>
+                            <p class="mt-1 text-sm/6 text-gray-600">{{quote.form.step1.description}}</p>
                         
                             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
@@ -808,8 +808,8 @@
                     <!-- Step 2: Contact Information -->
                     <div id="step2" class="form-step hidden">
                         <div class="border-b border-gray-900/10 pb-12">
-                            <h2 class="text-base/7 font-semibold text-gray-900"></h2>
-                            <p class="mt-1 text-sm/6 text-gray-600"></p>
+                            <h2 class="text-base/7 font-semibold text-gray-900">{{quote.form.step2.title}}</h2>
+                            <p class="mt-1 text-sm/6 text-gray-600">{{quote.form.step2.description}}</p>
                         
                             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                                 <!-- Company Information -->
