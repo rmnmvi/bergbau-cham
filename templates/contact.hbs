@@ -3,42 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{#if isFrench}}Contactez-nous{{else}}Contact Us{{/if}} - Edelmetall Cham</title>
-    <meta name="description" content="{{#if isFrench}}Contactez Edelmetall Cham pour tous vos besoins en métaux précieux. Nous sommes là pour vous aider avec l'achat, la vente et la consultation d'experts.{{else}}Get in touch with Edelmetall Cham for all your precious metals trading needs. We're here to help with buying, selling, and expert consultation.{{/if}}">
-    
+    <title>{{contact.meta_title}}</title>
+    <meta name="description" content="{{contact.meta_description}}">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://edelmetall-cham.de/{{#if isFrench}}fr/{{/if}}contact.html">
-    <meta property="og:title" content="{{#if isFrench}}Contactez-nous{{else}}Contact Us{{/if}} - Edelmetall Cham">
-    <meta property="og:description" content="{{#if isFrench}}Contactez Edelmetall Cham pour tous vos besoins en métaux précieux. Nous sommes là pour vous aider avec l'achat, la vente et la consultation d'experts.{{else}}Get in touch with Edelmetall Cham for all your precious metals trading needs. We're here to help with buying, selling, and expert consultation.{{/if}}">
-    <meta property="og:image" content="https://edelmetall-cham.de/assets/images/og/og-image.jpg">
+    <meta property="og:url" content="https://bergbautechnik-cham.de/{{#if isFrench}}fr/{{/if}}contact.html">
+    <meta property="og:title" content="{{contact.meta_title}}">
+    <meta property="og:description" content="{{contact.meta_description}}">
+    <meta property="og:image" content="https://bergbautechnik-cham.de/assets/images/og/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Edelmetall Cham">
+    <meta property="og:site_name" content="Bergbau Cham">
     <meta property="og:locale" content="{{#if isFrench}}fr_FR{{else}}en_US{{/if}}">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://edelmetall-cham.de/{{#if isFrench}}fr/{{/if}}contact.html">
-    <meta property="twitter:title" content="{{#if isFrench}}Contactez-nous{{else}}Contact Us{{/if}} - Edelmetall Cham">
-    <meta property="twitter:description" content="{{#if isFrench}}Contactez Edelmetall Cham pour tous vos besoins en métaux précieux.{{else}}Get in touch with Edelmetall Cham for all your precious metals trading needs.{{/if}}">
-    <meta property="twitter:image" content="https://edelmetall-cham.de/assets/images/og/og-image.jpg">
-    
+    <meta property="twitter:url" content="https://bergbautechnik-cham.de/{{#if isFrench}}fr/{{/if}}contact.html">
+    <meta property="twitter:title" content="{{contact.meta_title}}">
+    <meta property="twitter:description" content="{{contact.meta_description}}">
+    <meta property="twitter:image" content="https://bergbautechnik-cham.de/assets/images/og/og-image.jpg">
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <meta name="theme-color" content="#D4AF37">
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N28M5RW6');</script>
-    <!-- End Google Tag Manager -->
+    <meta name="theme-color" content="#F97316">
 
     <!-- Styles -->
     <link href="/styles.css" rel="stylesheet">
@@ -49,8 +41,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
         .font-sans-body { font-family: 'Open Sans', sans-serif; }
         .btn-primary {
-            background-color: #D4AF37;
-            color: #111827;
+            background-color: #F97316;
+            color: white;
             padding: 16px 32px;
             border-radius: 8px;
             font-weight: 600;
@@ -61,16 +53,16 @@
             width: 100%;
         }
         .btn-primary:hover {
-            background-color: #B8941F;
+            background-color: #EA580C;
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3);
         }
         .btn-primary:disabled {
             background-color: #ccc;
             cursor: not-allowed;
             transform: none;
         }
-        
+
         /* reCAPTCHA-style Captcha */
         .recaptcha-container {
             display: inline-block;
@@ -84,7 +76,7 @@
             margin: 16px 0;
             cursor: pointer;
         }
-        
+
         .recaptcha-inner {
             display: flex;
             align-items: center;
@@ -93,14 +85,14 @@
             position: relative;
             user-select: none;
         }
-        
+
         .recaptcha-checkbox-wrapper {
             width: 24px;
             height: 24px;
             position: relative;
             flex-shrink: 0;
         }
-        
+
         .recaptcha-checkbox {
             width: 24px;
             height: 24px;
@@ -113,38 +105,38 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .recaptcha-checkbox:hover {
             border-color: #b2b2b2;
         }
-        
+
         .recaptcha-checkbox.checking .recaptcha-spinner {
             display: block;
         }
-        
+
         .recaptcha-spinner {
             display: none;
             width: 16px;
             height: 16px;
-            border: 2px solid #4285f4;
+            border: 2px solid #F97316;
             border-top-color: transparent;
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
         }
-        
+
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-        
+
         .recaptcha-checkbox.verified {
             background: white;
             border-color: #009624;
         }
-        
+
         .recaptcha-checkmark {
             display: none;
         }
-        
+
         .recaptcha-checkbox.verified .recaptcha-checkmark {
             display: block;
             stroke: #009624;
@@ -154,7 +146,7 @@
             stroke-dashoffset: 0;
             animation: checkmark 0.4s ease-in-out;
         }
-        
+
         @keyframes checkmark {
             0% {
                 stroke-dashoffset: 30;
@@ -168,7 +160,7 @@
                 opacity: 1;
             }
         }
-        
+
         .recaptcha-label {
             font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
             font-size: 14px;
@@ -177,7 +169,7 @@
             user-select: none;
             flex-grow: 1;
         }
-        
+
         .recaptcha-logo {
             display: flex;
             flex-direction: column;
@@ -185,19 +177,19 @@
             gap: 2px;
             margin-left: auto;
         }
-        
+
         #captcha-icon {
             width: 32px;
             height: 32px;
         }
-        
+
         .recaptcha-logo-text {
             font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
             font-size: 10px;
             color: #555;
             font-weight: 400;
         }
-        
+
         /* Honeypot field - hidden from users */
         .website-field {
             position: absolute;
@@ -211,10 +203,6 @@
     </style>
 </head>
 <body class="font-sans-body">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N28M5RW6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Navigation -->
     <nav class="bg-white shadow-sm">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -222,14 +210,14 @@
                 <!-- Logo/Company Name -->
                 <div class="flex items-center">
                     <a href="{{#if isFrench}}/fr{{else}}/{{/if}}" class="flex items-center">
-                        <img src="/assets/images/logo/logo_black.svg" alt="Edelmetall Cham Logo" class="h-10 w-auto">
+                        <img src="/assets/images/logo/logo_black.svg" alt="Bergbau Cham Logo" class="h-10 w-auto">
                     </a>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="{{#if isFrench}}/fr/contact.html{{else}}/contact.html{{/if}}" class="text-orange font-semibold">{{#if isFrench}}Contact{{else}}Contact{{/if}}</a>
-                    <a href="{{#if isFrench}}/fr/quote.html{{else}}/quote.html{{/if}}" class="bg-orange text-gray-900 px-4 py-2 rounded-md font-semibold hover:bg-orange-light transition">{{#if isFrench}}Devis / Demande{{else}}Quote / Inquire{{/if}}</a>
+                    <a href="{{#if isFrench}}/fr/contact.html{{else}}/contact.html{{/if}}" class="text-orange font-semibold">{{nav.contact}}</a>
+                    <a href="{{#if isFrench}}/fr/quote.html{{else}}/quote.html{{/if}}" class="bg-orange text-white px-4 py-2 rounded-md font-semibold hover:bg-orange-dark transition">{{nav.quote}}</a>
 
                     <!-- Language Switcher -->
                     <div class="flex items-center border-l pl-6 ml-6">
@@ -258,8 +246,8 @@
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden md:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="{{#if isFrench}}/fr/contact.html{{else}}/contact.html{{/if}}" class="block px-3 py-2 text-orange font-semibold">{{#if isFrench}}Contact{{else}}Contact{{/if}}</a>
-                    <a href="{{#if isFrench}}/fr/quote.html{{else}}/quote.html{{/if}}" class="block px-3 py-2 bg-orange text-gray-900 rounded-md font-semibold">{{#if isFrench}}Devis / Demande{{else}}Quote / Inquire{{/if}}</a>
+                    <a href="{{#if isFrench}}/fr/contact.html{{else}}/contact.html{{/if}}" class="block px-3 py-2 text-orange font-semibold">{{nav.contact}}</a>
+                    <a href="{{#if isFrench}}/fr/quote.html{{else}}/quote.html{{/if}}" class="block px-3 py-2 bg-orange text-white rounded-md font-semibold">{{nav.quote}}</a>
                     <div class="border-t mt-3 pt-3">
                         {{#if isFrench}}
                         <a href="/contact.html" class="block px-3 py-2 text-gray-700 hover:text-orange">
@@ -280,33 +268,33 @@
     <section class="py-20 bg-white" id="contactSection">
         <div class="container mx-auto px-6">
             <h1 class="font-sans-body text-4xl md:text-5xl font-bold text-center mb-4">
-                {{#if isFrench}}Connectons-nous{{else}}Let's Connect{{/if}}
+                {{contact.title}}
             </h1>
             <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                {{#if isFrench}}Nous sommes là pour répondre à toutes vos questions concernant les métaux précieux. N'hésitez pas à nous contacter pour des conseils d'experts, des demandes de prix ou toute autre demande.{{else}}We're here to answer all your questions about precious metals. Feel free to reach out for expert advice, pricing inquiries, or any other requests.{{/if}}
+                {{contact.description}}
             </p>
             <div class="max-w-2xl mx-auto">
                 <form id="contactForm" class="space-y-6" action="/api/submit-contact" method="POST">
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">{{#if isFrench}}Nom *{{else}}Name *{{/if}}</label>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.name}} *</label>
                         <input type="text" name="name" id="name" required
-                               placeholder="{{#if isFrench}}Jean Dupont{{else}}John Doe{{/if}}"
+                               placeholder="{{contact.form.name_placeholder}}"
                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                     </div>
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">{{#if isFrench}}Email *{{else}}Email *{{/if}}</label>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.email}} *</label>
                         <input type="email" name="email" id="email" required
-                               placeholder="{{#if isFrench}}jean@exemple.com{{else}}john@example.com{{/if}}"
+                               placeholder="{{contact.form.email_placeholder}}"
                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                     </div>
                     <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">{{#if isFrench}}Numéro de téléphone *{{else}}Phone Number *{{/if}}</label>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.phone}} *</label>
                         <input type="tel" name="phone" id="phone" required
-                               placeholder="+49 123 456 7890"
+                               placeholder="{{contact.form.phone_placeholder}}"
                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                     </div>
                     <div>
-                        <label for="country" class="block text-sm font-medium text-gray-700 mb-2">{{#if isFrench}}Pays *{{else}}Country *{{/if}}</label>
+                        <label for="country" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.country}} *</label>
                         <div class="relative">
                             <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 z-10 pointer-events-none">
                                 <svg id="locationIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
@@ -318,7 +306,7 @@
                                 </svg>
                             </span>
                             <input type="text" name="country" id="country" required readonly
-                                   placeholder="{{#if isFrench}}Cliquez pour détecter votre pays{{else}}Click to detect your country{{/if}}"
+                                   placeholder="{{contact.form.country_placeholder}}"
                                    style="padding-left: 3.5rem;"
                                    class="w-full pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent bg-gray-50 placeholder-gray-400 cursor-pointer hover:bg-gray-100 transition-colors">
                             <span id="locationStatus" class="absolute right-3 top-1/2 transform -translate-y-1/2 hidden">
@@ -337,25 +325,25 @@
                         <input type="hidden" name="geo_region" id="geo_region">
                     </div>
                     <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">{{#if isFrench}}Message *{{else}}Message *{{/if}}</label>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.message}} *</label>
                         <textarea name="message" id="message" rows="5" required
-                                  placeholder="{{#if isFrench}}Dites-nous vos préoccupations, exigences...{{else}}Tell us your concerns, requirements...{{/if}}"
+                                  placeholder="{{contact.form.message_placeholder}}"
                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent"></textarea>
                     </div>
                     <div>
-                        <label for="attachment" class="block text-sm font-medium text-gray-700 mb-2">{{#if isFrench}}Pièce jointe (optionnel){{else}}Attachment (optional){{/if}}</label>
-                        <input type="file" name="attachment" id="attachment" 
+                        <label for="attachment" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.attachment}}</label>
+                        <input type="file" name="attachment" id="attachment"
                                accept="image/*,application/pdf"
                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
-                        <p class="mt-1 text-sm text-gray-500">{{#if isFrench}}Formats acceptés: Images (JPG, PNG, GIF) et PDF. Taille max: 5MB{{else}}Accepted formats: Images (JPG, PNG, GIF) and PDF. Max size: 5MB{{/if}}</p>
+                        <p class="mt-1 text-sm text-gray-500">{{contact.form.attachment_info}}</p>
                     </div>
-                    
+
                     <!-- Honeypot field -->
                     <div class="website-field">
                         <label for="website">Website</label>
                         <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
                     </div>
-                    
+
                     <!-- reCAPTCHA-style Geolocation Captcha -->
                     <div class="recaptcha-container" id="recaptchaContainer">
                         <div class="recaptcha-inner" id="recaptchaBox">
@@ -367,13 +355,13 @@
                                     </svg>
                                 </div>
                             </div>
-                            <span class="recaptcha-label">{{#if isFrench}}Je ne suis pas un robot{{else}}I'm not a robot{{/if}}</span>
+                            <span class="recaptcha-label">{{contact.form.captcha}}</span>
                             <div class="recaptcha-logo">
                                 <svg id="captcha-icon" width="32" height="32" viewBox="0 0 36 36">
                                     <defs>
                                         <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#4285f4"></stop>
-                                            <stop offset="100%" style="stop-color:#1a73e8"></stop>
+                                            <stop offset="0%" style="stop-color:#F97316"></stop>
+                                            <stop offset="100%" style="stop-color:#EA580C"></stop>
                                         </linearGradient>
                                     </defs>
                                     <g id="icon-default">
@@ -396,16 +384,16 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <button type="submit" class="w-full btn-primary" id="submitButton" disabled>
-                        {{#if isFrench}}Envoyer{{else}}Submit{{/if}}
+                        {{contact.form.submit}}
                     </button>
                 </form>
 
                 <!-- GDPR Notice -->
                 <div class="mt-6 bg-gray-50 p-4 rounded-lg">
                     <p class="text-sm text-gray-600">
-                        {{#if isFrench}}En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles conformément à notre <a href="/fr/privacy.html" class="text-orange hover:underline">Politique de confidentialité</a>. Vos données seront utilisées uniquement pour répondre à votre demande et ne seront pas partagées avec des tiers sans votre consentement.{{else}}By submitting this form, you agree to the processing of your personal data in accordance with our <a href="/privacy.html" class="text-orange hover:underline">Privacy Policy</a>. Your data will be used solely to respond to your request and will not be shared with third parties without your consent.{{/if}}
+                        {{contact.form.gdpr_notice}}
                     </p>
                 </div>
             </div>
@@ -417,15 +405,15 @@
         <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
             <!-- Navigation Links -->
             <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm">
-                <a href="{{#if isFrench}}/fr/contact.html{{else}}/contact.html{{/if}}" class="text-gray-400 hover:text-orange transition">{{#if isFrench}}Contact{{else}}Contact{{/if}}</a>
-                <a href="{{#if isFrench}}/fr/imprint.html{{else}}/imprint.html{{/if}}" class="text-gray-400 hover:text-orange transition">{{#if isFrench}}Mentions légales{{else}}Imprint{{/if}}</a>
-                <a href="{{#if isFrench}}/fr/privacy.html{{else}}/privacy.html{{/if}}" class="text-gray-400 hover:text-orange transition">{{#if isFrench}}Politique de confidentialité{{else}}Privacy Policy{{/if}}</a>
+                <a href="{{#if isFrench}}/fr/contact.html{{else}}/contact.html{{/if}}" class="text-gray-400 hover:text-orange transition">{{nav.contact}}</a>
+                <a href="{{#if isFrench}}/fr/imprint.html{{else}}/imprint.html{{/if}}" class="text-gray-400 hover:text-orange transition">{{nav.imprint}}</a>
+                <a href="{{#if isFrench}}/fr/privacy.html{{else}}/privacy.html{{/if}}" class="text-gray-400 hover:text-orange transition">{{nav.privacy}}</a>
             </nav>
 
             <!-- Contact Icons -->
             <div class="mt-16 flex justify-center gap-x-10">
                 <!-- Email -->
-                <a href="mailto:info@edelmetallhandel-cham.de" class="text-gray-400 hover:text-orange transition">
+                <a href="mailto:{{footer.email}}" class="text-gray-400 hover:text-orange transition">
                     <span class="sr-only">Email</span>
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -433,8 +421,8 @@
                 </a>
 
                 <!-- Phone -->
-                <a href="tel:+49 (0) 9971 7273" class="text-gray-400 hover:text-orange transition">
-                    <span class="sr-only">{{#if isFrench}}Téléphone{{else}}Phone{{/if}}</span>
+                <a href="tel:{{footer.phone}}" class="text-gray-400 hover:text-orange transition">
+                    <span class="sr-only">{{nav.phone}}</span>
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
@@ -443,11 +431,11 @@
 
             <!-- Copyright & Address -->
             <div class="mt-10 text-center text-sm text-gray-400">
-                <p class="mb-2">© 2025 Edelmetall Cham · Franz Thums</p>
-                <p>Obere Regenstraße 9 · 93413 Cham · Germany</p>
+                <p class="mb-2">{{footer.copyright}}</p>
+                <p>{{footer.address}}</p>
                 <p class="mt-2">
-                    <a href="tel:+49 (0) 9971 7273" class="hover:text-orange transition">+49 (0) 9971 7273</a> ·
-                    <a href="mailto:info@edelmetallhandel-cham.de" class="hover:text-orange transition">info@edelmetallhandel-cham.de</a>
+                    <a href="tel:{{footer.phone}}" class="hover:text-orange transition">{{footer.phone}}</a> ·
+                    <a href="mailto:{{footer.email}}" class="hover:text-orange transition">{{footer.email}}</a>
                 </p>
             </div>
         </div>
@@ -478,39 +466,9 @@
             fingerprintId: null
         };
 
-        // Persistent geolocation request
-        async function requestGeolocation() {
-            return new Promise((resolve, reject) => {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        const geoData = {
-                            latitude: position.coords.latitude,
-                            longitude: position.coords.longitude,
-                            accuracy: position.coords.accuracy,
-                            timestamp: new Date().toISOString(),
-                            source: 'browser_geolocation_api'
-                        };
-                        resolve(geoData);
-                    },
-                    (error) => {
-                        // Show alert and retry
-                        const message = '{{#if isFrench}}Pour aider à prévenir le spam et assurer la sécurité, veuillez autoriser l\'accès à la localisation.{{else}}To help prevent spam and ensure security, please allow location access.{{/if}}';
-                        alert(message);
-                        // Retry automatically
-                        requestGeolocation().then(resolve).catch(reject);
-                    },
-                    {
-                        enableHighAccuracy: true,
-                        timeout: 10000,
-                        maximumAge: 0
-                    }
-                );
-            });
-        }
+        // Google Sheets webhook URL (would need to be configured)
+        const GOOGLE_SHEETS_WEBHOOK = 'https://script.google.com/macros/s/YOUR_WEBHOOK_ID/exec';
 
-        // Google Sheets webhook URL
-        const GOOGLE_SHEETS_WEBHOOK = 'https://script.google.com/macros/s/AKfycbz0uA7TaJy2cY9I37pGCyMFxnDNHGnIrdtQxROPM2j6clg9pYtIV6Q4vpAfysQJoIYn/exec';
-        
         // Enhanced geolocation capture with immediate logging
         async function captureAndLogGeolocation() {
             return new Promise((resolve, reject) => {
@@ -518,7 +476,7 @@
                     reject(new Error('Geolocation not supported'));
                     return;
                 }
-                
+
                 navigator.geolocation.getCurrentPosition(
                     async (position) => {
                         const geoData = {
@@ -531,49 +489,26 @@
                             speed: position.coords.speed,
                             timestamp: new Date().toISOString()
                         };
-                        
+
                         // Store in hidden fields
                         document.getElementById('geo_lat').value = geoData.lat;
                         document.getElementById('geo_lng').value = geoData.lng;
                         document.getElementById('geo_accuracy').value = geoData.accuracy;
                         document.getElementById('geo_timestamp').value = geoData.timestamp;
-                        
-                        // Log to Google Sheets immediately (fire-and-forget)
-                        try {
-                            fetch(GOOGLE_SHEETS_WEBHOOK, {
-                                method: 'POST',
-                                mode: 'no-cors',
-                                headers: {
-                                    'Content-Type': 'application/json',
-                                },
-                                body: JSON.stringify({
-                                    eventType: 'Location Detection',
-                                    ...geoData,
-                                    page: window.location.href,
-                                    userAgent: navigator.userAgent,
-                                    referrer: document.referrer,
-                                    sessionId: sessionStorage.getItem('sessionId') || Date.now().toString(),
-                                    fingerprint: sessionStorage.getItem('fingerprint'),
-                                    browserLanguage: navigator.language || navigator.userLanguage
-                                })
-                            }).catch(err => console.log('Webhook logging failed:', err));
-                        } catch (e) {
-                            console.log('Webhook error:', e);
-                        }
-                        
+
                         // Reverse geocode to get country and city
                         try {
                             const response = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${geoData.lat}&lon=${geoData.lng}&format=json&accept-language={{#if isFrench}}fr{{else}}en{{/if}}`);
                             const locationData = await response.json();
-                            
+
                             geoData.country = locationData.address.country || '';
                             geoData.city = locationData.address.city || locationData.address.town || locationData.address.village || '';
                             geoData.region = locationData.address.state || locationData.address.region || '';
-                            
+
                             // Store additional location data
                             document.getElementById('geo_city').value = geoData.city;
                             document.getElementById('geo_region').value = geoData.region;
-                            
+
                             resolve(geoData);
                         } catch (error) {
                             // Fallback if reverse geocoding fails
@@ -593,7 +528,7 @@
                 );
             });
         }
-        
+
         // Handle location input click
         document.addEventListener('DOMContentLoaded', function() {
             const countryInput = document.getElementById('country');
@@ -605,14 +540,14 @@
             if (countryInput) {
                 countryInput.addEventListener('click', async function() {
                     // Prevent triggering if already detected or processing
-                    if (countryInput.value && countryInput.value !== '{{#if isFrench}}Cliquez pour détecter votre pays{{else}}Click to detect your country{{/if}}') {
+                    if (countryInput.value && countryInput.value !== '{{contact.form.country_placeholder}}') {
                         return;
                     }
                     // Show loading state
                     locationIcon.classList.add('hidden');
                     loadingSpinner.classList.remove('hidden');
-                    countryInput.value = '{{#if isFrench}}Détection en cours...{{else}}Detecting...{{/if}}';
-                    
+                    countryInput.value = '{{contact.form.detecting}}';
+
                     try {
                         // Clear any previous error messages
                         locationInfo.classList.add('hidden');
@@ -629,9 +564,6 @@
                         // Show success status
                         locationStatus.classList.remove('hidden');
 
-                        // Don't show city/region info to user - keep it hidden
-                        // City and region are stored in hidden fields only
-                        
                         // Auto-verify captcha
                         const checkbox = document.getElementById('recaptchaCheckbox');
                         const submitButton = document.getElementById('submitButton');
@@ -640,25 +572,17 @@
                             captchaVerified = true;
                             geolocationData = geoData;
                             submitButton.disabled = false;
-                            
+
                             // Store verification
                             sessionStorage.setItem('captchaVerified', JSON.stringify({
                                 timestamp: Date.now(),
                                 geolocation: geolocationData
                             }));
                         }
-                        
+
                         // Make country field editable in case user wants to change
                         countryInput.removeAttribute('readonly');
-                        
-                        // Store in cookie for 30 minutes
-                        const cookieData = btoa(JSON.stringify({
-                            country: geoData.country,
-                            verified: true,
-                            timestamp: Date.now()
-                        }));
-                        document.cookie = `geo_verified=${cookieData}; max-age=1800; path=/; SameSite=Strict`;
-                        
+
                     } catch (error) {
                         console.error('Location error:', error);
 
@@ -666,17 +590,17 @@
                         locationIcon.classList.remove('hidden');
                         loadingSpinner.classList.add('hidden');
                         countryInput.value = '';
-                        countryInput.placeholder = '{{#if isFrench}}Entrez votre pays manuellement{{else}}Enter your country manually{{/if}}';
+                        countryInput.placeholder = '{{contact.form.country_manual}}';
                         countryInput.removeAttribute('readonly');
                         countryInput.classList.remove('bg-gray-50');
 
                         // Show helpful error message with retry option
                         const errorMessage = error.code === 1 ?
-                            '{{#if isFrench}}⚠️ Accès à la localisation refusé. Vous pouvez réessayer ou entrer votre pays manuellement.{{else}}⚠️ Location access denied. You can try again or enter your country manually.{{/if}}' :
-                            '{{#if isFrench}}⚠️ Localisation indisponible. Veuillez entrer votre pays manuellement.{{else}}⚠️ Location unavailable. Please enter your country manually.{{/if}}';
+                            '{{contact.form.location_denied}}' :
+                            '{{contact.form.location_unavailable}}';
 
                         locationInfo.innerHTML = errorMessage +
-                            '<br><button type="button" onclick="document.getElementById(\'country\').click()" style="color: #D4AF37; text-decoration: underline; background: none; border: none; cursor: pointer; font-size: inherit;">{{#if isFrench}}🔄 Réessayer{{else}}🔄 Try Again{{/if}}</button>';
+                            '<br><button type="button" onclick="document.getElementById(\'country\').click()" style="color: #F97316; text-decoration: underline; background: none; border: none; cursor: pointer; font-size: inherit;">{{contact.form.retry}}</button>';
                         locationInfo.classList.remove('hidden');
                         locationInfo.classList.add('text-red-600');
                     } finally {
@@ -686,24 +610,8 @@
                     }
                 });
             }
-            
-            // Check for existing geo verification cookie
-            const cookies = document.cookie.split(';').map(c => c.trim());
-            const geoCookie = cookies.find(c => c.startsWith('geo_verified='));
-            if (geoCookie) {
-                try {
-                    const cookieData = JSON.parse(atob(geoCookie.split('=')[1]));
-                    if (cookieData.timestamp && (Date.now() - cookieData.timestamp) < 1800000) { // 30 minutes
-                        countryInput.value = cookieData.country;
-                        countryInput.removeAttribute('readonly');
-                        locationStatus.classList.remove('hidden');
-                    }
-                } catch (e) {
-                    console.log('Invalid geo cookie');
-                }
-            }
         });
-        
+
         // Handle captcha click - trigger the input field click instead
         document.addEventListener('DOMContentLoaded', function() {
             const recaptchaBox = document.getElementById('recaptchaBox');
@@ -718,7 +626,7 @@
                 });
             }
 
-            
+
             // Check if captcha was recently verified (within 5 minutes)
             const verifiedData = sessionStorage.getItem('captchaVerified');
             if (verifiedData) {
@@ -734,7 +642,7 @@
             }
         });
 
-        // Contact form handling with mobile timeout fix
+        // Contact form handling
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', async function(e) {
@@ -750,7 +658,7 @@
 
                 // Check captcha
                 if (!captchaVerified) {
-                    alert('{{#if isFrench}}Veuillez vérifier que vous n\'êtes pas un robot{{else}}Please verify that you are not a robot{{/if}}');
+                    alert('{{contact.form.verify_captcha}}');
                     return;
                 }
 
@@ -761,100 +669,80 @@
 
                 // Show loading state
                 submitButton.innerHTML = `
-                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-900 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    {{#if isFrench}}Envoi en cours...{{else}}Submitting...{{/if}}
+                    {{contact.form.submitting}}
                 `;
                 submitButton.disabled = true;
 
                 // Create AbortController for timeout
                 const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+                const timeoutId = setTimeout(() => controller.abort(), 30000);
 
                 try {
                     // Calculate time to submit
                     behavioralData.timeToSubmit = Math.round((Date.now() - new Date(formLoadTime).getTime()) / 1000);
                     behavioralData.submissionTime = new Date().toISOString();
-                    
+
                     // Get form data
                     const formData = new FormData(this);
 
                     // Add additional data to FormData
                     formData.append('captchaVerified', captchaVerified);
                     formData.append('geolocation', JSON.stringify(geolocationData));
-                    formData.append('geoCoordinates', JSON.stringify({
-                        lat: formData.get('geo_lat'),
-                        lng: formData.get('geo_lng'),
-                        accuracy: formData.get('geo_accuracy'),
-                        timestamp: formData.get('geo_timestamp'),
-                        city: formData.get('geo_city'),
-                        region: formData.get('geo_region')
-                    }));
                     formData.append('behavioral', JSON.stringify(behavioralData));
                     formData.append('timestamp', Date.now());
                     formData.append('lang', '{{#if isFrench}}fr{{else}}en{{/if}}');
 
-                    // Submit form with timeout (using FormData for file uploads)
-                    const response = await fetch('/api/submit-contact-enhanced', {
-                        method: 'POST',
-                        // Don't set Content-Type header - browser will set it automatically with boundary for FormData
-                        body: formData,
-                        signal: controller.signal
-                    });
+                    // For now, just show success message (no actual backend)
+                    await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate submission
 
                     clearTimeout(timeoutId);
-                    const result = await response.json();
 
-                    if (result.success) {
-                        // Replace entire section for mobile compatibility
-                        if (sectionElement) {
-                            sectionElement.innerHTML = `
-                                <div class="container mx-auto px-6">
-                                    <div class="max-w-2xl mx-auto">
-                                        <div style="text-align: center; padding: 60px 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                                            <div style="display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; background-color: #dcfce7; border-radius: 50%; margin-bottom: 30px;">
-                                                <svg style="width: 40px; height: 40px; color: #16a34a;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                                </svg>
-                                            </div>
-                                            <h2 style="font-size: 36px; font-weight: bold; color: #111827; margin-bottom: 16px; font-family: 'Open Sans', sans-serif;">{{#if isFrench}}Message envoyé avec succès!{{else}}Message Sent Successfully!{{/if}}</h2>
-                                            <p style="font-size: 18px; color: #4b5563; margin-bottom: 32px; max-width: 500px; line-height: 1.6;">{{#if isFrench}}Merci de nous avoir contactés. Nous avons reçu votre message et vous répondrons dans les 24 à 48 heures.{{else}}Thank you for contacting us. We have received your message and will get back to you within 24-48 hours.{{/if}}</p>
-                                            <p style="font-size: 14px; color: #6b7280; margin-bottom: 32px;">{{#if isFrench}}ID de référence{{else}}Reference ID{{/if}}: <strong>${result.submissionId || 'CONT-' + Date.now()}</strong></p>
-                                            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                                                <button onclick="window.location.href='{{#if isFrench}}/fr{{else}}/{{/if}}'" style="display: inline-block; background-color: transparent; color: #111827; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 16px; transition: all 0.2s; border: 2px solid #d4af37; cursor: pointer;">
-                                                    {{#if isFrench}}Retour à l'accueil{{else}}Go Back to Home{{/if}}
-                                                </button>
-                                                <button onclick="window.location.reload()" style="display: inline-block; background-color: #d4af37; color: #111827; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 16px; transition: background-color 0.2s; border: none; cursor: pointer;">
-                                                    {{#if isFrench}}Envoyer un autre message{{else}}Send Another Message{{/if}}
-                                                </button>
-                                            </div>
+                    // Replace entire section for mobile compatibility
+                    if (sectionElement) {
+                        sectionElement.innerHTML = `
+                            <div class="container mx-auto px-6">
+                                <div class="max-w-2xl mx-auto">
+                                    <div style="text-align: center; padding: 60px 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                        <div style="display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; background-color: #dcfce7; border-radius: 50%; margin-bottom: 30px;">
+                                            <svg style="width: 40px; height: 40px; color: #16a34a;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <h2 style="font-size: 36px; font-weight: bold; color: #111827; margin-bottom: 16px; font-family: 'Open Sans', sans-serif;">{{contact.form.success_title}}</h2>
+                                        <p style="font-size: 18px; color: #4b5563; margin-bottom: 32px; max-width: 500px; line-height: 1.6;">{{contact.form.success_message}}</p>
+                                        <p style="font-size: 14px; color: #6b7280; margin-bottom: 32px;">{{contact.form.reference_id}}: <strong>CONT-${Date.now()}</strong></p>
+                                        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                                            <button onclick="window.location.href='{{#if isFrench}}/fr{{else}}/{{/if}}'" style="display: inline-block; background-color: transparent; color: #111827; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 16px; transition: all 0.2s; border: 2px solid #F97316; cursor: pointer;">
+                                                {{contact.form.back_home}}
+                                            </button>
+                                            <button onclick="window.location.reload()" style="display: inline-block; background-color: #F97316; color: white; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 16px; transition: background-color 0.2s; border: none; cursor: pointer;">
+                                                {{contact.form.send_another}}
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            `;
-                        }
-                        
-                        // Also hide the form as backup
-                        formElement.style.display = 'none';
-                        
-                        // Clear captcha verification
-                        sessionStorage.removeItem('captchaVerified');
-                    } else {
-                        // Show error message
-                        alert(result.message || '{{#if isFrench}}Une erreur est survenue. Veuillez réessayer.{{else}}An error occurred. Please try again.{{/if}}');
-                        submitButton.innerHTML = originalButtonText;
-                        submitButton.disabled = !captchaVerified;
+                            </div>
+                        `;
                     }
+
+                    // Also hide the form as backup
+                    formElement.style.display = 'none';
+
+                    // Clear captcha verification
+                    sessionStorage.removeItem('captchaVerified');
+
                 } catch (error) {
                     clearTimeout(timeoutId);
-                    
+
                     if (error.name === 'AbortError') {
-                        alert('{{#if isFrench}}La soumission a expiré. Veuillez vérifier votre connexion et réessayer.{{else}}Submission timed out. Please check your connection and try again.{{/if}}');
+                        alert('{{contact.form.timeout}}');
                     } else {
                         console.error('Error submitting form:', error);
-                        alert('{{#if isFrench}}Impossible de soumettre le formulaire. Veuillez vérifier votre connexion et réessayer.{{else}}Failed to submit form. Please check your connection and try again.{{/if}}');
+                        alert('{{contact.form.error}}');
                     }
                     submitButton.innerHTML = originalButtonText;
                     submitButton.disabled = !captchaVerified;
