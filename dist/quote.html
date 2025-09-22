@@ -254,11 +254,9 @@
                                                 </label>
                                                 <div class="mt-2 grid grid-cols-1">
                                                     <select id="unit-0" name="commodities[0][unit]" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
-                                                        <option value="kg">Kilograms (kg)</option>
-                                                        <option value="g">Grams (g)</option>
-                                                        <option value="oz">Troy Ounces (oz)</option>
-                                                        <option value="lb">Pounds (lb)</option>
-                                                        <option value="mt">Metric Tons (MT)</option>
+                                                        <option value="pcs">Pieces (pcs)</option>
+                                                        <option value="units">Units</option>
+                                                        <option value="sets">Sets</option>
                                                     </select>
                                                     <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                                         <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -293,45 +291,13 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <!-- Purity -->
+                                <!-- Manufacturer -->
                                 <div class="col-span-full">
                                     <label for="purity" class="block text-sm/6 font-medium text-gray-900">
                                         Manufacturer <span class="text-red-500">*</span>
                                     </label>
-                                    <div class="mt-2 grid grid-cols-1">
-                                        <select id="purity" name="purity" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
-                                            <option value="">Select manufacturer</option>
-                                            <optgroup label="Gold">
-                                                <option value="24k">24 CARAT – 99.99% PURITY</option>
-                                                <option value="23k">23 CARAT – 98.14+% PURITY</option>
-                                                <option value="22k">22 CARAT – 91.67% PURITY</option>
-                                                <option value="18k">18 CARAT – 75% PURITY</option>
-                                                <option value="14k">14 CARAT – 58.33% PURITY</option>
-                                            </optgroup>
-                                            <optgroup label="Silver">
-                                                <option value="999">999 Fine Silver (99.9%)</option>
-                                                <option value="925">Sterling Silver (92.5%)</option>
-                                                <option value="900">Coin Silver (90%)</option>
-                                            </optgroup>
-                                            <optgroup label="Platinum">
-                                                <option value="pt999">999 Platinum (99.9%)</option>
-                                                <option value="pt950">950 Platinum (95%)</option>
-                                                <option value="pt900">900 Platinum (90%)</option>
-                                            </optgroup>
-                                            <option value="other">Other (specify)</option>
-                                        </select>
-                                        <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
-                                            <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <!-- Custom Purity (shown when "Other" is selected) -->
-                                <div id="customPurityDiv" class="hidden col-span-full">
-                                    <label for="customPurity" class="block text-sm/6 font-medium text-gray-900">
-                                        Specify Manufacturer
-                                    </label>
                                     <div class="mt-2">
-                                        <input type="text" id="customPurity" name="customPurity" placeholder="e.g., Caterpillar, Komatsu" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
+                                        <input type="text" id="purity" name="purity" required placeholder="e.g., Caterpillar, Komatsu" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <!-- Legacy quantity fields removed - now part of commodity items above -->
@@ -470,128 +436,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Origin Country (Moved to top) - Supplier field -->
-                                <div class="col-span-full supplier-fields">
-                                    <label for="origin" class="block text-sm/6 font-medium text-gray-900">
-                                        Country of Origin <span class="text-red-500">*</span>
-                                    </label>
-                                    <div class="mt-2 grid grid-cols-1">
-                                        <select id="origin" name="origin" required onchange="updateCurrency(this.value)" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
-                                            <option value="">Select country</option>
-                                            <!-- African Countries -->
-                                            <optgroup label="Africa">
-                                                <option value="DZ" data-currency="DZD">🇩🇿 Algeria</option>
-                                                <option value="AO" data-currency="AOA">🇦🇴 Angola</option>
-                                                <option value="BJ" data-currency="XOF">🇧🇯 Benin</option>
-                                                <option value="BW" data-currency="BWP">🇧🇼 Botswana</option>
-                                                <option value="BF" data-currency="XOF">🇧🇫 Burkina Faso</option>
-                                                <option value="BI" data-currency="BIF">🇧🇮 Burundi</option>
-                                                <option value="CM" data-currency="XAF">🇨🇲 Cameroon</option>
-                                                <option value="CV" data-currency="CVE">🇨🇻 Cape Verde</option>
-                                                <option value="CF" data-currency="XAF">🇨🇫 Central African Republic</option>
-                                                <option value="TD" data-currency="XAF">🇹🇩 Chad</option>
-                                                <option value="KM" data-currency="KMF">🇰🇲 Comoros</option>
-                                                <option value="CG" data-currency="XAF">🇨🇬 Congo</option>
-                                                <option value="CD" data-currency="CDF">🇨🇩 DR Congo</option>
-                                                <option value="CI" data-currency="XOF" selected>🇨🇮 Côte d'Ivoire</option>
-                                                <option value="DJ" data-currency="DJF">🇩🇯 Djibouti</option>
-                                                <option value="EG" data-currency="EGP">🇪🇬 Egypt</option>
-                                                <option value="GQ" data-currency="XAF">🇬🇶 Equatorial Guinea</option>
-                                                <option value="ER" data-currency="ERN">🇪🇷 Eritrea</option>
-                                                <option value="SZ" data-currency="SZL">🇸🇿 Eswatini</option>
-                                                <option value="ET" data-currency="ETB">🇪🇹 Ethiopia</option>
-                                                <option value="GA" data-currency="XAF">🇬🇦 Gabon</option>
-                                                <option value="GM" data-currency="GMD">🇬🇲 Gambia</option>
-                                                <option value="GH" data-currency="GHS">🇬🇭 Ghana</option>
-                                                <option value="GN" data-currency="GNF">🇬🇳 Guinea</option>
-                                                <option value="GW" data-currency="XOF">🇬🇼 Guinea-Bissau</option>
-                                                <option value="KE" data-currency="KES">🇰🇪 Kenya</option>
-                                                <option value="LS" data-currency="LSL">🇱🇸 Lesotho</option>
-                                                <option value="LR" data-currency="LRD">🇱🇷 Liberia</option>
-                                                <option value="LY" data-currency="LYD">🇱🇾 Libya</option>
-                                                <option value="MG" data-currency="MGA">🇲🇬 Madagascar</option>
-                                                <option value="MW" data-currency="MWK">🇲🇼 Malawi</option>
-                                                <option value="ML" data-currency="XOF">🇲🇱 Mali</option>
-                                                <option value="MR" data-currency="MRU">🇲🇷 Mauritania</option>
-                                                <option value="MU" data-currency="MUR">🇲🇺 Mauritius</option>
-                                                <option value="MA" data-currency="MAD">🇲🇦 Morocco</option>
-                                                <option value="MZ" data-currency="MZN">🇲🇿 Mozambique</option>
-                                                <option value="NA" data-currency="NAD">🇳🇦 Namibia</option>
-                                                <option value="NE" data-currency="XOF">🇳🇪 Niger</option>
-                                                <option value="NG" data-currency="NGN">🇳🇬 Nigeria</option>
-                                                <option value="RW" data-currency="RWF">🇷🇼 Rwanda</option>
-                                                <option value="ST" data-currency="STN">🇸🇹 São Tomé and Príncipe</option>
-                                                <option value="SN" data-currency="XOF">🇸🇳 Senegal</option>
-                                                <option value="SC" data-currency="SCR">🇸🇨 Seychelles</option>
-                                                <option value="SL" data-currency="SLL">🇸🇱 Sierra Leone</option>
-                                                <option value="SO" data-currency="SOS">🇸🇴 Somalia</option>
-                                                <option value="ZA" data-currency="ZAR">🇿🇦 South Africa</option>
-                                                <option value="SS" data-currency="SSP">🇸🇸 South Sudan</option>
-                                                <option value="SD" data-currency="SDG">🇸🇩 Sudan</option>
-                                                <option value="TZ" data-currency="TZS">🇹🇿 Tanzania</option>
-                                                <option value="TG" data-currency="XOF">🇹🇬 Togo</option>
-                                                <option value="TN" data-currency="TND">🇹🇳 Tunisia</option>
-                                                <option value="UG" data-currency="UGX">🇺🇬 Uganda</option>
-                                                <option value="ZM" data-currency="ZMW">🇿🇲 Zambia</option>
-                                                <option value="ZW" data-currency="ZWL">🇿🇼 Zimbabwe</option>
-                                            </optgroup>
-                                            <!-- Middle Eastern Countries -->
-                                            <optgroup label="Middle East">
-                                                <option value="BH" data-currency="BHD">🇧🇭 Bahrain</option>
-                                                <option value="IR" data-currency="IRR">🇮🇷 Iran</option>
-                                                <option value="IQ" data-currency="IQD">🇮🇶 Iraq</option>
-                                                <option value="IL" data-currency="ILS">🇮🇱 Israel</option>
-                                                <option value="JO" data-currency="JOD">🇯🇴 Jordan</option>
-                                                <option value="KW" data-currency="KWD">🇰🇼 Kuwait</option>
-                                                <option value="LB" data-currency="LBP">🇱🇧 Lebanon</option>
-                                                <option value="OM" data-currency="OMR">🇴🇲 Oman</option>
-                                                <option value="PS" data-currency="ILS">🇵🇸 Palestine</option>
-                                                <option value="QA" data-currency="QAR">🇶🇦 Qatar</option>
-                                                <option value="SA" data-currency="SAR">🇸🇦 Saudi Arabia</option>
-                                                <option value="SY" data-currency="SYP">🇸🇾 Syria</option>
-                                                <option value="TR" data-currency="TRY">🇹🇷 Turkey</option>
-                                                <option value="AE" data-currency="AED">🇦🇪 United Arab Emirates</option>
-                                                <option value="YE" data-currency="YER">🇾🇪 Yemen</option>
-                                            </optgroup>
-                                            <!-- Eastern Countries -->
-                                            <optgroup label="Eastern Asia & Pacific">
-                                                <option value="AF" data-currency="AFN">🇦🇫 Afghanistan</option>
-                                                <option value="BD" data-currency="BDT">🇧🇩 Bangladesh</option>
-                                                <option value="BT" data-currency="BTN">🇧🇹 Bhutan</option>
-                                                <option value="BN" data-currency="BND">🇧🇳 Brunei</option>
-                                                <option value="KH" data-currency="KHR">🇰🇭 Cambodia</option>
-                                                <option value="CN" data-currency="CNY">🇨🇳 China</option>
-                                                <option value="TL" data-currency="USD">🇹🇱 East Timor</option>
-                                                <option value="IN" data-currency="INR">🇮🇳 India</option>
-                                                <option value="ID" data-currency="IDR">🇮🇩 Indonesia</option>
-                                                <option value="JP" data-currency="JPY">🇯🇵 Japan</option>
-                                                <option value="KZ" data-currency="KZT">🇰🇿 Kazakhstan</option>
-                                                <option value="KG" data-currency="KGS">🇰🇬 Kyrgyzstan</option>
-                                                <option value="LA" data-currency="LAK">🇱🇦 Laos</option>
-                                                <option value="MY" data-currency="MYR">🇲🇾 Malaysia</option>
-                                                <option value="MV" data-currency="MVR">🇲🇻 Maldives</option>
-                                                <option value="MN" data-currency="MNT">🇲🇳 Mongolia</option>
-                                                <option value="MM" data-currency="MMK">🇲🇲 Myanmar</option>
-                                                <option value="NP" data-currency="NPR">🇳🇵 Nepal</option>
-                                                <option value="KP" data-currency="KPW">🇰🇵 North Korea</option>
-                                                <option value="PK" data-currency="PKR">🇵🇰 Pakistan</option>
-                                                <option value="PH" data-currency="PHP">🇵🇭 Philippines</option>
-                                                <option value="SG" data-currency="SGD">🇸🇬 Singapore</option>
-                                                <option value="KR" data-currency="KRW">🇰🇷 South Korea</option>
-                                                <option value="LK" data-currency="LKR">🇱🇰 Sri Lanka</option>
-                                                <option value="TW" data-currency="TWD">🇹🇼 Taiwan</option>
-                                                <option value="TJ" data-currency="TJS">🇹🇯 Tajikistan</option>
-                                                <option value="TH" data-currency="THB">🇹🇭 Thailand</option>
-                                                <option value="TM" data-currency="TMT">🇹🇲 Turkmenistan</option>
-                                                <option value="UZ" data-currency="UZS">🇺🇿 Uzbekistan</option>
-                                                <option value="VN" data-currency="VND">🇻🇳 Vietnam</option>
-                                            </optgroup>
-                                        </select>
-                                        <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
-                                            <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                </div>
 
                                 <!-- Price - Supplier field -->
                                 <div class="sm:col-span-3 supplier-fields">
@@ -739,10 +583,10 @@
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="trialQuantity" name="trialQuantity" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="">No demo equipment</option>
-                                            <option value="50kg">50 kg</option>
-                                            <option value="100kg">100 kg</option>
-                                            <option value="250kg">250 kg</option>
-                                            <option value="500kg">500 kg</option>
+                                            <option value="1unit">1 unit</option>
+                                            <option value="2units">2 units</option>
+                                            <option value="5units">5 units</option>
+                                            <option value="10units">10 units</option>
                                             <option value="custom">Custom arrangement</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
@@ -771,28 +615,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Procedure Agreement - Supplier only -->
-                                <div class="col-span-full supplier-fields" id="supplierProcedure">
-                                    <div class="bg-gray-50 p-4 rounded-lg">
-                                        <div class="flex gap-3">
-                                            <div class="flex h-6 shrink-0 items-center">
-                                                <div class="group grid size-4 grid-cols-1">
-                                                    <input id="procedure" name="procedure" type="checkbox" required class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-orange checked:bg-orange indeterminate:border-orange indeterminate:bg-orange focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
-                                                    <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
-                                                        <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
-                                                        <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div class="text-sm/6">
-                                                <label for="procedure" class="font-medium text-gray-900">I agree to the standard trading procedures</label>
-                                                <div class="mt-2 text-xs text-gray-600">
-                                                    <p>By submitting this form, I acknowledge that I have read and agree to the standard trading procedures and terms of service.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -1366,11 +1188,9 @@
                                 Unit <span class="text-red-500">*</span>
                             </label>
                             <select name="commodities[${commodityCount}][unit]" required class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
-                                <option value="kg">kg</option>
-                                <option value="g">g</option>
-                                <option value="oz">oz</option>
-                                <option value="lb">lb</option>
-                                <option value="mt">mt</option>
+                                <option value="pcs">pcs</option>
+                                <option value="units">units</option>
+                                <option value="sets">sets</option>
                             </select>
                         </div>
 
