@@ -47,6 +47,23 @@ mission:
   subtitle: "Our Mission"
   text: "With longstanding expertise in international mining equipment trade, we have established ourselves as a cornerstone of trust and reliability. Our focus on transparency, compliance, and sustainable partnerships enables us to build lasting relationships while connecting continents through ethical mining equipment commerce."
 
+# Services Section
+services:
+  title: "Our Equipment & Services"
+  description: "Premium mining equipment and comprehensive technical support tailored to your operational needs"
+  heavy_machinery:
+    title: "Heavy Machinery"
+    description: "Premium excavators, bulldozers, and earth-moving equipment for large-scale mining operations."
+  drilling:
+    title: "Drilling Equipment"
+    description: "Professional drilling systems and rock drilling equipment for exploration and extraction operations."
+  crushers:
+    title: "Drilling & Crushing"
+    description: "Advanced drilling rigs, crushers, and processing equipment for efficient mineral extraction."
+  support:
+    title: "Technical Support"
+    description: "Expert maintenance, repairs, and technical consulting for optimal equipment performance."
+
 # Values Section
 values:
   subtitle: "Why Choose Us"
@@ -83,6 +100,11 @@ values:
       partners_value: "100+"
       volume: "Transaction Volume"
       volume_value: "€100M+"
+
+# FAQ Section
+faq:
+  title: "Frequently Asked Questions"
+  description: "Common questions about our mining equipment and services"
 
 # Partners Section
 partners:

@@ -47,6 +47,23 @@ mission:
   subtitle: "Notre Mission"
   text: "Avec une expertise de longue date dans le commerce international d'équipement minier, nous nous sommes établis comme une pierre angulaire de confiance et de fiabilité. Notre focus sur la transparence, la conformité et les partenariats durables nous permet de construire des relations durables tout en reliant les continents par le commerce éthique d'équipement minier."
 
+# Services Section
+services:
+  title: "Notre Équipement et Services"
+  description: "Équipement minier premium et support technique complet adapté à vos besoins opérationnels"
+  heavy_machinery:
+    title: "Machines Lourdes"
+    description: "Excavateurs premium, bulldozers et équipement de terrassement pour opérations minières à grande échelle."
+  drilling:
+    title: "Équipement de Forage"
+    description: "Systèmes de forage professionnels et équipement de forage rocheux pour opérations d'exploration et d'extraction."
+  crushers:
+    title: "Forage et Concassage"
+    description: "Plateformes de forage avancées, concasseurs et équipement de traitement pour extraction minérale efficace."
+  support:
+    title: "Support Technique"
+    description: "Maintenance experte, réparations et conseil technique pour performance optimale de l'équipement."
+
 # Values Section
 values:
   subtitle: "Pourquoi Nous Choisir"
@@ -83,6 +100,11 @@ values:
       partners_value: "100+"
       volume: "Volume de Transactions"
       volume_value: "€100M+"
+
+# FAQ Section
+faq:
+  title: "Questions Fréquemment Posées"
+  description: "Questions communes sur notre équipement minier et services"
 
 # Partners Section
 partners:

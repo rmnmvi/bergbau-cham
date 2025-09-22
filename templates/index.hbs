@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{#if isFrench}}fr{{else}}en{{/if}}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bergbau Cham - Premium Mining Equipment & Machinery</title>
-    <meta name="description" content="Bergbau Cham - Your trusted partner for premium mining equipment, machinery, and technical solutions across Africa and Europe.">
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
     <!-- CSS path fix -->
-    <meta name="keywords" content="Bergbau, mining, extraction, resources, international mining, Europe, Africa">
+    <meta name="keywords" content="{{meta.keywords}}">
 
     <!-- Search Engine Blocking (but allow social media previews) -->
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
@@ -16,22 +16,22 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bergbau-cham.de/">
-    <meta property="og:title" content="Bergbau Cham - Premium Mining Equipment & Machinery">
-    <meta property="og:description" content="Your trusted partner for premium mining equipment, machinery, and technical solutions across Africa and Europe.">
+    <meta property="og:title" content="{{meta.title}}">
+    <meta property="og:description" content="{{meta.description}}">
     <meta property="og:image" content="https://bergbau-cham.de/assets/images/og/og-image.jpg">
     <meta property="og:image:secure_url" content="https://bergbau-cham.de/assets/images/og/og-image.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Bergbau Cham - Trusted Partner in Mining Operations">
+    <meta property="og:image:alt" content="{{meta.title}}">
     <meta property="og:site_name" content="Bergbau Cham">
-    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale" content="{{#if isFrench}}fr_FR{{else}}en_US{{/if}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bergbau-cham.de/">
-    <meta property="twitter:title" content="Bergbau Cham - Premium Mining Equipment & Machinery">
-    <meta property="twitter:description" content="Your trusted partner for premium mining equipment, machinery, and technical solutions across Africa and Europe.">
+    <meta property="twitter:title" content="{{meta.title}}">
+    <meta property="twitter:description" content="{{meta.description}}">
     <meta property="twitter:image" content="https://bergbau-cham.de/assets/images/og/og-image.jpg">
 
     <!-- Favicon -->
@@ -54,10 +54,10 @@
             </a>
             <div class="hidden md:flex items-center space-x-8">
                 <ul class="flex space-x-8">
-                    <li><a href="#contact" class="text-white hover:text-orange-500 transition">Contact</a></li>
+                    <li><a href="#contact" class="text-white hover:text-orange-500 transition">{{nav.contact}}</a></li>
                 </ul>
                 <a href="quote.html" class="ml-4 px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
-                    Quote
+                    {{nav.quote}}
                 </a>
 
                 <!-- Language Switcher -->
@@ -90,10 +90,10 @@
         <!-- Mobile menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-sm">
             <ul class="px-6 py-4 space-y-2">
-                <li><a href="#contact" class="block text-white hover:text-orange-500 transition">Contact</a></li>
+                <li><a href="#contact" class="block text-white hover:text-orange-500 transition">{{nav.contact}}</a></li>
                 <li class="pt-2">
                     <a href="quote.html" class="block w-full text-center px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
-                        Quote
+                        {{nav.quote}}
                     </a>
                 </li>
             </ul>
@@ -117,11 +117,10 @@
                     <!-- Text Content -->
                     <div class="max-w-3xl">
                         <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-sans-body font-light mb-6">
-                            Trusted Partner in<br><span class="text-orange-500">Mining Equipment</span>
+                            {{{hero.title}}}
                         </h1>
                         <p class="text-white text-base md:text-lg font-sans-body font-light leading-relaxed max-w-2xl">
-                            For decades, Bergbau Cham has built lasting relationships across Africa and Europe.
-                            We operate with transparency, compliance, and a commitment to sustainable partnerships in international mining equipment trade.
+                            {{hero.description}}
                         </p>
                     </div>
 
@@ -129,7 +128,7 @@
                     <div class="md:mb-2">
                         <a href="#contact"
                            class="inline-block bg-white text-gray-900 font-sans-body font-semibold uppercase tracking-wider text-sm px-8 py-4 hover:bg-gray-100 transition-colors duration-300">
-                            Get in touch
+                            {{hero.cta}}
                         </a>
                     </div>
                 </div>
@@ -143,22 +142,22 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-                        Excellence in Mining Equipment
+                        {{about.title}}
                     </h2>
                     <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                        With decades of experience in the mining equipment industry, Bergbau Cham has established itself as a trusted supplier of premium mining machinery and technical solutions across Africa and Europe. Our commitment to quality and reliability sets us apart.
+                        {{about.paragraph1}}
                     </p>
                     <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                        We specialize in heavy mining equipment, excavators, crushers, drilling machinery, and comprehensive technical support that meets the highest industry standards while ensuring maximum operational efficiency.
+                        {{about.paragraph2}}
                     </p>
                     <div class="grid grid-cols-2 gap-6">
                         <div class="text-center">
-                            <h3 class="text-3xl font-bold text-orange-500 mb-2">25+</h3>
-                            <p class="text-gray-600">Years Experience</p>
+                            <h3 class="text-3xl font-bold text-orange-500 mb-2">{{about.stats.years}}</h3>
+                            <p class="text-gray-600">{{about.stats.years_label}}</p>
                         </div>
                         <div class="text-center">
-                            <h3 class="text-3xl font-bold text-orange-500 mb-2">500+</h3>
-                            <p class="text-gray-600">Equipment Supplied</p>
+                            <h3 class="text-3xl font-bold text-orange-500 mb-2">{{about.stats.countries}}</h3>
+                            <p class="text-gray-600">{{about.stats.countries_label}}</p>
                         </div>
                     </div>
                 </div>
@@ -173,9 +172,9 @@
     <section id="services" class="py-20 bg-white">
         <div class="container mx-auto px-8 lg:px-16">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Our Equipment & Services</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">{{services.title}}</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Premium mining equipment and comprehensive technical support tailored to your operational needs
+                    {{services.description}}
                 </p>
             </div>
 
@@ -186,9 +185,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 11.172V5l-1-1z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Heavy Machinery</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">{{services.heavy_machinery.title}}</h3>
                     <p class="text-gray-600">
-                        Premium excavators, bulldozers, and earth-moving equipment for large-scale mining operations.
+                        {{services.heavy_machinery.description}}
                     </p>
                 </div>
 
@@ -198,9 +197,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Drilling & Crushing</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">{{services.crushers.title}}</h3>
                     <p class="text-gray-600">
-                        Advanced drilling rigs, crushers, and processing equipment for efficient mineral extraction.
+                        {{services.crushers.description}}
                     </p>
                 </div>
 
@@ -210,9 +209,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Technical Support</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">{{services.support.title}}</h3>
                     <p class="text-gray-600">
-                        Expert maintenance, repairs, and technical consulting for optimal equipment performance.
+                        {{services.support.description}}
                     </p>
                 </div>
             </div>
@@ -223,9 +222,9 @@
     <section id="partners" class="py-20 bg-gray-900">
         <div class="container mx-auto px-8 lg:px-16">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Our Equipment Partners</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">{{partners.title}}</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Authorized dealer and service partner for leading mining equipment manufacturers worldwide
+                    {{partners.description}}
                 </p>
             </div>
 
@@ -278,9 +277,9 @@
     <section id="faq" class="py-20 bg-white">
         <div class="container mx-auto px-8 lg:px-16">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">{{faq.title}}</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Common questions about our mining equipment and services
+                    {{faq.description}}
                 </p>
             </div>
 
