@@ -1267,22 +1267,34 @@
             const stepElement = document.getElementById(`step${step}`);
             const requiredFields = stepElement.querySelectorAll('[required]');
             let isValid = true;
-            
+            let emptyFields = [];
+
             requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    field.classList.add('outline-red-500');
-                    field.classList.remove('outline-gray-300');
-                    isValid = false;
-                } else {
-                    field.classList.remove('outline-red-500');
-                    field.classList.add('outline-gray-300');
+                // Check if the field itself or its parent container is hidden
+                const isFieldVisible = field.offsetParent !== null;
+                const isInHiddenContainer = field.closest('.hidden') !== null;
+                const isHiddenInput = field.type === 'hidden';
+
+                // Only validate visible fields that are not in hidden containers
+                if (isFieldVisible && !isInHiddenContainer && !isHiddenInput) {
+                    if (!field.value.trim()) {
+                        field.classList.add('outline-red-500');
+                        field.classList.remove('outline-gray-300');
+                        isValid = false;
+                        // Track which field is empty for debugging
+                        emptyFields.push(field.name || field.id || 'unnamed field');
+                    } else {
+                        field.classList.remove('outline-red-500');
+                        field.classList.add('outline-gray-300');
+                    }
                 }
             });
-            
+
             if (!isValid) {
-                alert('Please fill in all required fields.');
+                console.log('Empty required fields:', emptyFields);
+                alert('Please fill in all required fields: ' + emptyFields.join(', '));
             }
-            
+
             return isValid;
         }
         
