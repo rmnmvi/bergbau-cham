@@ -1,0 +1,122 @@
+# French translations for Bergbau Cham website
+meta:
+  title: "Bergbau Cham - Partenaire de Confiance dans l'Équipement Minier"
+  description: "Bergbau Cham - Depuis des décennies, nous construisons des relations durables entre l'Afrique et l'Europe dans le commerce d'équipement minier."
+  keywords: "Bergbau, équipement minier, machinerie, minier international, Europe, Afrique"
+
+# Navigation
+nav:
+  home: "Accueil"
+  about: "À Propos"
+  partners: "Partenaires"
+  faq: "FAQ"
+  contact: "Contact"
+  quote: "Devis"
+  get_in_touch: "Contactez-nous"
+  imprint: "Mentions Légales"
+  privacy: "Politique de Confidentialité"
+
+# Hero Section
+hero:
+  title: "Partenaire de Confiance dans<br>l'Équipement Minier"
+  description: "Depuis des décennies, Bergbau Cham a construit des relations durables entre l'Afrique et l'Europe. Nous opérons avec transparence, conformité et un engagement envers des partenariats durables dans le commerce international d'équipement minier."
+  cta: "Contactez-nous"
+
+# About Section
+about:
+  subtitle: "Notre Histoire"
+  title: "Relier les continents par la confiance"
+  paragraph1: "Fondé sur la conviction que le commerce d'équipement minier devrait être accessible et transparent, Bergbau Cham a été créé pour combler le fossé entre les fournisseurs africains et les marchés européens."
+  paragraph2: "Notre voyage a commencé avec une passion pour l'excellence et le désir d'avoir un impact positif sur le commerce mondial d'équipement minier. Aujourd'hui, nous sommes un partenaire de confiance pour les institutions du monde entier."
+  cta_partners: "Voir Nos Partenaires"
+  cta_contact: "Contactez-nous"
+
+  # Stats
+  stats:
+    years: "25+"
+    years_label: "Années d'Excellence"
+    countries: "40+"
+    countries_label: "Pays Desservis"
+    compliance: "100%"
+    compliance_label: "Taux de Conformité"
+    volume: "€100M+"
+    volume_label: "Volume de Trading"
+
+# Mission Statement
+mission:
+  subtitle: "Notre Mission"
+  text: "Avec une expertise de longue date dans le commerce international d'équipement minier, nous nous sommes établis comme une pierre angulaire de confiance et de fiabilité. Notre focus sur la transparence, la conformité et les partenariats durables nous permet de construire des relations durables tout en reliant les continents par le commerce éthique d'équipement minier."
+
+# Values Section
+values:
+  subtitle: "Pourquoi Nous Choisir"
+  title: "Fondé sur la Confiance et l'Excellence"
+
+  global_network:
+    title: "Réseau Mondial"
+    description: "Partenariats stratégiques couvrant l'Europe, l'Afrique et au-delà. Notre réseau établi garantit des transactions internationales d'équipement minier sans faille."
+    regions:
+      - "UE"
+      - "AFRIQUE"
+      - "ASIE"
+      - "AMÉRIQUES"
+      - "SIÈGE"
+      - "MO"
+
+  transparency:
+    title: "Transparence Totale"
+    description: "Conformité complète aux réglementations internationales, documentation claire et communication ouverte à chaque étape."
+
+  security:
+    title: "Sécurité Maximale"
+    description: "Partenariat avec les leaders de l'industrie pour le transport et le stockage sécurisés d'équipement minier."
+
+  experience:
+    title: "Des Décennies d'Expérience"
+    description: "Relations établies et historique prouvé dans le commerce international d'équipement minier depuis notre création."
+    metrics:
+      years: "Années d'Activité"
+      years_value: "25+"
+      countries: "Pays Desservis"
+      countries_value: "40+"
+      partners: "Partenaires de Confiance"
+      partners_value: "100+"
+      volume: "Volume de Transactions"
+      volume_value: "€100M+"
+
+# Partners Section
+partners:
+  subtitle: "Notre Réseau"
+  title: "Partenaires Mondiaux de Confiance"
+  description: "Nous collaborons avec des leaders de l'industrie qui partagent notre engagement envers l'excellence et l'intégrité dans le commerce d'équipement minier"
+
+  list:
+    caterpillar:
+      name: "CATERPILLAR"
+      description: "Leader en Machinerie Lourde"
+    sennebogen:
+      name: "SENNEBOGEN"
+      description: "Machines de Manutention"
+    putzmeister:
+      name: "PUTZMEISTER"
+      description: "Technologie Béton & Minier"
+    komatsu:
+      name: "KOMATSU"
+      description: "Équipement Construction & Minier"
+    liebherr:
+      name: "LIEBHERR"
+      description: "Minier & Terrassement"
+    sandvik:
+      name: "SANDVIK"
+      description: "Technologie Minière & Roche"
+    epiroc:
+      name: "EPIROC"
+      description: "Minier & Infrastructure"
+    wirtgen:
+      name: "WIRTGEN"
+      description: "Technologies Route & Minéraux"
+
+# Footer
+footer:
+  copyright: "© 2025 Edelmetall Cham · Franz Thums"
+  address: "Obere Regenstraße 9 · 93413 Cham · Allemagne"

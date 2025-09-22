@@ -1,0 +1,475 @@
+# French translations for Edelmetall Cham website
+meta:
+  title: "Edelmetall Cham - Partenaire de Confiance dans le Commerce des Métaux Précieux"
+  description: "Edelmetall Cham - Depuis des décennies, nous construisons des relations durables entre l'Afrique et l'Europe dans le commerce des métaux précieux."
+  keywords: "Edelmetall, métaux précieux, commerce d'or, trading international, Europe, Afrique"
+
+# Navigation
+nav:
+  home: "Accueil"
+  about: "À Propos"
+  partners: "Partenaires"
+  faq: "FAQ"
+  contact: "Contact"
+  quote: "Devis / Demande"
+  get_in_touch: "Contactez-nous"
+  imprint: "Mentions Légales"
+  privacy: "Politique de Confidentialité"
+
+# Hero Section
+hero:
+  title: "Partenaire de Confiance dans le<br>Commerce des Métaux Précieux"
+  description: "Depuis des décennies, Edelmetall Cham a construit des relations durables entre l'Afrique et l'Europe. Nous opérons avec transparence, conformité et un engagement envers des partenariats durables dans le commerce international de l'or."
+  cta: "Contactez-nous"
+
+# About Section
+about:
+  subtitle: "Notre Histoire"
+  title: "Relier les continents par la confiance"
+  paragraph1: "Fondé sur la conviction que le commerce des métaux précieux devrait être accessible et transparent, Edelmetall Cham a été créé pour combler le fossé entre les fournisseurs africains et les marchés européens."
+  paragraph2: "Notre voyage a commencé avec une passion pour l'excellence et le désir d'avoir un impact positif sur le commerce mondial des métaux précieux. Aujourd'hui, nous sommes un partenaire de confiance pour les institutions du monde entier."
+  cta_partners: "Voir Nos Partenaires"
+  cta_contact: "Contactez-nous"
+  
+  # Stats
+  stats:
+    years: "25+"
+    years_label: "Années d'Excellence"
+    countries: "40+"
+    countries_label: "Pays Desservis"
+    compliance: "100%"
+    compliance_label: "Taux de Conformité"
+    volume: "€100M+"
+    volume_label: "Volume de Trading"
+
+# Mission Statement
+mission:
+  subtitle: "Notre Mission"
+  text: "Avec une expertise de longue date dans le commerce international de l'or, nous nous sommes établis comme une pierre angulaire de confiance et de fiabilité. Notre focus sur la transparence, la conformité et les partenariats durables nous permet de construire des relations durables tout en reliant les continents par le commerce éthique des métaux précieux."
+
+# Values Section
+values:
+  subtitle: "Pourquoi Nous Choisir"
+  title: "Fondé sur la Confiance et l'Excellence"
+  
+  global_network:
+    title: "Réseau Mondial"
+    description: "Partenariats stratégiques couvrant l'Europe, l'Afrique et au-delà. Notre réseau établi garantit des transactions internationales de métaux précieux sans faille."
+    regions:
+      - "UE"
+      - "AFRIQUE"
+      - "ASIE"
+      - "AMÉRIQUES"
+      - "SIÈGE"
+      - "MO"
+  
+  transparency:
+    title: "Transparence Totale"
+    description: "Conformité complète aux réglementations internationales, documentation claire et communication ouverte à chaque étape."
+  
+  security:
+    title: "Sécurité Maximale"
+    description: "En partenariat avec Brink's, Loomis et Prosegur pour le transport et le stockage sécurisés."
+  
+  experience:
+    title: "Des Décennies d'Expérience"
+    description: "Relations établies et historique prouvé dans le commerce international des métaux précieux depuis notre création."
+    metrics:
+      years: "Années d'Activité"
+      years_value: "25+"
+      countries: "Pays Desservis"
+      countries_value: "40+"
+      partners: "Partenaires de Confiance"
+      partners_value: "100+"
+      volume: "Volume de Transactions"
+      volume_value: "€100M+"
+
+# Partners Section
+partners:
+  subtitle: "Notre Réseau"
+  title: "Partenaires Mondiaux de Confiance"
+  description: "Nous collaborons avec des leaders de l'industrie qui partagent notre engagement envers l'excellence et l'intégrité dans le commerce des métaux précieux"
+  
+  list:
+    degussa:
+      name: "DEGUSSA"
+      description: "Spécialiste des Métaux Précieux"
+    munze_deutschland:
+      name: "MÜNZE DEUTSCHLAND"
+      description: "Monnaie Fédérale Allemande"
+    munze_osterreich:
+      name: "MÜNZE ÖSTERREICH"
+      description: "Monnaie Autrichienne"
+    royal_canadian:
+      name: "MONNAIE ROYALE CANADIENNE"
+      description: "Pièces Feuille d'Érable"
+    rand_refinery:
+      name: "RAND REFINERY"
+      description: "Producteur de Krügerrand"
+    royal_mint:
+      name: "THE ROYAL MINT"
+      description: "Monnaie Officielle du Royaume-Uni"
+    shell:
+      name: "SHELL"
+      description: "Partenaire Énergétique"
+    deutsche_bank:
+      name: "DEUTSCHE BANK"
+      description: "Services Financiers"
+    brinks:
+      name: "BRINK'S"
+      description: "Logistique Sécurisée"
+    loomis:
+      name: "LOOMIS"
+      description: "Gestion de Valeurs"
+    prosegur:
+      name: "PROSEGUR"
+      description: "Services de Sécurité"
+    heimerle_meule:
+      name: "HEIMERLE + MEULE"
+      description: "Raffinerie Allemande"
+
+# FAQ Section
+faq:
+  title: "Questions Fréquemment Posées"
+  questions:
+    q1:
+      question: "Sur quels marchés Edelmetall Cham opère-t-il actuellement ?"
+      answer: "Notre focus principal est le Ghana, où nous avons établi des relations solides avec des vendeurs certifiés et des opérations minières. Grâce à notre vaste réseau d'approvisionnement mondial, nous nous développons continuellement sur des marchés supplémentaires à travers l'Afrique, garantissant un approvisionnement fiable en métaux précieux tout en maintenant les plus hauts standards de conformité et de commerce éthique."
+    
+    q2:
+      question: "Comment fonctionne le processus d'achat d'Edelmetall Cham ?"
+      answer: "En tant qu'acheteur, nous recevons la facture pro forma du vendeur et organisons l'accompagnement de la cargaison jusqu'à notre raffinerie désignée. Après des tests d'analyse complets confirmant la quantité et la pureté, nous traitons le paiement immédiatement sur la base de la facture commerciale finale. Nous gérons toute la documentation d'importation, le dédouanement et les taxes locales à notre destination."
+    
+    q3:
+      question: "Quelles procédures de vérification et d'analyse Edelmetall Cham exige-t-il ?"
+      answer: "Tous les métaux précieux subissent des tests d'analyse complets dans nos raffineries désignées pour vérifier la quantité et la pureté. Le représentant du vendeur est invité à assister au processus de test. Le paiement est calculé sur la base du rapport d'analyse final, garantissant une transparence et une précision totales dans chaque transaction."
+    
+    q4:
+      question: "Comment l'assurance et la sécurité sont-elles gérées pendant le transport ?"
+      answer: "Les coûts d'assurance jusqu'à la destination sont normalement supportés par le vendeur, restant en vigueur jusqu'au transfert de propriété lors du paiement. Nous travaillons avec des entreprises de sécurité de premier plan, notamment Brink's, Loomis et Prosegur, pour assurer une protection maximale pendant le transport. Le représentant du vendeur accompagne la cargaison jusqu'à nos installations pour une sécurité et une vérification supplémentaires."
+    
+    q5:
+      question: "Quelles sont les exigences pour les vendeurs travaillant avec Edelmetall Cham ?"
+      answer: "Les vendeurs doivent fournir toute la documentation d'exportation nécessaire et se conformer aux réglementations du pays d'origine. Ils doivent être capables de transporter des métaux précieux à l'échelle mondiale sans restrictions et maintenir des certifications appropriées. Nous exigeons de la transparence dans la documentation et la capacité d'accompagner les expéditions jusqu'à nos installations désignées pour vérification."
+
+# CTA Section
+cta:
+  headline: "Prêt à Commencer Votre Parcours dans les Métaux Précieux ?"
+  description: "Que vous cherchiez à acheter ou à vendre des métaux précieux, nous sommes là pour vous fournir des conseils d'experts et des solutions compétitives adaptées à vos besoins."
+  contact_button: "Contactez-nous"
+  buy_button: "Je veux acheter"
+  sell_button: "Je veux vendre"
+
+# Contact Section
+contact:
+  meta_title: "Contactez-nous - Edelmetall Cham"
+  meta_description: "Contactez Edelmetall Cham pour tous vos besoins en commerce de métaux précieux. Nous sommes là pour vous aider avec l'achat, la vente et la consultation d'experts."
+  title: "Connectons-nous"
+  form:
+    name: "Nom"
+    email: "Email"
+    phone: "Numéro de Téléphone"
+    message: "Message"
+    submit: "Envoyer"
+    required: "*"
+    # Placeholders
+    name_placeholder: "Jean Dupont"
+    email_placeholder: "jean@exemple.com"
+    phone_placeholder: "+33 6 12 34 56 78"
+    message_placeholder: "Parlez-nous de vos besoins en métaux précieux..."
+    # Success messages
+    success_title: "Message envoyé avec succès!"
+    success_message: "Merci de nous avoir contactés. Nous avons reçu votre message et vous répondrons dans les 24 à 48 heures."
+    success_id: "ID de référence"
+    send_another: "Envoyer un autre message"
+    go_home: "Retour à l'accueil"
+  
+  info:
+    company: "Edelmetall Cham"
+    represented_by: "représenté par Franz Thums"
+    address_line1: "Obere Regenstraße 9"
+    address_line2: "93413 Cham, Allemagne"
+    phone_label: "Téléphone :"
+    phone: "+49 (0) 9971 7273"
+    email_label: "Email :"
+    email: "info@edelmetallhandel-cham.de"
+
+# Footer
+footer:
+  copyright: "© 2025 Edelmetall Cham · Franz Thums"
+  address: "Obere Regenstraße 9 · 93413 Cham · Allemagne"
+  
+# Quote Form Page
+quote:
+  meta_title: "Demande de Devis - Edelmetall Cham"
+  meta_description: "Soumettez votre demande de commerce de métaux précieux. Nous fournissons des devis compétitifs pour l'or et autres métaux précieux avec une tarification transparente et des transactions sécurisées."
+  
+  header:
+    title: "Soumettez Votre Devis"
+    subtitle: "Fournissez des détails sur vos métaux précieux pour une offre compétitive"
+    request_title: "Demander un Devis"
+    request_subtitle: "Dites-nous quels métaux précieux vous souhaitez acheter"
+  
+  mode:
+    request_quote: "Je veux acheter (Demander un Devis)"
+    submit_quote: "Je veux vendre (Soumettre un Devis)"
+    tab_request: "Je veux acheter"
+    tab_submit: "Je veux vendre"
+    request_description: "Demandez un prix pour les métaux précieux que vous souhaitez acheter"
+    submit_description: "Soumettez votre offre pour les métaux précieux que vous souhaitez vendre"
+
+  steps:
+    step1: "Détails du Produit"
+    step2: "Prix et Conditions"
+    step3: "Informations de Contact"
+    step1_title: "Détails du Produit"
+    step2_title: "Conditions de Prix et de Livraison"
+    step3_title: "Informations de Contact"
+    step1_subtitle: "Fournissez des détails sur vos métaux précieux pour évaluation."
+    step2_subtitle: "Spécifiez les informations de prix et les préférences de livraison."
+    step3_subtitle: "Fournissez vos coordonnées pour le suivi."
+    product_pricing: "Produit et Prix"
+    contact_info: "Informations de Contact"
+    product_pricing_title: "Détails du Produit et Prix"
+    product_pricing_subtitle: "Fournissez des informations complètes sur vos métaux précieux et prix."
+    contact_info_title: "Informations de Contact"
+    contact_info_subtitle: "Fournissez vos coordonnées pour le suivi."
+  
+  form:
+    # Step 1: Commodity Details
+    commodity_type: "Type de Marchandise"
+    select_commodity: "Sélectionner la marchandise"
+    gold: "Or"
+    silver: "Argent"
+    platinum: "Platine"
+    copper: "Cuivre"
+    palladium: "Palladium"
+    other_materials: "Autres Matières Premières"
+    
+    form_type: "Forme"
+    select_form: "Sélectionner la forme"
+    bars: "Lingots"
+    
+    purity: "Pureté"
+    select_purity: "Sélectionner la pureté"
+    specify_purity: "Spécifier la Pureté"
+    purity_placeholder: "ex. 85% de pureté"
+    
+    quantity: "Quantité"
+    quantity_placeholder: "Entrer le montant"
+    unit: "Unité"
+    
+    # Step 2: Pricing & Terms
+    country_of_origin: "Pays d'Origine"
+    select_country: "Sélectionner le pays"
+    
+    price_per_unit: "Prix par Unité"
+    currency: "Devise"
+    
+    delivery_terms: "Conditions de Livraison"
+    select_delivery_terms: "Sélectionner les conditions de livraison"
+    cif: "CIF - Coût, Assurance et Fret"
+    fob: "FOB - Franco à Bord"
+    exw: "EXW - Départ Usine"
+    ddp: "DDP - Rendu Droits Acquittés"
+    fca: "FCA - Franco Transporteur"
+    
+    trial_quantity: "Quantité d'Essai Disponible"
+    no_trial: "Pas de quantité d'essai"
+    custom_amount: "Montant personnalisé"
+    specify_trial: "Spécifier la Quantité d'Essai"
+    trial_placeholder: "ex. 150 kg"
+    
+    additional_information: "Informations Supplémentaires"
+    additional_placeholder: "Tous détails supplémentaires sur votre offre..."
+    pricing_section: "Prix et Conditions Commerciales"
+    requirements_section: "Exigences d'Achat"
+
+    # Buyer-specific fields
+    desired_quantity_min: "Qté Min"
+    desired_quantity_max: "Qté Max"
+    target_price_range: "Fourchette de Prix Cible"
+    pricing_method: "Méthode de Tarification"
+    fixed_price: "Prix Fixe"
+    exchange_discount: "Remise sur Taux de Change"
+    reference_source: "Source de Référence"
+    discount_percentage: "Pourcentage de Remise"
+    lbma_reference: "LBMA London Fix"
+    kitco_reference: "Prix Spot KITCO"
+    discount_example: "ex. moins 7%"
+    preferred_currency: "Devise Préférée"
+    preferred_delivery_location: "Lieu de Livraison Préféré"
+    delivery_location_placeholder: "ex. Francfort, Allemagne"
+    delivery_incoterms: "Conditions de Livraison (Incoterms)"
+    select_incoterms: "Sélectionner Incoterms"
+    incoterm_exw: "EXW - Départ Usine"
+    incoterm_fob: "FOB - Franco à Bord"
+    incoterm_cif: "CIF - Coût, Assurance et Fret"
+    incoterm_cip: "CIP - Port et Assurance Payés Jusqu'à"
+    incoterm_dap: "DAP - Rendu au Lieu de Destination"
+    incoterm_ddp: "DDP - Rendu Droits Acquittés"
+    incoterm_fca: "FCA - Franco Transporteur"
+    incoterm_cpt: "CPT - Port Payé Jusqu'à"
+    urgency: "Urgence d'Achat"
+    urgency_immediate: "Immédiat (Dans 1 semaine)"
+    urgency_1week: "Dans 1 semaine"
+    urgency_1month: "Dans 1 mois"
+    urgency_flexible: "Délai flexible"
+    
+    procedure_agreement: "J'accepte la procédure suivante :"
+    procedure_text: "Le Vendeur fournit tous les documents d'exportation et s'assure qu'un représentant accompagne la cargaison jusqu'à la destination de l'Acheteur. Le paiement est effectué après l'analyse de la raffinerie, moment où la propriété est transférée à l'Acheteur une fois que tous les coûts sont réglés."
+    
+    # Step 3: Contact Information
+    company_name: "Nom de l'Entreprise"
+    first_name: "Prénom"
+    last_name: "Nom de Famille"
+    position: "Poste/Titre"
+    position_placeholder: "ex. Responsable Commercial"
+    
+    email_address: "Adresse Email"
+    phone_number: "Numéro de Téléphone"
+    phone_placeholder: "+49 123 456789"
+    
+    street_address: "Adresse"
+    city: "Ville"
+    state_province: "État/Province"
+    postal_code: "Code Postal"
+    country: "Pays"
+    
+    preferred_contact: "Méthode de Contact Préférée"
+    email_option: "Email"
+    phone_option: "Téléphone"
+    both_option: "Les Deux"
+    
+    # GDPR Notice
+    gdpr_notice: "<strong>Avis de Protection des Données :</strong> En soumettant ce formulaire, vous acceptez que vos données personnelles soient traitées conformément à notre politique de confidentialité dans le but de traiter votre demande de devis. Vos données seront traitées de manière confidentielle et ne seront pas partagées avec des tiers sans votre consentement, sauf si nécessaire pour répondre à votre demande."
+    
+    # Multiple Commodities
+    add_commodity: "Intéressé par l'achat d'autres matières premières?"
+    remove_commodity: "Supprimer"
+    commodity_number: "Produit"
+    additional_commodity: "Produit Supplémentaire"
+    
+    # File Upload
+    license_upload: "Licence commerciale/Certificats (Optionnel)"
+    upload_help: "Téléchargez des documents vérifiant vos références (PDF, JPG, PNG, DOC, DOCX - Max 10MB)"
+    max_files: "Maximum 3 fichiers"
+    file_upload_error: "Type ou taille de fichier invalide"
+    select_files: "Sélectionner des fichiers"
+    files_selected: "fichiers sélectionnés"
+    
+    # Buttons
+    required: "*"
+    next_pricing: "Suivant: Prix et Conditions"
+    next_contact: "Suivant: Informations de Contact"
+    back: "Retour"
+    submit_quote: "Soumettre le Devis"
+    request_quote: "Soumettre la Demande"
+    
+    # Success Message
+    success_title: "Devis Soumis avec Succès !"
+    success_message: "Merci pour votre soumission. Nous avons reçu votre devis et l'examinerons attentivement. Notre équipe vous contactera dans les 24 à 48 heures avec une réponse."
+    success_id: "ID de Soumission :"
+    return_home: "Retour à l'Accueil"
+
+# Imprint Page
+imprint:
+  meta_title: "Mentions Légales - Edelmetall Cham"
+  meta_description: "Informations légales et détails de l'entreprise pour Edelmetall Cham - société de commerce de métaux précieux basée en Allemagne."
+  
+  title: "Mentions Légales"
+  subtitle: "Informations Légales"
+  
+  company_info:
+    title: "Informations sur l'Entreprise"
+    name: "Edelmetall Cham"
+    represented: "Représenté par : Franz Thums"
+    address: "Obere Regenstraße 9<br>93413 Cham<br>Allemagne"
+    
+  contact_info:
+    title: "Informations de Contact"
+    phone: "Téléphone : +49 (0) 9971 7273"
+    email: "Email : info@edelmetallhandel-cham.de"
+    
+  legal:
+    title: "Détails Légaux"
+    vat_label: "Numéro de TVA :"
+    vat: "DE XXX XXX XXX"
+    register_label: "Registre du Commerce :"
+    register: "Amtsgericht Regensburg HRB XXXXX"
+    
+  responsible:
+    title: "Responsable du Contenu"
+    text: "Selon § 55 Abs. 2 RStV :"
+    name: "Franz Thums"
+    address: "Obere Regenstraße 9<br>93413 Cham<br>Allemagne"
+    
+  disclaimer:
+    title: "Avis de Non-Responsabilité"
+    liability_title: "Responsabilité du Contenu"
+    liability_text: "Le contenu de nos pages a été créé avec le plus grand soin. Cependant, nous ne pouvons garantir l'exactitude, l'exhaustivité et l'actualité du contenu. En tant que prestataire de services, nous sommes responsables de notre propre contenu sur ces pages conformément aux lois générales. Cependant, nous ne sommes pas obligés de surveiller les informations tierces transmises ou stockées ou d'enquêter sur des circonstances indiquant une activité illégale."
+    
+    links_title: "Responsabilité des Liens"
+    links_text: "Notre site Web contient des liens vers des sites Web tiers externes sur le contenu desquels nous n'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune responsabilité pour ces contenus externes. Le fournisseur ou l'opérateur respectif des pages est toujours responsable du contenu des pages liées."
+    
+    copyright_title: "Droits d'Auteur"
+    copyright_text: "Le contenu et les œuvres créés par les opérateurs du site sur ces pages sont soumis au droit d'auteur allemand. La duplication, le traitement, la distribution et tout type d'exploitation en dehors des limites du droit d'auteur nécessitent le consentement écrit de l'auteur ou du créateur respectif."
+
+# Privacy Policy Page
+privacy:
+  meta_title: "Politique de Confidentialité - Edelmetall Cham"
+  meta_description: "Politique de confidentialité et informations sur la protection des données pour les visiteurs et clients du site Web d'Edelmetall Cham."
+  
+  title: "Politique de Confidentialité"
+  subtitle: "Déclaration de Protection des Données"
+  last_updated: "Dernière mise à jour : Janvier 2025"
+  
+  intro: "Nous prenons très au sérieux la protection de vos données personnelles. Nous traitons vos données personnelles de manière confidentielle et conformément aux réglementations légales sur la protection des données et à cette politique de confidentialité."
+  
+  controller:
+    title: "1. Responsable du Traitement des Données"
+    content: "Le responsable du traitement des données sur ce site Web est :<br><br>Edelmetall Cham<br>Franz Thums<br>Obere Regenstraße 9<br>93413 Cham<br>Allemagne<br><br>Téléphone : +49 (0) 9971 7273<br>Email : info@edelmetallhandel-cham.de"
+  
+  data_collection:
+    title: "2. Collecte de Données sur Notre Site Web"
+    
+    visiting:
+      title: "2.1 Visite de Notre Site Web"
+      content: "Lorsque vous visitez notre site Web, le navigateur utilisé sur votre appareil envoie automatiquement des informations au serveur de notre site Web. Ces informations sont temporairement stockées dans un fichier dit journal. Les informations suivantes sont collectées sans votre intervention et stockées jusqu'à leur suppression automatique :<br><br>• Adresse IP de l'ordinateur demandeur<br>• Date et heure d'accès<br>• Nom et URL du fichier récupéré<br>• Site Web à partir duquel l'accès est effectué (URL de référence)<br>• Navigateur utilisé et, le cas échéant, le système d'exploitation de votre ordinateur<br><br>La base juridique pour le stockage temporaire des données et des fichiers journaux est l'Art. 6 para. 1 lit. f RGPD."
+    
+    contact_form:
+      title: "2.2 Formulaire de Contact et Contact par Email"
+      content: "Lorsque vous nous contactez via le formulaire de contact ou par email, les données que vous fournissez seront stockées par nous dans le but de traiter votre demande et en cas de questions de suivi. Nous ne transmettons pas ces données sans votre consentement.<br><br>Le traitement des données est basé sur l'Art. 6 para. 1 lit. b RGPD si votre demande est liée à l'exécution d'un contrat ou est nécessaire pour la mise en œuvre de mesures précontractuelles."
+    
+    quote_form:
+      title: "2.3 Formulaire de Demande de Devis"
+      content: "Lorsque vous soumettez une demande de devis via notre formulaire, nous collectons et traitons les données suivantes :<br><br>• Informations sur l'entreprise (nom, type, pays, années d'activité)<br>• Détails du produit (type, quantité, pureté, origine)<br>• Informations de contact (nom, email, téléphone)<br><br>Ces données sont utilisées exclusivement pour traiter votre demande de devis et la communication commerciale ultérieure. La base juridique est l'Art. 6 para. 1 lit. b RGPD."
+  
+  data_rights:
+    title: "3. Vos Droits"
+    intro: "Vous avez les droits suivants concernant vos données personnelles :"
+    rights: "• Droit à l'information (Art. 15 RGPD)<br>• Droit de rectification (Art. 16 RGPD)<br>• Droit à l'effacement (Art. 17 RGPD)<br>• Droit à la limitation du traitement (Art. 18 RGPD)<br>• Droit à la portabilité des données (Art. 20 RGPD)<br>• Droit d'opposition au traitement (Art. 21 RGPD)<br>• Droit de porter plainte auprès d'une autorité de contrôle (Art. 77 RGPD)"
+  
+  data_security:
+    title: "4. Sécurité des Données"
+    content: "Nous utilisons des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données contre la manipulation accidentelle ou intentionnelle, la perte partielle ou complète, la destruction ou l'accès non autorisé par des tiers. Nos mesures de sécurité sont continuellement améliorées en fonction du développement technologique."
+  
+  ssl:
+    title: "5. Cryptage SSL/TLS"
+    content: "Ce site utilise le cryptage SSL/TLS pour des raisons de sécurité et pour protéger la transmission de contenu confidentiel, tel que les demandes que vous nous envoyez en tant qu'opérateur du site. Vous pouvez reconnaître une connexion cryptée par le fait que la ligne d'adresse du navigateur passe de \"http://\" à \"https://\" et par le symbole de cadenas dans votre ligne de navigateur."
+  
+  third_party:
+    title: "6. Services Tiers"
+    content: "Nous n'utilisons aucun service tiers tel que Google Analytics, les plugins de médias sociaux ou les polices externes qui pourraient collecter vos données. Toutes les ressources sont hébergées localement sur nos serveurs."
+  
+  retention:
+    title: "7. Conservation des Données"
+    content: "Nous ne stockons les données personnelles que le temps nécessaire pour remplir les objectifs pour lesquels elles ont été collectées, ou comme requis par la loi. Les données du formulaire de contact et les demandes de devis sont supprimées après le traitement final de votre demande, sauf si nous devons les conserver pour des raisons légales (par exemple, réglementations fiscales)."
+  
+  changes:
+    title: "8. Modifications de Cette Politique de Confidentialité"
+    content: "Nous nous réservons le droit d'adapter cette politique de confidentialité afin qu'elle soit toujours conforme aux exigences légales actuelles ou pour mettre en œuvre des modifications de nos services dans la politique de confidentialité. La nouvelle politique de confidentialité s'appliquera alors à votre prochaine visite."
+  
+  contact:
+    title: "9. Contact pour les Questions de Protection des Données"
+    content: "Si vous avez des questions sur la protection des données, veuillez nous envoyer un email à : info@edelmetallhandel-cham.de"
