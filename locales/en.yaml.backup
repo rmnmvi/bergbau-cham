@@ -1,0 +1,475 @@
+# English translations for Edelmetall Cham website
+meta:
+  title: "Edelmetall Cham - Trusted Partner in Precious Metals Trade"
+  description: "Edelmetall Cham - For decades, building lasting relationships across Africa and Europe in precious metals trade."
+  keywords: "Edelmetall, precious metals, gold trade, international trading, Europe, Africa"
+
+# Navigation
+nav:
+  home: "Home"
+  about: "About Us"
+  partners: "Partners"
+  faq: "FAQ"
+  contact: "Contact"
+  quote: "Quote / Inquire"
+  get_in_touch: "Get in touch"
+  imprint: "Imprint"
+  privacy: "Privacy Policy"
+
+# Hero Section
+hero:
+  title: "Trusted Partner in<br>Precious Metals Trade"
+  description: "For decades, Edelmetall Cham has built lasting relationships across Africa and Europe. We operate with transparency, compliance, and a commitment to sustainable partnerships in the international gold trade."
+  cta: "Get in touch"
+
+# About Section
+about:
+  subtitle: "Our Story"
+  title: "Bridging continents through trust"
+  paragraph1: "Founded on the belief that precious metals trading should be accessible and transparent, Edelmetall Cham was created to bridge the gap between African suppliers and European markets."
+  paragraph2: "Our journey began with a passion for excellence and a desire to make a positive impact on the global precious metals trade. Today, we stand as a trusted partner for institutions worldwide."
+  cta_partners: "View Our Partners"
+  cta_contact: "Get in Touch"
+  
+  # Stats
+  stats:
+    years: "25+"
+    years_label: "Years of Excellence"
+    countries: "40+"
+    countries_label: "Countries Served"
+    compliance: "100%"
+    compliance_label: "Compliance Rate"
+    volume: "€100M+"
+    volume_label: "Trading Volume"
+
+# Mission Statement
+mission:
+  subtitle: "Our Mission"
+  text: "With long-standing expertise in the international gold trade, we've established ourselves as a cornerstone of trust and reliability. Our focus on transparency, compliance, and sustainable partnerships enables us to build enduring relationships while bridging continents through ethical precious metals trading."
+
+# Values Section
+values:
+  subtitle: "Why Choose Us"
+  title: "Built on Trust & Excellence"
+  
+  global_network:
+    title: "Global Network"
+    description: "Strategic partnerships spanning Europe, Africa, and beyond. Our established network ensures seamless international precious metals transactions."
+    regions:
+      - "EU"
+      - "AFRICA"
+      - "ASIA"
+      - "AMERICAS"
+      - "HQ"
+      - "ME"
+  
+  transparency:
+    title: "Complete Transparency"
+    description: "Full compliance with international regulations, clear documentation, and open communication at every step."
+  
+  security:
+    title: "Maximum Security"
+    description: "Partnered with Brink's, Loomis, and Prosegur for secure transport and storage."
+  
+  experience:
+    title: "Decades of Experience"
+    description: "Established relationships and proven track record in international precious metals trading since inception."
+    metrics:
+      years: "Years in Business"
+      years_value: "25+"
+      countries: "Countries Served"
+      countries_value: "40+"
+      partners: "Trusted Partners"
+      partners_value: "100+"
+      volume: "Transaction Volume"
+      volume_value: "€100M+"
+
+# Partners Section
+partners:
+  subtitle: "Our Network"
+  title: "Trusted Global Partners"
+  description: "We collaborate with industry leaders who share our commitment to excellence and integrity in precious metals trading"
+  
+  list:
+    degussa:
+      name: "DEGUSSA"
+      description: "Precious Metals Specialist"
+    munze_deutschland:
+      name: "MÜNZE DEUTSCHLAND"
+      description: "German Federal Mint"
+    munze_osterreich:
+      name: "MÜNZE ÖSTERREICH"
+      description: "Austrian Mint"
+    royal_canadian:
+      name: "ROYAL CANADIAN MINT"
+      description: "Maple Leaf Coins"
+    rand_refinery:
+      name: "RAND REFINERY"
+      description: "Krügerrand Producer"
+    royal_mint:
+      name: "THE ROYAL MINT"
+      description: "UK Official Mint"
+    shell:
+      name: "SHELL"
+      description: "Energy Partner"
+    deutsche_bank:
+      name: "DEUTSCHE BANK"
+      description: "Financial Services"
+    brinks:
+      name: "BRINK'S"
+      description: "Secure Logistics"
+    loomis:
+      name: "LOOMIS"
+      description: "Valuables Handling"
+    prosegur:
+      name: "PROSEGUR"
+      description: "Security Services"
+    heimerle_meule:
+      name: "HEIMERLE + MEULE"
+      description: "German Refinery"
+
+# FAQ Section
+faq:
+  title: "Frequently Asked Questions"
+  questions:
+    q1:
+      question: "Which markets does Edelmetall Cham currently operate in?"
+      answer: "Our primary market focus is Ghana, where we have established strong relationships with certified sellers and mining operations. Through our extensive global supply network, we are continuously expanding to additional markets across Africa, ensuring reliable sourcing of precious metals while maintaining the highest standards of compliance and ethical trading."
+    
+    q2:
+      question: "How does Edelmetall Cham's purchasing process work?"
+      answer: "As a buyer, we receive the seller's pro-forma invoice and arrange for the consignment to be accompanied to our designated refinery. After comprehensive assay testing confirms the quantity and purity, we process payment immediately based on the final commercial invoice. We handle all import documentation, customs clearance, and local taxes at our destination."
+    
+    q3:
+      question: "What verification and assay procedures does Edelmetall Cham require?"
+      answer: "All precious metals undergo comprehensive assay testing at our designated refineries to verify quantity and purity. The seller's representative is welcome to witness the testing process. Payment is calculated based on the final assay report, ensuring complete transparency and accuracy in every transaction."
+    
+    q4:
+      question: "How are insurance and security handled during transport?"
+      answer: "Insurance costs to the destination are normally borne by the seller, remaining in effect until ownership transfer upon payment. We work with leading security firms including Brink's, Loomis, and Prosegur to ensure maximum protection during transport. The seller's representative accompanies the consignment to our facility for added security and verification."
+    
+    q5:
+      question: "What are the requirements for sellers working with Edelmetall Cham?"
+      answer: "Sellers must provide all necessary export documentation and comply with origin country regulations. They should be able to transport precious metals globally without restrictions and maintain proper certifications. We require transparency in documentation and the ability to accompany shipments to our designated facilities for verification."
+
+# CTA Section
+cta:
+  headline: "Ready to Start Your Precious Metals Journey?"
+  description: "Whether you're looking to buy or sell precious metals, we're here to provide expert guidance and competitive solutions tailored to your needs."
+  contact_button: "Contact Us"
+  buy_button: "I want to buy"
+  sell_button: "I want to sell"
+
+# Contact Section
+contact:
+  meta_title: "Contact Us - Edelmetall Cham"
+  meta_description: "Get in touch with Edelmetall Cham for all your precious metals trading needs. We're here to help with buying, selling, and expert consultation."
+  title: "Let's Connect"
+  form:
+    name: "Name"
+    email: "Email"
+    phone: "Phone Number"
+    message: "Message"
+    submit: "Submit"
+    required: "*"
+    # Placeholders
+    name_placeholder: "John Doe"
+    email_placeholder: "john@example.com"
+    phone_placeholder: "+49 123 456 7890"
+    message_placeholder: "Tell us about your precious metals needs..."
+    # Success messages
+    success_title: "Message Sent Successfully!"
+    success_message: "Thank you for contacting us. We have received your message and will get back to you within 24-48 hours."
+    success_id: "Reference ID"
+    send_another: "Send Another Message"
+    go_home: "Go Back to Home"
+  
+  info:
+    company: "Edelmetall Cham"
+    represented_by: "represented by Franz Thums"
+    address_line1: "Obere Regenstraße 9"
+    address_line2: "93413 Cham, Germany"
+    phone_label: "Phone:"
+    phone: "+49 (0) 9971 7273"
+    email_label: "Email:"
+    email: "info@edelmetallhandel-cham.de"
+
+# Footer
+footer:
+  copyright: "© 2025 Edelmetall Cham · Franz Thums"
+  address: "Obere Regenstraße 9 · 93413 Cham · Germany"
+  
+# Quote Form Page
+quote:
+  meta_title: "Request a Quote - Edelmetall Cham"
+  meta_description: "Submit your precious metals trading inquiry. We provide competitive quotes for gold and other precious metals with transparent pricing and secure transactions."
+  
+  header:
+    title: "Submit Your Quote"
+    subtitle: "Provide details about your precious metals for a competitive offer"
+    request_title: "Request a Quote"
+    request_subtitle: "Tell us what precious metals you're looking to purchase"
+  
+  mode:
+    request_quote: "I want to buy (Request Quote)"
+    submit_quote: "I want to sell (Submit Quote)"
+    tab_request: "I want to buy"
+    tab_submit: "I want to sell"
+    request_description: "Request pricing for precious metals you want to purchase from us"
+    submit_description: "Submit your offer for precious metals you want to sell to us"
+
+  steps:
+    step1: "Product Details"
+    step2: "Pricing & Terms"
+    step3: "Contact Info"
+    step1_title: "Product Details"
+    step2_title: "Pricing & Delivery Terms"
+    step3_title: "Contact Information"
+    step1_subtitle: "Provide details about your precious metals for evaluation."
+    step2_subtitle: "Specify pricing information and delivery preferences."
+    step3_subtitle: "Provide your contact details for follow-up communication."
+    product_pricing: "Product & Pricing"
+    contact_info: "Contact Information"
+    product_pricing_title: "Product & Pricing Details"
+    product_pricing_subtitle: "Provide complete information about your precious metals and pricing."
+    contact_info_title: "Contact Information"
+    contact_info_subtitle: "Provide your contact details for follow-up communication."
+  
+  form:
+    # Step 1: Commodity Details
+    commodity_type: "Commodity Type"
+    select_commodity: "Select commodity"
+    gold: "Gold"
+    silver: "Silver"
+    platinum: "Platinum"
+    copper: "Copper"
+    palladium: "Palladium"
+    other_materials: "Other Raw Materials"
+    
+    form_type: "Form"
+    select_form: "Select form"
+    bars: "Bars"
+    
+    purity: "Purity"
+    select_purity: "Select purity"
+    specify_purity: "Specify Purity"
+    purity_placeholder: "e.g., 85% purity"
+    
+    quantity: "Quantity"
+    quantity_placeholder: "Enter amount"
+    unit: "Unit"
+    
+    # Step 2: Pricing & Terms
+    country_of_origin: "Country of Origin"
+    select_country: "Select country"
+    
+    price_per_unit: "Price per Unit"
+    currency: "Currency"
+    
+    delivery_terms: "Delivery Terms"
+    select_delivery_terms: "Select delivery terms"
+    cif: "CIF - Cost, Insurance & Freight"
+    fob: "FOB - Free On Board"
+    exw: "EXW - Ex Works"
+    ddp: "DDP - Delivered Duty Paid"
+    fca: "FCA - Free Carrier"
+    
+    trial_quantity: "Trial Quantity Available"
+    no_trial: "No trial quantity"
+    custom_amount: "Custom amount"
+    specify_trial: "Specify Trial Quantity"
+    trial_placeholder: "e.g., 150 kg"
+    
+    additional_information: "Additional Information"
+    additional_placeholder: "Any additional details about your offer..."
+    pricing_section: "Pricing & Trading Terms"
+    requirements_section: "Purchase Requirements"
+
+    # Buyer-specific fields
+    desired_quantity_min: "Min Qty"
+    desired_quantity_max: "Max Qty"
+    target_price_range: "Target Price Range"
+    pricing_method: "Pricing Method"
+    fixed_price: "Fixed Price"
+    exchange_discount: "Exchange Rate Discount"
+    reference_source: "Reference Source"
+    discount_percentage: "Discount Percentage"
+    lbma_reference: "LBMA London Fix"
+    kitco_reference: "KITCO Spot Price"
+    discount_example: "e.g., minus 7%"
+    preferred_currency: "Preferred Currency"
+    preferred_delivery_location: "Preferred Delivery Location"
+    delivery_location_placeholder: "e.g., Frankfurt, Germany"
+    delivery_incoterms: "Delivery Terms (Incoterms)"
+    select_incoterms: "Select Incoterms"
+    incoterm_exw: "EXW - Ex Works"
+    incoterm_fob: "FOB - Free On Board"
+    incoterm_cif: "CIF - Cost, Insurance & Freight"
+    incoterm_cip: "CIP - Carriage and Insurance Paid To"
+    incoterm_dap: "DAP - Delivered At Place"
+    incoterm_ddp: "DDP - Delivered Duty Paid"
+    incoterm_fca: "FCA - Free Carrier"
+    incoterm_cpt: "CPT - Carriage Paid To"
+    urgency: "Purchase Urgency"
+    urgency_immediate: "Immediate (Within 1 week)"
+    urgency_1week: "Within 1 week"
+    urgency_1month: "Within 1 month"
+    urgency_flexible: "Flexible timing"
+    
+    procedure_agreement: "I agree to the following procedure:"
+    procedure_text: "The Seller provides all export documents and ensures a representative accompanies the consignment to the Buyer's destination. Payment is made after the refinery assay, at which point ownership transfers to the Buyer once all costs are settled."
+    
+    # Step 3: Contact Information
+    company_name: "Company Name"
+    first_name: "First Name"
+    last_name: "Last Name"
+    position: "Position/Title"
+    position_placeholder: "e.g., Sales Manager"
+    
+    email_address: "Email Address"
+    phone_number: "Phone Number"
+    phone_placeholder: "+49 123 456789"
+    
+    street_address: "Street Address"
+    city: "City"
+    state_province: "State/Province"
+    postal_code: "Postal Code"
+    country: "Country"
+    
+    preferred_contact: "Preferred Contact Method"
+    email_option: "Email"
+    phone_option: "Phone"
+    both_option: "Both"
+    
+    # GDPR Notice
+    gdpr_notice: "<strong>Data Protection Notice:</strong> By submitting this form, you agree that your personal data will be processed in accordance with our privacy policy for the purpose of processing your quote request. Your data will be handled confidentially and will not be shared with third parties without your consent, except as necessary to fulfill your request."
+    
+    # Multiple Commodities
+    add_commodity: "Interested in purchasing other commodities?"
+    remove_commodity: "Remove"
+    commodity_number: "Commodity"
+    additional_commodity: "Additional Commodity"
+    
+    # File Upload
+    license_upload: "Business License/Certificates (Optional)"
+    upload_help: "Upload documents that verify your business credentials (PDF, JPG, PNG, DOC, DOCX - Max 10MB)"
+    max_files: "Maximum 3 files"
+    file_upload_error: "Invalid file type or size"
+    select_files: "Select files"
+    files_selected: "files selected"
+    
+    # Buttons
+    required: "*"
+    next_pricing: "Next: Pricing & Terms"
+    next_contact: "Next: Contact Info"
+    back: "Back"
+    submit_quote: "Submit Quote"
+    request_quote: "Submit Request"
+    
+    # Success Message
+    success_title: "Quote Submitted Successfully!"
+    success_message: "Thank you for your submission. We have received your quote and will review it carefully. Our team will contact you within 24-48 hours with a response."
+    success_id: "Submission ID:"
+    return_home: "Return to Home"
+
+# Imprint Page
+imprint:
+  meta_title: "Imprint - Edelmetall Cham"
+  meta_description: "Legal information and company details for Edelmetall Cham - precious metals trading company based in Germany."
+  
+  title: "Imprint"
+  subtitle: "Legal Information"
+  
+  company_info:
+    title: "Company Information"
+    name: "Edelmetall Cham"
+    represented: "Represented by: Franz Thums"
+    address: "Obere Regenstraße 9<br>93413 Cham<br>Germany"
+    
+  contact_info:
+    title: "Contact Information"
+    phone: "Phone: +49 (0) 9971 7273"
+    email: "Email: info@edelmetallhandel-cham.de"
+    
+  legal:
+    title: "Legal Details"
+    vat_label: "VAT ID:"
+    vat: "DE XXX XXX XXX"
+    register_label: "Commercial Register:"
+    register: "Amtsgericht Regensburg HRB XXXXX"
+    
+  responsible:
+    title: "Responsible for Content"
+    text: "According to § 55 Abs. 2 RStV:"
+    name: "Franz Thums"
+    address: "Obere Regenstraße 9<br>93413 Cham<br>Germany"
+    
+  disclaimer:
+    title: "Disclaimer"
+    liability_title: "Liability for Content"
+    liability_text: "The contents of our pages were created with great care. However, we cannot guarantee the accuracy, completeness, and timeliness of the content. As a service provider, we are responsible for our own content on these pages according to general laws. However, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+    
+    links_title: "Liability for Links"
+    links_text: "Our website contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages."
+    
+    copyright_title: "Copyright"
+    copyright_text: "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator."
+
+# Privacy Policy Page
+privacy:
+  meta_title: "Privacy Policy - Edelmetall Cham"
+  meta_description: "Privacy policy and data protection information for Edelmetall Cham website visitors and clients."
+  
+  title: "Privacy Policy"
+  subtitle: "Data Protection Declaration"
+  last_updated: "Last Updated: January 2025"
+  
+  intro: "We take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy."
+  
+  controller:
+    title: "1. Data Controller"
+    content: "The data controller responsible for data processing on this website is:<br><br>Edelmetall Cham<br>Franz Thums<br>Obere Regenstraße 9<br>93413 Cham<br>Germany<br><br>Phone: +49 (0) 9971 7273<br>Email: info@edelmetallhandel-cham.de"
+  
+  data_collection:
+    title: "2. Data Collection on Our Website"
+    
+    visiting:
+      title: "2.1 Visiting Our Website"
+      content: "When you visit our website, the browser used on your device automatically sends information to the server of our website. This information is temporarily stored in a so-called log file. The following information is collected without your intervention and stored until automated deletion:<br><br>• IP address of the requesting computer<br>• Date and time of access<br>• Name and URL of the retrieved file<br>• Website from which access is made (referrer URL)<br>• Browser used and, if applicable, the operating system of your computer<br><br>The legal basis for temporary storage of data and log files is Art. 6 para. 1 lit. f GDPR."
+    
+    contact_form:
+      title: "2.2 Contact Form and Email Contact"
+      content: "When you contact us via the contact form or by email, the data you provide will be stored by us for the purpose of processing your inquiry and in case of follow-up questions. We do not pass on this data without your consent.<br><br>The processing of data is based on Art. 6 para. 1 lit. b GDPR if your request is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures."
+    
+    quote_form:
+      title: "2.3 Quote Request Form"
+      content: "When you submit a quote request through our form, we collect and process the following data:<br><br>• Company information (name, type, country, years in business)<br>• Product details (type, quantity, purity, origin)<br>• Contact information (name, email, phone)<br><br>This data is used exclusively for processing your quote request and subsequent business communication. The legal basis is Art. 6 para. 1 lit. b GDPR."
+  
+  data_rights:
+    title: "3. Your Rights"
+    intro: "You have the following rights regarding your personal data:"
+    rights: "• Right to information (Art. 15 GDPR)<br>• Right to rectification (Art. 16 GDPR)<br>• Right to erasure (Art. 17 GDPR)<br>• Right to restriction of processing (Art. 18 GDPR)<br>• Right to data portability (Art. 20 GDPR)<br>• Right to object to processing (Art. 21 GDPR)<br>• Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
+  
+  data_security:
+    title: "4. Data Security"
+    content: "We use appropriate technical and organizational security measures to protect your data against accidental or intentional manipulation, partial or complete loss, destruction, or unauthorized access by third parties. Our security measures are continuously improved in line with technological development."
+  
+  ssl:
+    title: "5. SSL/TLS Encryption"
+    content: "This site uses SSL/TLS encryption for security reasons and to protect the transmission of confidential content, such as requests you send to us as the site operator. You can recognize an encrypted connection by the fact that the address line of the browser changes from \"http://\" to \"https://\" and by the lock symbol in your browser line."
+  
+  third_party:
+    title: "6. Third-Party Services"
+    content: "We do not use any third-party services such as Google Analytics, social media plugins, or external fonts that could collect your data. All resources are hosted locally on our servers."
+  
+  retention:
+    title: "7. Data Retention"
+    content: "We store personal data only for as long as necessary to fulfill the purposes for which it was collected, or as required by law. Contact form data and quote requests are deleted after final processing of your inquiry, unless we need to retain them for legal reasons (e.g., tax regulations)."
+  
+  changes:
+    title: "8. Changes to This Privacy Policy"
+    content: "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy. The new privacy policy will then apply to your next visit."
+  
+  contact:
+    title: "9. Contact for Data Protection Questions"
+    content: "If you have any questions about data protection, please send us an email to: info@edelmetallhandel-cham.de"

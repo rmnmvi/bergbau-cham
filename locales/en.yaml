@@ -116,23 +116,163 @@ partners:
       name: "WIRTGEN"
       description: "Road & Mineral Technologies"
 
-# Quote Form
+# Quote Form Page
 quote:
-  title: "Mining Equipment Quote Request"
-  description: "Get a personalized quote for mining equipment and machinery"
+  meta_title: "Mining Equipment Quote Request"
+  meta_description: "Submit your mining equipment inquiry. We provide competitive quotes for mining machinery and equipment with transparent pricing and secure transactions."
+
+  header:
+    title: "Submit Your Quote"
+    subtitle: "Provide details about your mining equipment for a competitive offer"
+    request_title: "Request a Quote"
+    request_subtitle: "Tell us what mining equipment you're looking to purchase"
+
+  mode:
+    request_quote: "I want to buy (Request Quote)"
+    submit_quote: "I want to sell (Submit Quote)"
+    tab_request: "I want to buy"
+    tab_submit: "I want to sell"
+    request_description: "Request pricing for mining equipment you want to purchase from us"
+    submit_description: "Submit your offer for mining equipment you want to sell to us"
+
+  steps:
+    step1: "Equipment Details"
+    step2: "Pricing & Terms"
+    step3: "Contact Info"
+    step1_title: "Equipment Details"
+    step2_title: "Pricing & Delivery Terms"
+    step3_title: "Contact Information"
+    step1_subtitle: "Provide details about your mining equipment for evaluation."
+    step2_subtitle: "Specify pricing information and delivery preferences."
+    step3_subtitle: "Provide your contact details for follow-up communication."
+    product_pricing: "Equipment & Pricing"
+    contact_info: "Contact Information"
+    product_pricing_title: "Equipment & Pricing Details"
+    product_pricing_subtitle: "Provide complete information about your mining equipment and pricing."
+    contact_info_title: "Contact Information"
+    contact_info_subtitle: "Provide your contact details for follow-up communication."
 
   form:
-    step1:
-      title: "Equipment & Specifications"
-      description: "Provide complete information about your mining equipment requirements and specifications."
+    # Step 1: Equipment Details
+    commodity_type: "Equipment Type"
+    select_commodity: "Select equipment"
+    gold: "Excavator"
+    silver: "Bulldozer"
+    platinum: "Loader"
+    copper: "Dump Truck"
+    palladium: "Crane"
+    rhodium: "Drilling Equipment"
+    other_materials: "Other Mining Equipment"
 
-    step2:
-      title: "Business & Contact Information"
-      description: "Tell us about your company and how we can reach you."
+    form_type: "Condition"
+    select_form: "Select condition"
+    bars: "New"
 
-    step3:
-      title: "Review & Submit"
-      description: "Review your information and submit your quote request."
+    purity: "Manufacturer"
+    select_purity: "Select manufacturer"
+    specify_purity: "Specify Manufacturer"
+    purity_placeholder: "e.g., Caterpillar, Komatsu"
+
+    quantity: "Quantity"
+    quantity_placeholder: "Enter number of units"
+    unit: "Units"
+
+    # Step 2: Pricing & Terms
+    country_of_origin: "Country of Origin"
+    select_country: "Select country"
+
+    price_per_unit: "Price per Unit"
+    currency: "Currency"
+
+    delivery_terms: "Delivery Terms"
+    select_delivery_terms: "Select delivery terms"
+    cif: "CIF - Cost, Insurance & Freight"
+    fob: "FOB - Free On Board"
+    exw: "EXW - Ex Works"
+    ddp: "DDP - Delivered Duty Paid"
+    fca: "FCA - Free Carrier"
+
+    trial_quantity: "Demo Equipment Available"
+    no_trial: "No demo equipment"
+    custom_amount: "Custom arrangement"
+    specify_trial: "Specify Demo Arrangement"
+    trial_placeholder: "e.g., 1 unit for testing"
+
+    additional_information: "Additional Information"
+    additional_placeholder: "Any additional details about your equipment requirements..."
+    pricing_section: "Pricing & Trading Terms"
+    requirements_section: "Equipment Requirements"
+
+    # Buyer-specific fields
+    desired_quantity_min: "Min Qty"
+    desired_quantity_max: "Max Qty"
+    target_price_range: "Target Price Range"
+    pricing_method: "Pricing Method"
+    fixed_price: "Fixed Price"
+    exchange_discount: "Market Rate Discount"
+    reference_source: "Reference Source"
+    discount_percentage: "Discount Percentage"
+    lbma_reference: "Market Standard Price"
+    kitco_reference: "Industry Spot Price"
+    discount_example: "e.g., minus 7%"
+    preferred_currency: "Preferred Currency"
+    preferred_delivery_location: "Preferred Delivery Location"
+    delivery_location_placeholder: "e.g., Frankfurt, Germany"
+    delivery_incoterms: "Delivery Terms (Incoterms)"
+    select_incoterms: "Select Incoterms"
+    incoterm_exw: "EXW - Ex Works"
+    incoterm_fob: "FOB - Free On Board"
+    incoterm_cif: "CIF - Cost, Insurance & Freight"
+    incoterm_cip: "CIP - Carriage and Insurance Paid To"
+    incoterm_dap: "DAP - Delivered At Place"
+    incoterm_ddp: "DDP - Delivered Duty Paid"
+    incoterm_fca: "FCA - Free Carrier"
+    incoterm_cpt: "CPT - Carriage Paid To"
+    urgency: "Equipment Urgency"
+    urgency_immediate: "Immediate (Within 1 week)"
+    urgency_1week: "Within 1 week"
+    urgency_1month: "Within 1 month"
+    urgency_flexible: "Flexible timing"
+
+    # Contact Form Fields
+    first_name: "First Name"
+    last_name: "Last Name"
+    company_name: "Company Name"
+    position: "Position"
+    position_placeholder: "e.g., Procurement Manager"
+    email_address: "Email Address"
+    phone_number: "Phone Number"
+    phone_placeholder: "e.g., +49 123 456 789"
+    street_address: "Street Address"
+    city: "City"
+    state_province: "State/Province"
+    postal_code: "Postal Code"
+    country: "Country"
+
+    preferred_contact: "Preferred Contact Method"
+    email_option: "Email"
+    phone_option: "Phone"
+    both_option: "Both"
+
+    procedure_agreement: "I agree to the standard trading procedures"
+    procedure_text: "By submitting this form, I acknowledge that I have read and agree to the standard trading procedures and terms of service."
+
+    # Add Commodity Button
+    add_commodity: "Add Another Equipment Type"
+
+    # Buttons
+    required: "*"
+    next_pricing: "Next: Pricing & Terms"
+    next_contact: "Next: Contact Info"
+    back: "Back"
+    submit_quote: "Submit Quote"
+    request_quote: "Submit Request"
+
+    # Success Message
+    success_title: "Quote Submitted Successfully!"
+    success_message: "Thank you for your submission. We have received your quote and will review it carefully. Our team will contact you within 24-48 hours with a response."
+    success_id: "Submission ID:"
+    return_home: "Return to Home"
 
 # Footer
 footer:

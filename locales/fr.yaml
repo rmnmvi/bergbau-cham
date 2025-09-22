@@ -118,8 +118,8 @@ partners:
 
 # Quote Form
 quote:
-  title: "Demande de Devis pour Équipement Minier"
-  description: "Obtenez un devis personnalisé pour l'équipement et les machines minières"
+  meta_title: "Demande de Devis pour Équipement Minier"
+  meta_description: "Obtenez un devis personnalisé pour l'équipement et les machines minières"
 
   form:
     step1:
