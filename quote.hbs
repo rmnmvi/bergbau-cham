@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <meta name="description" content="">
+    <title>{{quote.meta_title}}</title>
+    <meta name="description" content="{{quote.meta_description}}">
     
     <!-- Search Engine Blocking -->
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
@@ -12,11 +12,11 @@
     <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="{{rootPath}}assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{rootPath}}assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="{{rootPath}}assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{rootPath}}assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="{{rootPath}}assets/favicon/site.webmanifest" />
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,7 +27,7 @@
     <!-- End Google Tag Manager -->
 
     <!-- Local Tailwind CSS with embedded fonts -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="{{rootPath}}styles.css">
 </head>
 <body class="font-sans-body text-gray-900 bg-gray-50">
     <!-- Google Tag Manager (noscript) -->
@@ -35,102 +35,8 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <!-- Header -->
-    <header class="bg-black">
-        <nav class="container mx-auto px-8 lg:px-16 py-6 flex justify-between items-center">
-            <a href="/index.html" class="flex items-center">
-                <img src="./assets/images/logo/logo_white.svg" alt="Edelmetall Cham Logo" class="h-10 w-auto">
-            </a>
-            <div class="hidden md:flex items-center space-x-8">
-                <ul class="flex space-x-8">
-                    <li><a href="/contact.html" class="text-white hover:text-gold transition">Contact</a></li>
-                </ul>
-                <a href="/quote.html" class="ml-4 px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
-                    Quote
-                </a>
-                <!-- Language Dropdown -->
-                <div class="relative ml-4">
-                    <button onclick="toggleLanguageDropdown(event)" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
-                        <img src="./assets/images/flags/gb.svg" alt="en" class="w-5 h-auto">
-                        <svg id="langDropdownArrow" class="w-4 h-4 text-white transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div id="langDropdown" class="absolute right-0 mt-2 w-24 bg-white rounded-lg shadow-lg hidden transition-all duration-200 z-50">
-                        <a href="/quote.html" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50 bg-gray-50 rounded-t-lg">
-                            <img src="./assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
-                            <span class="text-gray-700 font-medium">EN</span>
-                        </a>
-                        <a href="/fr/quote.html" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50  rounded-b-lg">
-                            <img src="./assets/images/flags/fr.svg" alt="Français" class="w-5 h-auto">
-                            <span class="text-gray-700 font-medium">FR</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile menu button -->
-            <button class="md:hidden text-white" onclick="toggleMobileMenu()">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </nav>
-        <!-- Mobile menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-sm">
-            <ul class="px-6 py-4 space-y-2">
-                <li><a href="/contact.html" class="block text-white hover:text-gold transition">Contact</a></li>
-                <li class="pt-2">
-                    <a href="/quote.html" class="block w-full text-center px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
-                        Quote
-                    </a>
-                </li>
-                <!-- Language switcher for mobile -->
-                <li class="pt-4 border-t border-gray-700">
-                    <div class="flex items-center justify-center space-x-4">
-                        <a href="/quote.html" class="flex items-center space-x-2 px-3 py-2 bg-white/20 rounded-lg">
-                            <img src="./assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
-                            <span class="text-white text-sm">EN</span>
-                        </a>
-                        <a href="/fr/quote.html" class="flex items-center space-x-2 px-3 py-2  rounded-lg">
-                            <img src="./assets/images/flags/fr.svg" alt="Français" class="w-5 h-auto">
-                            <span class="text-white text-sm">FR</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
-    
-    <script>
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        menu.classList.toggle('hidden');
-    }
-    
-    function toggleLanguageDropdown(event) {
-        event.stopPropagation();
-        const dropdown = document.getElementById('langDropdown');
-        const arrow = document.getElementById('langDropdownArrow');
-        
-        if (dropdown.classList.contains('hidden')) {
-            dropdown.classList.remove('hidden');
-            arrow.classList.add('rotate-180');
-        } else {
-            dropdown.classList.add('hidden');
-            arrow.classList.remove('rotate-180');
-        }
-    }
-    
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(event) {
-        const dropdown = document.getElementById('langDropdown');
-        const arrow = document.getElementById('langDropdownArrow');
-        if (dropdown && !dropdown.contains(event.target) && !event.target.closest('button[onclick*="toggleLanguageDropdown"]')) {
-            dropdown.classList.add('hidden');
-            if (arrow) arrow.classList.remove('rotate-180');
-        }
-    });
-    </script>
+    {{> nav-header}}
+
     <!-- Main Content -->
     <main class="py-12 md:py-20">
         <div class="container mx-auto px-6 lg:px-8">
@@ -143,13 +49,13 @@
                                     class="tab-button px-6 py-4 rounded-lg font-bold text-center transition-all duration-300 bg-transparent text-gray-600 hover:text-gray-800"
                                     data-mode="request"
                                     onclick="toggleQuoteMode('request')">
-                                <span class="text-lg"></span>
+                                <span class="text-lg">{{quote.mode.tab_request}}</span>
                             </button>
                             <button type="button"
                                     class="tab-button px-6 py-4 rounded-lg font-bold text-center transition-all duration-300 bg-gold text-white shadow-lg transform scale-105"
                                     data-mode="submit"
                                     onclick="toggleQuoteMode('submit')">
-                                <span class="text-lg"></span>
+                                <span class="text-lg">{{quote.mode.tab_submit}}</span>
                             </button>
                         </div>
                     </div>
@@ -157,9 +63,9 @@
 
                 <!-- Dynamic Form Header (below tabs) -->
                 <div class="text-center mb-12">
-                    <h1 class="font-sans-body text-4xl md:text-5xl font-bold text-gray-900 mb-4" id="formTitle"></h1>
-                    <p class="text-lg text-gray-600" id="formSubtitle"></p>
-                    <p class="text-sm text-gray-500 mt-2" id="modeDescription"></p>
+                    <h1 class="font-sans-body text-4xl md:text-5xl font-bold text-gray-900 mb-4" id="formTitle">{{quote.header.title}}</h1>
+                    <p class="text-lg text-gray-600" id="formSubtitle">{{quote.header.subtitle}}</p>
+                    <p class="text-sm text-gray-500 mt-2" id="modeDescription">{{quote.mode.submit_description}}</p>
                 </div>
 
                 <!-- Progress Indicator -->
@@ -167,12 +73,12 @@
                     <div class="flex items-center justify-between">
                         <div class="flex items-center text-gold" id="step1-indicator">
                             <span class="flex items-center justify-center w-10 h-10 border-2 border-gold rounded-full bg-gold text-white font-bold">1</span>
-                            <span class="ml-3 font-medium"></span>
+                            <span class="ml-3 font-medium">{{quote.steps.product_pricing}}</span>
                         </div>
                         <div class="flex-1 h-0.5 bg-gray-300 mx-4"></div>
                         <div class="flex items-center text-gray-400" id="step2-indicator">
                             <span class="flex items-center justify-center w-10 h-10 border-2 border-gray-300 rounded-full">2</span>
-                            <span class="ml-3 font-medium"></span>
+                            <span class="ml-3 font-medium">{{quote.steps.contact_info}}</span>
                         </div>
                     </div>
                 </div>
@@ -185,8 +91,8 @@
                     <!-- Step 1: Product & Pricing Details -->
                     <div id="step1" class="form-step">
                         <div class="border-b border-gray-900/10 pb-12">
-                            <h2 class="text-base/7 font-semibold text-gray-900"></h2>
-                            <p class="mt-1 text-sm/6 text-gray-600"></p>
+                            <h2 class="text-base/7 font-semibold text-gray-900">{{quote.steps.product_pricing_title}}</h2>
+                            <p class="mt-1 text-sm/6 text-gray-600">{{quote.steps.product_pricing_subtitle}}</p>
                         
                             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
@@ -197,18 +103,18 @@
                                         <!-- Row 1: Commodity Type (full width) -->
                                         <div class="w-full">
                                             <label for="commodity-0" class="block text-sm/6 font-medium text-gray-900">
-                                                 1 <span class="text-red-500"></span>
+                                                {{quote.form.commodity_type}} 1 <span class="text-red-500">{{quote.form.required}}</span>
                                             </label>
                                             <div class="mt-2 grid grid-cols-1">
                                                 <select id="commodity-0" name="commodities[0][type]" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                                    <option value=""></option>
-                                                    <option value="gold"></option>
-                                                    <option value="silver"></option>
-                                                    <option value="platinum"></option>
-                                                    <option value="palladium"></option>
-                                                    <option value="rhodium"></option>
-                                                    <option value="copper"></option>
-                                                    <option value="other"></option>
+                                                    <option value="">{{quote.form.select_commodity}}</option>
+                                                    <option value="gold">{{quote.form.gold}}</option>
+                                                    <option value="silver">{{quote.form.silver}}</option>
+                                                    <option value="platinum">{{quote.form.platinum}}</option>
+                                                    <option value="palladium">{{quote.form.palladium}}</option>
+                                                    <option value="rhodium">{{quote.form.rhodium}}</option>
+                                                    <option value="copper">{{quote.form.copper}}</option>
+                                                    <option value="other">{{quote.form.other_materials}}</option>
                                                 </select>
                                                 <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                                     <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -221,36 +127,36 @@
                                             <!-- Quantity for this commodity - Seller Mode -->
                                             <div class="sm:col-span-2 supplier-fields">
                                                 <label for="quantity-0" class="block text-sm/6 font-medium text-gray-900">
-                                                     <span class="text-red-500"></span>
+                                                    {{quote.form.quantity}} <span class="text-red-500">{{quote.form.required}}</span>
                                                 </label>
                                                 <div class="mt-2">
-                                                    <input type="number" id="quantity-0" name="commodities[0][quantity]" min="1" required placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                    <input type="number" id="quantity-0" name="commodities[0][quantity]" min="1" required placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                                 </div>
                                             </div>
 
                                             <!-- Quantity for this commodity - Buyer Mode -->
                                             <div class="sm:col-span-2 buyer-fields hidden">
                                                 <label for="quantity-min-0" class="block text-sm/6 font-medium text-gray-900">
-                                                     <span class="text-red-500"></span>
+                                                    {{quote.form.desired_quantity_min}} <span class="text-red-500">{{quote.form.required}}</span>
                                                 </label>
                                                 <div class="mt-2">
-                                                    <input type="number" id="quantity-min-0" name="commodities[0][quantityMin]" min="1" required placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                    <input type="number" id="quantity-min-0" name="commodities[0][quantityMin]" min="1" required placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                                 </div>
                                             </div>
 
                                             <div class="sm:col-span-2 buyer-fields hidden">
                                                 <label for="quantity-max-0" class="block text-sm/6 font-medium text-gray-900">
-                                                    
+                                                    {{quote.form.desired_quantity_max}}
                                                 </label>
                                                 <div class="mt-2">
-                                                    <input type="number" id="quantity-max-0" name="commodities[0][quantityMax]" min="1" placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                    <input type="number" id="quantity-max-0" name="commodities[0][quantityMax]" min="1" placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                                 </div>
                                             </div>
 
                                             <!-- Unit for this commodity -->
                                             <div class="sm:col-span-2">
                                                 <label for="unit-0" class="block text-sm/6 font-medium text-gray-900">
-                                                     <span class="text-red-500"></span>
+                                                    {{quote.form.unit}} <span class="text-red-500">{{quote.form.required}}</span>
                                                 </label>
                                                 <div class="mt-2 grid grid-cols-1">
                                                     <select id="unit-0" name="commodities[0][unit]" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -276,17 +182,17 @@
                                         <svg class="mr-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"></path>
                                         </svg>
-                                        
+                                        {{quote.form.add_commodity}}
                                     </button>
                                 </div>
                                 <!-- Form Type -->
                                 <div class="sm:col-span-3">
                                     <label for="formType" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.form_type}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="formType" name="formType" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value="bars" selected></option>
+                                            <option value="bars" selected>{{quote.form.bars}}</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                             <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -296,11 +202,11 @@
                                 <!-- Purity -->
                                 <div class="col-span-full">
                                     <label for="purity" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.purity}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="purity" name="purity" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value=""></option>
+                                            <option value="">{{quote.form.select_purity}}</option>
                                             <optgroup label="Gold">
                                                 <option value="24k">24 CARAT – 99.99% PURITY</option>
                                                 <option value="23k">23 CARAT – 98.14+% PURITY</option>
@@ -328,10 +234,10 @@
                                 <!-- Custom Purity (shown when "Other" is selected) -->
                                 <div id="customPurityDiv" class="hidden col-span-full">
                                     <label for="customPurity" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.specify_purity}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="customPurity" name="customPurity" placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="customPurity" name="customPurity" placeholder="{{quote.form.purity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                     </div>
                                 </div>
                                 <!-- Legacy quantity fields removed - now part of commodity items above -->
@@ -339,12 +245,12 @@
 
                             <!-- Pricing Section (within same step) -->
                             <div class="col-span-full mt-10 supplier-fields">
-                                <h3 class="text-base font-semibold text-gray-900 mb-6 border-t border-gray-200 pt-8" id="pricingSectionTitle"></h3>
+                                <h3 class="text-base font-semibold text-gray-900 mb-6 border-t border-gray-200 pt-8" id="pricingSectionTitle">{{quote.form.pricing_section}}</h3>
                             </div>
 
                             <!-- Buyer Requirements Section (hidden by default) -->
                             <div class="col-span-full mt-10 buyer-fields hidden">
-                                <h3 class="text-base font-semibold text-gray-900 mb-6 border-t border-gray-200 pt-8"></h3>
+                                <h3 class="text-base font-semibold text-gray-900 mb-6 border-t border-gray-200 pt-8">{{quote.form.requirements_section}}</h3>
                             </div>
 
                             <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -352,19 +258,19 @@
                                 <!-- Pricing Method Selection -->
                                 <div class="hidden buyer-fields col-span-full" id="buyerPricingMethod">
                                     <label class="block text-sm/6 font-medium text-gray-900 mb-4">
-                                        
+                                        {{quote.form.pricing_method}}
                                     </label>
                                     <div class="space-y-3">
                                         <div class="flex items-center">
                                             <input type="radio" id="pricingFixed" name="pricingMethod" value="fixed" checked class="h-4 w-4 border-gray-300 text-gold focus:ring-gold">
                                             <label for="pricingFixed" class="ml-3 block text-sm/6 text-gray-900">
-                                                
+                                                {{quote.form.fixed_price}}
                                             </label>
                                         </div>
                                         <div class="flex items-center">
                                             <input type="radio" id="pricingExchange" name="pricingMethod" value="exchange" class="h-4 w-4 border-gray-300 text-gold focus:ring-gold">
                                             <label for="pricingExchange" class="ml-3 block text-sm/6 text-gray-900">
-                                                
+                                                {{quote.form.exchange_discount}}
                                             </label>
                                         </div>
                                     </div>
@@ -373,7 +279,7 @@
                                 <!-- Fixed Price Fields -->
                                 <div class="hidden buyer-fields sm:col-span-3" id="fixedPriceAmount">
                                     <label for="pricePerUnit" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.price_per_unit}}
                                     </label>
                                     <div class="mt-2">
                                         <input type="number" id="pricePerUnit" name="pricePerUnit" min="0" step="0.01" placeholder="0.00" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -382,7 +288,7 @@
 
                                 <div class="hidden buyer-fields sm:col-span-3" id="fixedPriceCurrency">
                                     <label for="priceCurrency" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.preferred_currency}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="priceCurrency" name="priceCurrency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -400,12 +306,12 @@
                                 <!-- Exchange Rate Discount Fields -->
                                 <div class="hidden buyer-fields sm:col-span-3" id="exchangeReference" style="display: none;">
                                     <label for="referenceSource" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.reference_source}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="referenceSource" name="referenceSource" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value="LBMA"></option>
-                                            <option value="KITCO"></option>
+                                            <option value="LBMA">{{quote.form.lbma_reference}}</option>
+                                            <option value="KITCO">{{quote.form.kitco_reference}}</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                             <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -415,37 +321,37 @@
 
                                 <div class="hidden buyer-fields sm:col-span-3" id="exchangeDiscount" style="display: none;">
                                     <label for="discountPercentage" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.discount_percentage}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="number" id="discountPercentage" name="discountPercentage" min="0" max="100" step="0.1" placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="number" id="discountPercentage" name="discountPercentage" min="0" max="100" step="0.1" placeholder="{{quote.form.discount_example}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                     </div>
                                 </div>
 
                                 <div class="hidden buyer-fields sm:col-span-3" id="buyerDeliveryLocation">
                                     <label for="deliveryLocation" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.preferred_delivery_location}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="deliveryLocation" name="deliveryLocation" placeholder="" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="deliveryLocation" name="deliveryLocation" placeholder="{{quote.form.delivery_location_placeholder}}" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                     </div>
                                 </div>
 
                                 <div class="hidden buyer-fields sm:col-span-3" id="buyerDeliveryTerms">
                                     <label for="deliveryTerms" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.delivery_incoterms}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="deliveryTerms" name="deliveryTerms" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value=""></option>
-                                            <option value="EXW"></option>
-                                            <option value="FCA"></option>
-                                            <option value="CPT"></option>
-                                            <option value="CIP"></option>
-                                            <option value="DAP"></option>
-                                            <option value="DDP"></option>
-                                            <option value="FOB"></option>
-                                            <option value="CIF"></option>
+                                            <option value="">{{quote.form.select_incoterms}}</option>
+                                            <option value="EXW">{{quote.form.incoterm_exw}}</option>
+                                            <option value="FCA">{{quote.form.incoterm_fca}}</option>
+                                            <option value="CPT">{{quote.form.incoterm_cpt}}</option>
+                                            <option value="CIP">{{quote.form.incoterm_cip}}</option>
+                                            <option value="DAP">{{quote.form.incoterm_dap}}</option>
+                                            <option value="DDP">{{quote.form.incoterm_ddp}}</option>
+                                            <option value="FOB">{{quote.form.incoterm_fob}}</option>
+                                            <option value="CIF">{{quote.form.incoterm_cif}}</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                             <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -455,14 +361,14 @@
 
                                 <div class="hidden buyer-fields sm:col-span-3" id="buyerUrgency">
                                     <label for="urgency" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.urgency}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="urgency" name="urgency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value="immediate"></option>
-                                            <option value="1week"></option>
-                                            <option value="1month"></option>
-                                            <option value="flexible"></option>
+                                            <option value="immediate">{{quote.form.urgency_immediate}}</option>
+                                            <option value="1week">{{quote.form.urgency_1week}}</option>
+                                            <option value="1month">{{quote.form.urgency_1month}}</option>
+                                            <option value="flexible">{{quote.form.urgency_flexible}}</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                             <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -473,11 +379,11 @@
                                 <!-- Origin Country (Moved to top) - Supplier field -->
                                 <div class="col-span-full supplier-fields">
                                     <label for="origin" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.country_of_origin}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="origin" name="origin" required onchange="updateCurrency(this.value)" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value=""></option>
+                                            <option value="">{{quote.form.select_country}}</option>
                                             <!-- African Countries -->
                                             <optgroup label="Africa">
                                                 <option value="DZ" data-currency="DZD">🇩🇿 Algeria</option>
@@ -596,7 +502,7 @@
                                 <!-- Price - Supplier field -->
                                 <div class="sm:col-span-3 supplier-fields">
                                     <label for="price" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.price_per_unit}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="number" id="price" name="price" min="0" step="1" required placeholder="50000" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -604,7 +510,7 @@
                                 </div>
                                 <div class="sm:col-span-3 supplier-fields">
                                     <label for="currency" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.currency}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="currency" name="currency" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -714,16 +620,16 @@
                                 <!-- Delivery Terms - Supplier field -->
                                 <div class="sm:col-span-3 supplier-fields">
                                     <label for="deliveryTerms" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.delivery_terms}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="deliveryTerms" name="deliveryTerms" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value=""></option>
-                                            <option value="cif"></option>
-                                            <option value="fob"></option>
-                                            <option value="exw"></option>
-                                            <option value="ddp"></option>
-                                            <option value="fca"></option>
+                                            <option value="">{{quote.form.select_delivery_terms}}</option>
+                                            <option value="cif">{{quote.form.cif}}</option>
+                                            <option value="fob">{{quote.form.fob}}</option>
+                                            <option value="exw">{{quote.form.exw}}</option>
+                                            <option value="ddp">{{quote.form.ddp}}</option>
+                                            <option value="fca">{{quote.form.fca}}</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                             <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -734,16 +640,16 @@
                                 <!-- Trial Quantity - Supplier field -->
                                 <div class="sm:col-span-3 supplier-fields">
                                     <label for="trialQuantity" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.trial_quantity}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="trialQuantity" name="trialQuantity" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
-                                            <option value=""></option>
+                                            <option value="">{{quote.form.no_trial}}</option>
                                             <option value="50kg">50 kg</option>
                                             <option value="100kg">100 kg</option>
                                             <option value="250kg">250 kg</option>
                                             <option value="500kg">500 kg</option>
-                                            <option value="custom"></option>
+                                            <option value="custom">{{quote.form.custom_amount}}</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
                                             <path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
@@ -754,20 +660,20 @@
                                 <!-- Custom Trial Quantity - Supplier field -->
                                 <div id="customTrialDiv" class="hidden sm:col-span-3 supplier-fields">
                                     <label for="customTrial" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.specify_trial}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="customTrial" name="customTrial" placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="customTrial" name="customTrial" placeholder="{{quote.form.trial_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                     </div>
                                 </div>
 
                                 <!-- Additional Notes -->
                                 <div class="col-span-full">
                                     <label for="notes" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.additional_information}}
                                     </label>
                                     <div class="mt-2">
-                                        <textarea id="notes" name="notes" rows="4" placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6"></textarea>
+                                        <textarea id="notes" name="notes" rows="4" placeholder="{{quote.form.additional_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6"></textarea>
                                     </div>
                                 </div>
 
@@ -785,9 +691,9 @@
                                                 </div>
                                             </div>
                                             <div class="text-sm/6">
-                                                <label for="procedure" class="font-medium text-gray-900"></label>
+                                                <label for="procedure" class="font-medium text-gray-900">{{quote.form.procedure_agreement}}</label>
                                                 <div class="mt-2 text-xs text-gray-600">
-                                                    <p></p>
+                                                    <p>{{quote.form.procedure_text}}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -799,7 +705,7 @@
                         <!-- Navigation -->
                         <div class="mt-6 flex items-center justify-end gap-x-6">
                             <button type="button" onclick="nextStep(2)" class="rounded-md bg-gold px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gold-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
-                                
+                                {{quote.form.next_contact}}
                             </button>
                         </div>
                     </div>
@@ -808,14 +714,14 @@
                     <!-- Step 2: Contact Information -->
                     <div id="step2" class="form-step hidden">
                         <div class="border-b border-gray-900/10 pb-12">
-                            <h2 class="text-base/7 font-semibold text-gray-900"></h2>
-                            <p class="mt-1 text-sm/6 text-gray-600"></p>
+                            <h2 class="text-base/7 font-semibold text-gray-900">{{quote.steps.step3_title}}</h2>
+                            <p class="mt-1 text-sm/6 text-gray-600">{{quote.steps.step3_subtitle}}</p>
                         
                             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                                 <!-- Company Information -->
                                 <div class="col-span-full">
                                     <label for="companyName" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.company_name}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="text" id="companyName" name="companyName" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -825,7 +731,7 @@
                                 <!-- Contact Person -->
                                 <div class="sm:col-span-3">
                                     <label for="firstName" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.first_name}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="text" id="firstName" name="firstName" required autocomplete="given-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -833,7 +739,7 @@
                                 </div>
                                 <div class="sm:col-span-3">
                                     <label for="lastName" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.last_name}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="text" id="lastName" name="lastName" required autocomplete="family-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -843,17 +749,17 @@
                                 <!-- Position -->
                                 <div class="sm:col-span-4">
                                     <label for="position" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.position}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="position" name="position" placeholder="" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="position" name="position" placeholder="{{quote.form.position_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                     </div>
                                 </div>
 
                                 <!-- Contact Details -->
                                 <div class="sm:col-span-4">
                                     <label for="email" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.email_address}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="email" id="email" name="email" required autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -861,17 +767,17 @@
                                 </div>
                                 <div class="sm:col-span-2">
                                     <label for="phone" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.phone_number}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="tel" id="phone" name="phone" required placeholder="" autocomplete="tel" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="tel" id="phone" name="phone" required placeholder="{{quote.form.phone_placeholder}}" autocomplete="tel" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
                                     </div>
                                 </div>
 
                                 <!-- Address -->
                                 <div class="col-span-full">
                                     <label for="address" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.street_address}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="text" id="address" name="address" required autocomplete="street-address" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -880,7 +786,7 @@
 
                                 <div class="sm:col-span-2 sm:col-start-1">
                                     <label for="city" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.city}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="text" id="city" name="city" required autocomplete="address-level2" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -888,7 +794,7 @@
                                 </div>
                                 <div class="sm:col-span-2">
                                     <label for="state" class="block text-sm/6 font-medium text-gray-900">
-                                        
+                                        {{quote.form.state_province}}
                                     </label>
                                     <div class="mt-2">
                                         <input type="text" id="state" name="state" autocomplete="address-level1" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -896,7 +802,7 @@
                                 </div>
                                 <div class="sm:col-span-2">
                                     <label for="postalCode" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.postal_code}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
                                         <input type="text" id="postalCode" name="postalCode" required autocomplete="postal-code" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -904,7 +810,7 @@
                                 </div>
                                 <div class="sm:col-span-2">
                                     <label for="country" class="block text-sm/6 font-medium text-gray-900">
-                                         <span class="text-red-500"></span>
+                                        {{quote.form.country}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="country" name="country" required autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
@@ -959,20 +865,20 @@
                             <!-- Preferred Contact Method -->
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">
-                                    
+                                    {{quote.form.preferred_contact}}
                                 </label>
                                 <div class="flex space-x-6">
                                     <label class="flex items-center">
                                         <input type="radio" name="contactMethod" value="email" checked class="h-4 w-4 text-gold focus:ring-gold border-gray-300">
-                                        <span class="ml-2 text-sm text-gray-700"></span>
+                                        <span class="ml-2 text-sm text-gray-700">{{quote.form.email_option}}</span>
                                     </label>
                                     <label class="flex items-center">
                                         <input type="radio" name="contactMethod" value="phone" class="h-4 w-4 text-gold focus:ring-gold border-gray-300">
-                                        <span class="ml-2 text-sm text-gray-700"></span>
+                                        <span class="ml-2 text-sm text-gray-700">{{quote.form.phone_option}}</span>
                                     </label>
                                     <label class="flex items-center">
                                         <input type="radio" name="contactMethod" value="both" class="h-4 w-4 text-gold focus:ring-gold border-gray-300">
-                                        <span class="ml-2 text-sm text-gray-700"></span>
+                                        <span class="ml-2 text-sm text-gray-700">{{quote.form.both_option}}</span>
                                     </label>
                                 </div>
                             </div>
@@ -980,7 +886,7 @@
                             <!-- Business License Upload (Optional) -->
                             <div class="col-span-full">
                                 <label for="license-upload" class="block text-sm/6 font-medium text-gray-900">
-                                    
+                                    {{license_upload}}
                                 </label>
                                 <div class="mt-2">
                                     <div class="flex items-center gap-x-3">
@@ -994,13 +900,13 @@
                                         >
                                     </div>
                                     <p class="mt-2 text-sm text-gray-600">
-                                        
+                                        {{upload_help}}
                                     </p>
                                     <p class="mt-1 text-xs text-gray-500">
-                                        
+                                        {{max_files}}
                                     </p>
                                     <div id="file-error" class="mt-2 text-sm text-red-600 hidden">
-                                        
+                                        {{file_upload_error}}
                                     </div>
                                     <div id="file-list" class="mt-2 text-sm text-gray-600"></div>
                                 </div>
@@ -1010,18 +916,22 @@
                         <!-- GDPR Notice -->
                         <div class="col-span-full mt-6 p-4 bg-gray-100 border border-gray-200 rounded-lg">
                             <p class="text-sm text-gray-700">
-                                <strong>Data Protection Notice:</strong>
+                                <strong>{{#if isFrench}}Avis de protection des données :{{else}}Data Protection Notice:{{/if}}</strong>
+                                {{#if isFrench}}
+                                En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles conformément à notre <a href="/fr/privacy.html" class="text-gold hover:text-gold-light underline">Politique de confidentialité</a>. Vos données seront utilisées uniquement pour répondre à votre demande et ne seront pas partagées avec des tiers sans votre consentement. Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles. Vous avez le droit d'accéder, de corriger ou de supprimer vos données à tout moment.
+                                {{else}}
                                 By submitting this form, you agree to the processing of your personal data in accordance with our <a href="/privacy.html" class="text-gold hover:text-gold-light underline">Privacy Policy</a>. Your data will be used solely to respond to your request and will not be shared with third parties without your consent. We implement appropriate technical and organizational measures to protect your personal information. You have the right to access, correct, or delete your data at any time.
+                                {{/if}}
                             </p>
                         </div>
 
                         <!-- Navigation -->
                         <div class="mt-8 flex justify-between">
                             <button type="button" onclick="previousStep(1)" class="text-gray-600 px-8 py-4 rounded-lg font-semibold hover:text-gray-900 transition">
-                                
+                                {{quote.form.back}}
                             </button>
                             <button type="submit" class="bg-gold text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gold-light transition transform hover:scale-105">
-                                
+                                {{quote.form.submit_quote}}
                             </button>
                         </div>
                     </div>
@@ -1036,9 +946,9 @@
         <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
             <!-- Navigation Links -->
             <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm">
-                <a href="/contact.html" class="text-gray-400 hover:text-gold transition">Contact</a>
-                <a href="/imprint.html" class="text-gray-400 hover:text-gold transition">Imprint</a>
-                <a href="/privacy.html" class="text-gray-400 hover:text-gold transition">Privacy Policy</a>
+                <a href="/{{langPath}}contact.html" class="text-gray-400 hover:text-gold transition">{{nav.contact}}</a>
+                <a href="/{{langPath}}imprint.html" class="text-gray-400 hover:text-gold transition">{{nav.imprint}}</a>
+                <a href="/{{langPath}}privacy.html" class="text-gray-400 hover:text-gold transition">{{nav.privacy}}</a>
             </nav>
             
             <!-- Contact Icons -->
@@ -1116,10 +1026,10 @@
 
             if (mode === 'request') {
                 // Buyer mode - requesting a quote
-                formTitle.textContent = ;
-                formSubtitle.textContent = ;
-                modeDescription.textContent = ;
-                submitButton.textContent = ;
+                formTitle.textContent = {{{json quote.header.request_title}}};
+                formSubtitle.textContent = {{{json quote.header.request_subtitle}}};
+                modeDescription.textContent = {{{json quote.mode.request_description}}};
+                submitButton.textContent = {{{json quote.form.request_quote}}};
 
                 // Hide supplier fields
                 supplierFields.forEach(field => {
@@ -1149,10 +1059,10 @@
 
             } else {
                 // Supplier mode - submitting a quote
-                formTitle.textContent = ;
-                formSubtitle.textContent = ;
-                modeDescription.textContent = ;
-                submitButton.textContent = ;
+                formTitle.textContent = {{{json quote.header.title}}};
+                formSubtitle.textContent = {{{json quote.header.subtitle}}};
+                modeDescription.textContent = {{{json quote.mode.submit_description}}};
+                submitButton.textContent = {{{json quote.form.submit_quote}}};
 
                 // Show supplier fields
                 supplierFields.forEach(field => {
@@ -1478,7 +1388,7 @@
                     fileInput.value = '';
                 } else if (validFiles.length > 0) {
                     // Display valid files
-                    fileList.innerHTML = `<strong>${validFiles.length} :</strong><br>` + 
+                    fileList.innerHTML = `<strong>${validFiles.length} {{files_selected}}:</strong><br>` + 
                         validFiles.map(f => `• ${f.name} (${(f.size / 1024).toFixed(1)} KB)`).join('<br>');
                 }
             });
@@ -1653,11 +1563,11 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                 </div>
-                                <h1 style="font-size: 36px; font-weight: bold; color: #111827; margin-bottom: 16px; font-family: 'Open Sans', sans-serif;"></h1>
-                                <p style="font-size: 18px; color: #4b5563; margin-bottom: 32px; max-width: 500px; line-height: 1.6;"></p>
-                                <p style="font-size: 14px; color: #6b7280; margin-bottom: 32px;"> <strong>${result.submissionId}</strong></p>
+                                <h1 style="font-size: 36px; font-weight: bold; color: #111827; margin-bottom: 16px; font-family: 'Open Sans', sans-serif;">{{quote.form.success_title}}</h1>
+                                <p style="font-size: 18px; color: #4b5563; margin-bottom: 32px; max-width: 500px; line-height: 1.6;">{{quote.form.success_message}}</p>
+                                <p style="font-size: 14px; color: #6b7280; margin-bottom: 32px;">{{quote.form.success_id}} <strong>${result.submissionId}</strong></p>
                                 <a href="index.html" style="display: inline-block; background-color: #d4af37; color: #111827; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 16px; transition: background-color 0.2s;">
-                                    
+                                    {{quote.form.return_home}}
                                 </a>
                             </div>
                         `;
