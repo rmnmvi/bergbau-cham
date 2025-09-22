@@ -1,0 +1,137 @@
+# English translations for Bergbau Cham website
+meta:
+  title: "Bergbau Cham - Trusted Partner in Mining Equipment"
+  description: "Bergbau Cham - For decades, we build lasting relationships across Africa and Europe in international mining equipment trade."
+  keywords: "Bergbau, mining, equipment, machinery, international mining, Europe, Africa"
+
+# Navigation
+nav:
+  home: "Home"
+  about: "About Us"
+  partners: "Partners"
+  faq: "FAQ"
+  contact: "Contact"
+  quote: "Quote"
+  get_in_touch: "Get in touch"
+  imprint: "Imprint"
+  privacy: "Privacy Policy"
+
+# Hero Section
+hero:
+  title: "Trusted Partner in<br>Mining Equipment"
+  description: "For decades, Bergbau Cham has built lasting relationships across Africa and Europe. We operate with transparency, compliance, and a commitment to sustainable partnerships in international mining equipment trade."
+  cta: "Get in touch"
+
+# About Section
+about:
+  subtitle: "Our Story"
+  title: "Connecting continents through trust"
+  paragraph1: "Founded on the belief that mining equipment trading should be accessible and transparent, Bergbau Cham was created to bridge the gap between African suppliers and European markets."
+  paragraph2: "Our journey began with a passion for excellence and the desire to make a positive impact in the global mining equipment trade. Today, we stand as a trusted partner for institutions worldwide."
+  cta_partners: "View Our Partners"
+  cta_contact: "Get in touch"
+
+  # Stats
+  stats:
+    years: "25+"
+    years_label: "Years of Excellence"
+    countries: "40+"
+    countries_label: "Countries Served"
+    compliance: "100%"
+    compliance_label: "Compliance Rate"
+    volume: "€100M+"
+    volume_label: "Trading Volume"
+
+# Mission Statement
+mission:
+  subtitle: "Our Mission"
+  text: "With longstanding expertise in international mining equipment trade, we have established ourselves as a cornerstone of trust and reliability. Our focus on transparency, compliance, and sustainable partnerships enables us to build lasting relationships while connecting continents through ethical mining equipment commerce."
+
+# Values Section
+values:
+  subtitle: "Why Choose Us"
+  title: "Built on Trust and Excellence"
+
+  global_network:
+    title: "Global Network"
+    description: "Strategic partnerships spanning Europe, Africa, and beyond. Our established network ensures seamless international mining equipment transactions."
+    regions:
+      - "EU"
+      - "AFRICA"
+      - "ASIA"
+      - "AMERICAS"
+      - "HQ"
+      - "ME"
+
+  transparency:
+    title: "Full Transparency"
+    description: "Complete compliance with international regulations, clear documentation, and open communication at every step."
+
+  security:
+    title: "Maximum Security"
+    description: "Partnering with industry leaders for secure transport and storage of mining equipment."
+
+  experience:
+    title: "Decades of Experience"
+    description: "Established relationships and proven track record in international mining equipment trade since our founding."
+    metrics:
+      years: "Years in Business"
+      years_value: "25+"
+      countries: "Countries Served"
+      countries_value: "40+"
+      partners: "Trusted Partners"
+      partners_value: "100+"
+      volume: "Transaction Volume"
+      volume_value: "€100M+"
+
+# Partners Section
+partners:
+  subtitle: "Our Network"
+  title: "Trusted Global Partners"
+  description: "We collaborate with industry leaders who share our commitment to excellence and integrity in mining equipment trade"
+
+  list:
+    caterpillar:
+      name: "CATERPILLAR"
+      description: "Heavy Machinery Leader"
+    sennebogen:
+      name: "SENNEBOGEN"
+      description: "Material Handling Machines"
+    putzmeister:
+      name: "PUTZMEISTER"
+      description: "Concrete & Mining Technology"
+    komatsu:
+      name: "KOMATSU"
+      description: "Construction & Mining Equipment"
+    liebherr:
+      name: "LIEBHERR"
+      description: "Mining & Earthmoving"
+    sandvik:
+      name: "SANDVIK"
+      description: "Mining & Rock Technology"
+    epiroc:
+      name: "EPIROC"
+      description: "Mining & Infrastructure"
+    wirtgen:
+      name: "WIRTGEN"
+      description: "Road & Mineral Technologies"
+
+# Footer
+footer:
+  copyright: "© 2025 Edelmetall Cham · Franz Thums"
+  address: "Obere Regenstraße 9 · 93413 Cham · Germany"
+  phone: "+49 (0) 9971 7273"
+  email: "info@bergbautechnik-cham.de"
+
+# Contact Section
+contact:
+  title: "Get in Touch"
+  info:
+    company: "Edelmetall Cham"
+    represented_by: "represented by Franz Thums"
+    address_line1: "Obere Regenstraße 9"
+    address_line2: "93413 Cham · Germany"
+    phone_label: "Phone:"
+    phone: "+49 (0) 9971 7273"
+    email_label: "Email:"
+    email: "info@bergbautechnik-cham.de"

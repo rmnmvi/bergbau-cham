@@ -5,10 +5,10 @@ const path = require('path');
 const yaml = require('js-yaml');
 const Handlebars = require('handlebars');
 
-// Configuration
+// Configuration - Updated for running from within dist directory
 const LOCALES_DIR = './locales';
 const TEMPLATES_DIR = './templates';
-const OUTPUT_DIR = './dist';
+const OUTPUT_DIR = './';  // Output to current directory (dist)
 const LANGUAGES = ['en', 'fr'];
 const DEFAULT_LANG = 'en';
 
