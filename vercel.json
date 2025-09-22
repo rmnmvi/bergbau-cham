@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:multilingual",
+  "buildCommand": "",
   "installCommand": "npm install",
   "rewrites": [
     {
