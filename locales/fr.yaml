@@ -118,5 +118,20 @@ partners:
 
 # Footer
 footer:
-  copyright: "© 2025 Edelmetall Cham · Franz Thums"
-  address: "Obere Regenstraße 9 · 93413 Cham · Allemagne"
+  copyright: "© 2025 Bergbau Cham · Franz Thums"
+  address: "Cham · Suisse"
+  phone: "+41 XX XXX XX XX"
+  email: "info@bergbau-cham.de"
+
+# Contact Section
+contact:
+  title: "Contactez-nous"
+  info:
+    company: "Bergbau Cham"
+    represented_by: "représenté par Franz Thums"
+    address_line1: "Cham"
+    address_line2: "Suisse"
+    phone_label: "Téléphone :"
+    phone: "+41 XX XXX XX XX"
+    email_label: "Email :"
+    email: "info@bergbau-cham.de"

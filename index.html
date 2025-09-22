@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bergbau Cham - Premium Mining Equipment & Machinery</title>
-    <meta name="description" content="Bergbau Cham - Your trusted partner for premium mining equipment, machinery, and technical solutions across Africa and Europe.">
-    <!-- CSS path fix -->
-    <meta name="keywords" content="Bergbau, mining, extraction, resources, international mining, Europe, Africa">
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
+    <meta name="keywords" content="{{meta.keywords}}">
 
     <!-- Search Engine Blocking (but allow social media previews) -->
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
@@ -54,15 +53,35 @@
             </a>
             <div class="hidden md:flex items-center space-x-8">
                 <ul class="flex space-x-8">
-                    <li><a href="#home" class="text-white hover:text-orange-500 transition">Home</a></li>
-                    <li><a href="#about" class="text-white hover:text-orange-500 transition">About Us</a></li>
-                    <li><a href="#partners" class="text-white hover:text-orange-500 transition">Partners</a></li>
-                    <li><a href="#faq" class="text-white hover:text-orange-500 transition">FAQ</a></li>
-                    <li><a href="#contact" class="text-white hover:text-orange-500 transition">Contact</a></li>
+                    <li><a href="#home" class="text-white hover:text-orange-500 transition">{{nav.home}}</a></li>
+                    <li><a href="#about" class="text-white hover:text-orange-500 transition">{{nav.about}}</a></li>
+                    <li><a href="#partners" class="text-white hover:text-orange-500 transition">{{nav.partners}}</a></li>
+                    <li><a href="#faq" class="text-white hover:text-orange-500 transition">{{nav.faq}}</a></li>
+                    <li><a href="#contact" class="text-white hover:text-orange-500 transition">{{nav.contact}}</a></li>
                 </ul>
                 <a href="quote.html" class="ml-4 px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
                     Quote
                 </a>
+
+                <!-- Language Switcher -->
+                <div class="relative ml-6">
+                    <button onclick="toggleLanguageDropdown(event)" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                        <img src="./assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
+                        <svg id="langDropdownArrow" class="w-4 h-4 text-white transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="langDropdown" class="absolute right-0 mt-2 w-24 bg-white rounded-lg shadow-lg hidden transition-all duration-200 z-50">
+                        <a href="index.html" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50 bg-gray-50 rounded-t-lg">
+                            <img src="./assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
+                            <span class="text-gray-700 font-medium">EN</span>
+                        </a>
+                        <a href="fr/index.html" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50 rounded-b-lg">
+                            <img src="./assets/images/flags/fr.svg" alt="Français" class="w-5 h-auto">
+                            <span class="text-gray-700 font-medium">FR</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- Mobile menu button -->
             <button class="md:hidden text-white" onclick="toggleMobileMenu()">
@@ -105,11 +124,10 @@
                     <!-- Text Content -->
                     <div class="max-w-3xl">
                         <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-sans-body font-light mb-6">
-                            Trusted Partner in<br><span class="text-orange-500">Mining Equipment</span>
+                            {{{hero.title}}}
                         </h1>
                         <p class="text-white text-base md:text-lg font-sans-body font-light leading-relaxed max-w-2xl">
-                            For decades, Bergbau Cham has built lasting relationships across Africa and Europe.
-                            We operate with transparency, compliance, and a commitment to sustainable partnerships in international mining equipment trade.
+                            {{hero.description}}
                         </p>
                     </div>
 
@@ -117,7 +135,7 @@
                     <div class="md:mb-2">
                         <a href="#contact"
                            class="inline-block bg-white text-gray-900 font-sans-body font-semibold uppercase tracking-wider text-sm px-8 py-4 hover:bg-gray-100 transition-colors duration-300">
-                            Get in touch
+                            {{hero.cta}}
                         </a>
                     </div>
                 </div>
@@ -393,9 +411,9 @@
                 <div>
                     <h3 class="text-white font-semibold mb-4">Contact</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li>Cham, Switzerland</li>
-                        <li>info@bergbau-cham.de</li>
-                        <li>+41 XX XXX XX XX</li>
+                        <li>{{footer.address}}</li>
+                        <li>{{footer.email}}</li>
+                        <li>{{footer.phone}}</li>
                         <li><a href="imprint.html" class="hover:text-white transition">Imprint</a></li>
                         <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
                     </ul>
@@ -403,7 +421,7 @@
             </div>
             <div class="border-t border-gray-800 pt-8 text-center">
                 <p class="text-gray-400">
-                    &copy; 2024 Bergbau Cham. All rights reserved.
+                    {{footer.copyright}}
                 </p>
             </div>
         </div>
@@ -422,6 +440,26 @@
             content.classList.toggle('hidden');
             icon.classList.toggle('rotate-180');
         }
+
+        function toggleLanguageDropdown(event) {
+            event.preventDefault();
+            const dropdown = document.getElementById('langDropdown');
+            const arrow = document.getElementById('langDropdownArrow');
+
+            dropdown.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        // Close language dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('langDropdown');
+            const button = event.target.closest('button[onclick="toggleLanguageDropdown(event)"]');
+
+            if (!button && dropdown && !dropdown.classList.contains('hidden')) {
+                dropdown.classList.add('hidden');
+                document.getElementById('langDropdownArrow').classList.remove('rotate-180');
+            }
+        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
