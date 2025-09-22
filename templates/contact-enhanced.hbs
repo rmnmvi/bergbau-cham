@@ -141,17 +141,17 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/{{langPath}}contact.html" class="text-gold font-semibold">{{nav.contact}}</a>
-                    <a href="/{{langPath}}quote.html" class="bg-gold text-gray-900 px-4 py-2 rounded-md font-semibold hover:bg-gold-light transition">{{nav.quote}}</a>
+                    <a href="/{{langPath}}contact.html" class="text-orange font-semibold">{{nav.contact}}</a>
+                    <a href="/{{langPath}}quote.html" class="bg-orange text-gray-900 px-4 py-2 rounded-md font-semibold hover:bg-orange-light transition">{{nav.quote}}</a>
 
                     <!-- Language Switcher -->
                     <div class="flex items-center border-l pl-6 ml-6">
                         {{#if isFrench}}
-                        <a href="/contact.html" class="text-gray-700 hover:text-gold transition flex items-center">
+                        <a href="/contact.html" class="text-gray-700 hover:text-orange transition flex items-center">
                             <span class="mr-1">🇬🇧</span> EN
                         </a>
                         {{else}}
-                        <a href="/fr/contact.html" class="text-gray-700 hover:text-gold transition flex items-center">
+                        <a href="/fr/contact.html" class="text-gray-700 hover:text-orange transition flex items-center">
                             <span class="mr-1">🇫🇷</span> FR
                         </a>
                         {{/if}}
@@ -171,15 +171,15 @@
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden md:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="/{{langPath}}contact.html" class="block px-3 py-2 text-gold font-semibold">{{nav.contact}}</a>
-                    <a href="/{{langPath}}quote.html" class="block px-3 py-2 bg-gold text-gray-900 rounded-md font-semibold">{{nav.quote}}</a>
+                    <a href="/{{langPath}}contact.html" class="block px-3 py-2 text-orange font-semibold">{{nav.contact}}</a>
+                    <a href="/{{langPath}}quote.html" class="block px-3 py-2 bg-orange text-gray-900 rounded-md font-semibold">{{nav.quote}}</a>
                     <div class="border-t mt-3 pt-3">
                         {{#if isFrench}}
-                        <a href="/contact.html" class="block px-3 py-2 text-gray-700 hover:text-gold">
+                        <a href="/contact.html" class="block px-3 py-2 text-gray-700 hover:text-orange">
                             <span class="mr-1">🇬🇧</span> English
                         </a>
                         {{else}}
-                        <a href="/fr/contact.html" class="block px-3 py-2 text-gray-700 hover:text-gold">
+                        <a href="/fr/contact.html" class="block px-3 py-2 text-gray-700 hover:text-orange">
                             <span class="mr-1">🇫🇷</span> Français
                         </a>
                         {{/if}}
@@ -208,25 +208,25 @@
                         <label for="name" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.name}} {{contact.form.required}}</label>
                         <input type="text" name="name" id="name" required
                                placeholder="{{contact.form.name_placeholder}}"
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.email}} {{contact.form.required}}</label>
                         <input type="email" name="email" id="email" required
                                placeholder="{{contact.form.email_placeholder}}"
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                     </div>
                     <div>
                         <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.phone}} {{contact.form.required}}</label>
                         <input type="tel" name="phone" id="phone" required
                                placeholder="{{contact.form.phone_placeholder}}"
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-700 mb-2">{{contact.form.message}} {{contact.form.required}}</label>
                         <textarea name="message" id="message" rows="5" required
                                   placeholder="{{contact.form.message_placeholder}}"
-                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent"></textarea>
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent"></textarea>
                     </div>
                     
                     <!-- Country Selector -->
@@ -235,7 +235,7 @@
                             {{#if isFrench}}Pays{{else}}Country{{/if}} {{contact.form.required}}
                         </label>
                         <select name="country" id="country" required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                             <option value="">{{#if isFrench}}Sélectionner un pays{{else}}Select a country{{/if}}</option>
                             <option value="Germany">{{#if isFrench}}Allemagne{{else}}Germany{{/if}}</option>
                             <option value="France">France</option>
@@ -258,7 +258,7 @@
                         </label>
                         <input type="file" name="attachment" id="attachment" 
                                accept="image/*,application/pdf,.doc,.docx,.xls,.xlsx,.txt"
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent">
                         <p class="mt-1 text-sm text-gray-500">
                             {{#if isFrench}}
                             Formats acceptés : PDF, JPG, PNG, GIF, DOC, DOCX, XLS, XLSX, TXT (Max 5MB)
@@ -317,8 +317,8 @@
                     <p class="text-sm mb-1">{{contact.info.represented_by}}</p>
                     <p>{{contact.info.address_line1}}</p>
                     <p>{{contact.info.address_line2}}</p>
-                    <p class="mt-3">{{contact.info.phone_label}} <a href="tel:{{contact.info.phone}}" class="text-gold hover:underline">{{contact.info.phone}}</a></p>
-                    <p>{{contact.info.email_label}} <a href="mailto:{{contact.info.email}}" class="text-gold hover:underline">{{contact.info.email}}</a></p>
+                    <p class="mt-3">{{contact.info.phone_label}} <a href="tel:{{contact.info.phone}}" class="text-orange hover:underline">{{contact.info.phone}}</a></p>
+                    <p>{{contact.info.email_label}} <a href="mailto:{{contact.info.email}}" class="text-orange hover:underline">{{contact.info.email}}</a></p>
                 </div>
             </div>
         </div>
@@ -329,15 +329,15 @@
         <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
             <!-- Navigation Links -->
             <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm">
-                <a href="/{{langPath}}contact.html" class="text-gray-400 hover:text-gold transition">{{nav.contact}}</a>
-                <a href="/{{langPath}}imprint.html" class="text-gray-400 hover:text-gold transition">{{nav.imprint}}</a>
-                <a href="/{{langPath}}privacy.html" class="text-gray-400 hover:text-gold transition">{{nav.privacy}}</a>
+                <a href="/{{langPath}}contact.html" class="text-gray-400 hover:text-orange transition">{{nav.contact}}</a>
+                <a href="/{{langPath}}imprint.html" class="text-gray-400 hover:text-orange transition">{{nav.imprint}}</a>
+                <a href="/{{langPath}}privacy.html" class="text-gray-400 hover:text-orange transition">{{nav.privacy}}</a>
             </nav>
 
             <!-- Contact Icons -->
             <div class="mt-16 flex justify-center gap-x-10">
                 <!-- Email -->
-                <a href="mailto:{{contact.info.email}}" class="text-gray-400 hover:text-gold transition">
+                <a href="mailto:{{contact.info.email}}" class="text-gray-400 hover:text-orange transition">
                     <span class="sr-only">Email</span>
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -345,7 +345,7 @@
                 </a>
 
                 <!-- Phone -->
-                <a href="tel:{{contact.info.phone}}" class="text-gray-400 hover:text-gold transition">
+                <a href="tel:{{contact.info.phone}}" class="text-gray-400 hover:text-orange transition">
                     <span class="sr-only">Phone</span>
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
@@ -358,8 +358,8 @@
                 <p class="mb-2">{{footer.copyright}}</p>
                 <p>{{footer.address}}</p>
                 <p class="mt-2">
-                    <a href="tel:{{contact.info.phone}}" class="hover:text-gold transition">{{contact.info.phone}}</a> ·
-                    <a href="mailto:{{contact.info.email}}" class="hover:text-gold transition">{{contact.info.email}}</a>
+                    <a href="tel:{{contact.info.phone}}" class="hover:text-orange transition">{{contact.info.phone}}</a> ·
+                    <a href="mailto:{{contact.info.email}}" class="hover:text-orange transition">{{contact.info.email}}</a>
                 </p>
             </div>
         </div>

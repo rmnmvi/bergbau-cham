@@ -60,7 +60,7 @@
   }
   
   .btn-primary {
-    @apply bg-gold text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gold-light transition transform hover:scale-105;
+    @apply bg-orange text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-light transition transform hover:scale-105;
   }
   
   .section-padding {

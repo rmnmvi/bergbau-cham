@@ -52,7 +52,7 @@
                                 <span class="text-lg">{{quote.mode.tab_request}}</span>
                             </button>
                             <button type="button"
-                                    class="tab-button px-6 py-4 rounded-lg font-bold text-center transition-all duration-300 bg-gold text-white shadow-lg transform scale-105"
+                                    class="tab-button px-6 py-4 rounded-lg font-bold text-center transition-all duration-300 bg-orange text-white shadow-lg transform scale-105"
                                     data-mode="submit"
                                     onclick="toggleQuoteMode('submit')">
                                 <span class="text-lg">{{quote.mode.tab_submit}}</span>
@@ -71,8 +71,8 @@
                 <!-- Progress Indicator -->
                 <div class="mb-8">
                     <div class="flex items-center justify-between">
-                        <div class="flex items-center text-gold" id="step1-indicator">
-                            <span class="flex items-center justify-center w-10 h-10 border-2 border-gold rounded-full bg-gold text-white font-bold">1</span>
+                        <div class="flex items-center text-orange" id="step1-indicator">
+                            <span class="flex items-center justify-center w-10 h-10 border-2 border-orange rounded-full bg-orange text-white font-bold">1</span>
                             <span class="ml-3 font-medium">{{quote.steps.product_pricing}}</span>
                         </div>
                         <div class="flex-1 h-0.5 bg-gray-300 mx-4"></div>
@@ -106,9 +106,9 @@
                                                 {{quote.form.commodity_type}} 1 <span class="text-red-500">{{quote.form.required}}</span>
                                             </label>
                                             <div class="mt-2 grid grid-cols-1">
-                                                <select id="commodity-0" name="commodities[0][type]" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                <select id="commodity-0" name="commodities[0][type]" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                                     <option value="">{{quote.form.select_commodity}}</option>
-                                                    <option value="gold">{{quote.form.gold}}</option>
+                                                    <option value="orange">{{quote.form.orange}}</option>
                                                     <option value="silver">{{quote.form.silver}}</option>
                                                     <option value="platinum">{{quote.form.platinum}}</option>
                                                     <option value="palladium">{{quote.form.palladium}}</option>
@@ -130,7 +130,7 @@
                                                     {{quote.form.quantity}} <span class="text-red-500">{{quote.form.required}}</span>
                                                 </label>
                                                 <div class="mt-2">
-                                                    <input type="number" id="quantity-0" name="commodities[0][quantity]" min="1" required placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                    <input type="number" id="quantity-0" name="commodities[0][quantity]" min="1" required placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                                 </div>
                                             </div>
 
@@ -140,7 +140,7 @@
                                                     {{quote.form.desired_quantity_min}} <span class="text-red-500">{{quote.form.required}}</span>
                                                 </label>
                                                 <div class="mt-2">
-                                                    <input type="number" id="quantity-min-0" name="commodities[0][quantityMin]" min="1" required placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                    <input type="number" id="quantity-min-0" name="commodities[0][quantityMin]" min="1" required placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                                 </div>
                                             </div>
 
@@ -149,7 +149,7 @@
                                                     {{quote.form.desired_quantity_max}}
                                                 </label>
                                                 <div class="mt-2">
-                                                    <input type="number" id="quantity-max-0" name="commodities[0][quantityMax]" min="1" placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                    <input type="number" id="quantity-max-0" name="commodities[0][quantityMax]" min="1" placeholder="{{quote.form.quantity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                                 </div>
                                             </div>
 
@@ -159,7 +159,7 @@
                                                     {{quote.form.unit}} <span class="text-red-500">{{quote.form.required}}</span>
                                                 </label>
                                                 <div class="mt-2 grid grid-cols-1">
-                                                    <select id="unit-0" name="commodities[0][unit]" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                                    <select id="unit-0" name="commodities[0][unit]" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                                         <option value="kg">Kilograms (kg)</option>
                                                         <option value="g">Grams (g)</option>
                                                         <option value="oz">Troy Ounces (oz)</option>
@@ -178,7 +178,7 @@
                                     <div id="additional-commodities" class="mt-6"></div>
                                     
                                     <!-- Add Commodity Button -->
-                                    <button type="button" id="add-commodity-btn" class="mt-4 inline-flex items-center text-sm text-gray-500 hover:text-gold hover:underline focus:outline-none focus:underline transition-colors duration-200">
+                                    <button type="button" id="add-commodity-btn" class="mt-4 inline-flex items-center text-sm text-gray-500 hover:text-orange hover:underline focus:outline-none focus:underline transition-colors duration-200">
                                         <svg class="mr-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"></path>
                                         </svg>
@@ -191,7 +191,7 @@
                                         {{quote.form.form_type}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="formType" name="formType" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="formType" name="formType" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="bars" selected>{{quote.form.bars}}</option>
                                         </select>
                                         <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
@@ -205,7 +205,7 @@
                                         {{quote.form.purity}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="purity" name="purity" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="purity" name="purity" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="">{{quote.form.select_purity}}</option>
                                             <optgroup label="Gold">
                                                 <option value="24k">24 CARAT – 99.99% PURITY</option>
@@ -237,7 +237,7 @@
                                         {{quote.form.specify_purity}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="customPurity" name="customPurity" placeholder="{{quote.form.purity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="customPurity" name="customPurity" placeholder="{{quote.form.purity_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <!-- Legacy quantity fields removed - now part of commodity items above -->
@@ -262,13 +262,13 @@
                                     </label>
                                     <div class="space-y-3">
                                         <div class="flex items-center">
-                                            <input type="radio" id="pricingFixed" name="pricingMethod" value="fixed" checked class="h-4 w-4 border-gray-300 text-gold focus:ring-gold">
+                                            <input type="radio" id="pricingFixed" name="pricingMethod" value="fixed" checked class="h-4 w-4 border-gray-300 text-orange focus:ring-orange">
                                             <label for="pricingFixed" class="ml-3 block text-sm/6 text-gray-900">
                                                 {{quote.form.fixed_price}}
                                             </label>
                                         </div>
                                         <div class="flex items-center">
-                                            <input type="radio" id="pricingExchange" name="pricingMethod" value="exchange" class="h-4 w-4 border-gray-300 text-gold focus:ring-gold">
+                                            <input type="radio" id="pricingExchange" name="pricingMethod" value="exchange" class="h-4 w-4 border-gray-300 text-orange focus:ring-orange">
                                             <label for="pricingExchange" class="ml-3 block text-sm/6 text-gray-900">
                                                 {{quote.form.exchange_discount}}
                                             </label>
@@ -282,7 +282,7 @@
                                         {{quote.form.price_per_unit}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="number" id="pricePerUnit" name="pricePerUnit" min="0" step="0.01" placeholder="0.00" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="number" id="pricePerUnit" name="pricePerUnit" min="0" step="0.01" placeholder="0.00" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -291,7 +291,7 @@
                                         {{quote.form.preferred_currency}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="priceCurrency" name="priceCurrency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="priceCurrency" name="priceCurrency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="USD">USD - US Dollar</option>
                                             <option value="EUR">EUR - Euro</option>
                                             <option value="CHF">CHF - Swiss Franc</option>
@@ -309,7 +309,7 @@
                                         {{quote.form.reference_source}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="referenceSource" name="referenceSource" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="referenceSource" name="referenceSource" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="LBMA">{{quote.form.lbma_reference}}</option>
                                             <option value="KITCO">{{quote.form.kitco_reference}}</option>
                                         </select>
@@ -324,7 +324,7 @@
                                         {{quote.form.discount_percentage}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="number" id="discountPercentage" name="discountPercentage" min="0" max="100" step="0.1" placeholder="{{quote.form.discount_example}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="number" id="discountPercentage" name="discountPercentage" min="0" max="100" step="0.1" placeholder="{{quote.form.discount_example}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -333,7 +333,7 @@
                                         {{quote.form.preferred_delivery_location}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="deliveryLocation" name="deliveryLocation" placeholder="{{quote.form.delivery_location_placeholder}}" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="deliveryLocation" name="deliveryLocation" placeholder="{{quote.form.delivery_location_placeholder}}" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -342,7 +342,7 @@
                                         {{quote.form.delivery_incoterms}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="deliveryTerms" name="deliveryTerms" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="deliveryTerms" name="deliveryTerms" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="">{{quote.form.select_incoterms}}</option>
                                             <option value="EXW">{{quote.form.incoterm_exw}}</option>
                                             <option value="FCA">{{quote.form.incoterm_fca}}</option>
@@ -364,7 +364,7 @@
                                         {{quote.form.urgency}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="urgency" name="urgency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="urgency" name="urgency" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="immediate">{{quote.form.urgency_immediate}}</option>
                                             <option value="1week">{{quote.form.urgency_1week}}</option>
                                             <option value="1month">{{quote.form.urgency_1month}}</option>
@@ -382,7 +382,7 @@
                                         {{quote.form.country_of_origin}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="origin" name="origin" required onchange="updateCurrency(this.value)" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="origin" name="origin" required onchange="updateCurrency(this.value)" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="">{{quote.form.select_country}}</option>
                                             <!-- African Countries -->
                                             <optgroup label="Africa">
@@ -505,7 +505,7 @@
                                         {{quote.form.price_per_unit}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="number" id="price" name="price" min="0" step="1" required placeholder="50000" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="number" id="price" name="price" min="0" step="1" required placeholder="50000" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <div class="sm:col-span-3 supplier-fields">
@@ -513,7 +513,7 @@
                                         {{quote.form.currency}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="currency" name="currency" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="currency" name="currency" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <!-- Major International Currencies -->
                                             <option value="USD">USD - US Dollar</option>
                                             <option value="EUR">EUR - Euro</option>
@@ -623,7 +623,7 @@
                                         {{quote.form.delivery_terms}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="deliveryTerms" name="deliveryTerms" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="deliveryTerms" name="deliveryTerms" required class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="">{{quote.form.select_delivery_terms}}</option>
                                             <option value="cif">{{quote.form.cif}}</option>
                                             <option value="fob">{{quote.form.fob}}</option>
@@ -643,7 +643,7 @@
                                         {{quote.form.trial_quantity}}
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="trialQuantity" name="trialQuantity" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="trialQuantity" name="trialQuantity" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="">{{quote.form.no_trial}}</option>
                                             <option value="50kg">50 kg</option>
                                             <option value="100kg">100 kg</option>
@@ -663,7 +663,7 @@
                                         {{quote.form.specify_trial}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="customTrial" name="customTrial" placeholder="{{quote.form.trial_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="customTrial" name="customTrial" placeholder="{{quote.form.trial_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -673,7 +673,7 @@
                                         {{quote.form.additional_information}}
                                     </label>
                                     <div class="mt-2">
-                                        <textarea id="notes" name="notes" rows="4" placeholder="{{quote.form.additional_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6"></textarea>
+                                        <textarea id="notes" name="notes" rows="4" placeholder="{{quote.form.additional_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6"></textarea>
                                     </div>
                                 </div>
 
@@ -683,7 +683,7 @@
                                         <div class="flex gap-3">
                                             <div class="flex h-6 shrink-0 items-center">
                                                 <div class="group grid size-4 grid-cols-1">
-                                                    <input id="procedure" name="procedure" type="checkbox" required class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-gold checked:bg-gold indeterminate:border-gold indeterminate:bg-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
+                                                    <input id="procedure" name="procedure" type="checkbox" required class="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-orange checked:bg-orange indeterminate:border-orange indeterminate:bg-orange focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto">
                                                     <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25">
                                                         <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-checked:opacity-100" />
                                                         <path d="M3 7H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-has-indeterminate:opacity-100" />
@@ -704,7 +704,7 @@
 
                         <!-- Navigation -->
                         <div class="mt-6 flex items-center justify-end gap-x-6">
-                            <button type="button" onclick="nextStep(2)" class="rounded-md bg-gold px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gold-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+                            <button type="button" onclick="nextStep(2)" class="rounded-md bg-orange px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs hover:bg-orange-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange">
                                 {{quote.form.next_contact}}
                             </button>
                         </div>
@@ -724,7 +724,7 @@
                                         {{quote.form.company_name}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="companyName" name="companyName" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="companyName" name="companyName" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -734,7 +734,7 @@
                                         {{quote.form.first_name}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <div class="sm:col-span-3">
@@ -742,7 +742,7 @@
                                         {{quote.form.last_name}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -752,7 +752,7 @@
                                         {{quote.form.position}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="position" name="position" placeholder="{{quote.form.position_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="position" name="position" placeholder="{{quote.form.position_placeholder}}" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -762,7 +762,7 @@
                                         {{quote.form.email_address}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="email" id="email" name="email" required autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="email" id="email" name="email" required autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <div class="sm:col-span-2">
@@ -770,7 +770,7 @@
                                         {{quote.form.phone_number}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="tel" id="phone" name="phone" required placeholder="{{quote.form.phone_placeholder}}" autocomplete="tel" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="tel" id="phone" name="phone" required placeholder="{{quote.form.phone_placeholder}}" autocomplete="tel" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -780,7 +780,7 @@
                                         {{quote.form.street_address}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="address" name="address" required autocomplete="street-address" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="address" name="address" required autocomplete="street-address" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
 
@@ -789,7 +789,7 @@
                                         {{quote.form.city}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="city" name="city" required autocomplete="address-level2" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="city" name="city" required autocomplete="address-level2" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <div class="sm:col-span-2">
@@ -797,7 +797,7 @@
                                         {{quote.form.state_province}}
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="state" name="state" autocomplete="address-level1" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="state" name="state" autocomplete="address-level1" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <div class="sm:col-span-2">
@@ -805,7 +805,7 @@
                                         {{quote.form.postal_code}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2">
-                                        <input type="text" id="postalCode" name="postalCode" required autocomplete="postal-code" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <input type="text" id="postalCode" name="postalCode" required autocomplete="postal-code" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                     </div>
                                 </div>
                                 <div class="sm:col-span-2">
@@ -813,7 +813,7 @@
                                         {{quote.form.country}} <span class="text-red-500">{{quote.form.required}}</span>
                                     </label>
                                     <div class="mt-2 grid grid-cols-1">
-                                        <select id="country" name="country" required autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                                        <select id="country" name="country" required autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                             <option value="">Select country</option>
                                             <option value="CH" data-flag="🇨🇭">🇨🇭 Switzerland</option>
                                             <option value="DE" data-flag="🇩🇪">🇩🇪 Germany</option>
@@ -869,15 +869,15 @@
                                 </label>
                                 <div class="flex space-x-6">
                                     <label class="flex items-center">
-                                        <input type="radio" name="contactMethod" value="email" checked class="h-4 w-4 text-gold focus:ring-gold border-gray-300">
+                                        <input type="radio" name="contactMethod" value="email" checked class="h-4 w-4 text-orange focus:ring-orange border-gray-300">
                                         <span class="ml-2 text-sm text-gray-700">{{quote.form.email_option}}</span>
                                     </label>
                                     <label class="flex items-center">
-                                        <input type="radio" name="contactMethod" value="phone" class="h-4 w-4 text-gold focus:ring-gold border-gray-300">
+                                        <input type="radio" name="contactMethod" value="phone" class="h-4 w-4 text-orange focus:ring-orange border-gray-300">
                                         <span class="ml-2 text-sm text-gray-700">{{quote.form.phone_option}}</span>
                                     </label>
                                     <label class="flex items-center">
-                                        <input type="radio" name="contactMethod" value="both" class="h-4 w-4 text-gold focus:ring-gold border-gray-300">
+                                        <input type="radio" name="contactMethod" value="both" class="h-4 w-4 text-orange focus:ring-orange border-gray-300">
                                         <span class="ml-2 text-sm text-gray-700">{{quote.form.both_option}}</span>
                                     </label>
                                 </div>
@@ -896,7 +896,7 @@
                                             name="licenses"
                                             multiple
                                             accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
-                                            class="block w-full text-sm text-gray-900 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-gold/10 file:text-gray-900 hover:file:bg-gold/20"
+                                            class="block w-full text-sm text-gray-900 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-orange/10 file:text-gray-900 hover:file:bg-orange/20"
                                         >
                                     </div>
                                     <p class="mt-2 text-sm text-gray-600">
@@ -918,9 +918,9 @@
                             <p class="text-sm text-gray-700">
                                 <strong>{{#if isFrench}}Avis de protection des données :{{else}}Data Protection Notice:{{/if}}</strong>
                                 {{#if isFrench}}
-                                En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles conformément à notre <a href="/fr/privacy.html" class="text-gold hover:text-gold-light underline">Politique de confidentialité</a>. Vos données seront utilisées uniquement pour répondre à votre demande et ne seront pas partagées avec des tiers sans votre consentement. Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles. Vous avez le droit d'accéder, de corriger ou de supprimer vos données à tout moment.
+                                En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles conformément à notre <a href="/fr/privacy.html" class="text-orange hover:text-orange-light underline">Politique de confidentialité</a>. Vos données seront utilisées uniquement pour répondre à votre demande et ne seront pas partagées avec des tiers sans votre consentement. Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles. Vous avez le droit d'accéder, de corriger ou de supprimer vos données à tout moment.
                                 {{else}}
-                                By submitting this form, you agree to the processing of your personal data in accordance with our <a href="/privacy.html" class="text-gold hover:text-gold-light underline">Privacy Policy</a>. Your data will be used solely to respond to your request and will not be shared with third parties without your consent. We implement appropriate technical and organizational measures to protect your personal information. You have the right to access, correct, or delete your data at any time.
+                                By submitting this form, you agree to the processing of your personal data in accordance with our <a href="/privacy.html" class="text-orange hover:text-orange-light underline">Privacy Policy</a>. Your data will be used solely to respond to your request and will not be shared with third parties without your consent. We implement appropriate technical and organizational measures to protect your personal information. You have the right to access, correct, or delete your data at any time.
                                 {{/if}}
                             </p>
                         </div>
@@ -930,7 +930,7 @@
                             <button type="button" onclick="previousStep(1)" class="text-gray-600 px-8 py-4 rounded-lg font-semibold hover:text-gray-900 transition">
                                 {{quote.form.back}}
                             </button>
-                            <button type="submit" class="bg-gold text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gold-light transition transform hover:scale-105">
+                            <button type="submit" class="bg-orange text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-orange-light transition transform hover:scale-105">
                                 {{quote.form.submit_quote}}
                             </button>
                         </div>
@@ -946,15 +946,15 @@
         <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
             <!-- Navigation Links -->
             <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm">
-                <a href="/{{langPath}}contact.html" class="text-gray-400 hover:text-gold transition">{{nav.contact}}</a>
-                <a href="/{{langPath}}imprint.html" class="text-gray-400 hover:text-gold transition">{{nav.imprint}}</a>
-                <a href="/{{langPath}}privacy.html" class="text-gray-400 hover:text-gold transition">{{nav.privacy}}</a>
+                <a href="/{{langPath}}contact.html" class="text-gray-400 hover:text-orange transition">{{nav.contact}}</a>
+                <a href="/{{langPath}}imprint.html" class="text-gray-400 hover:text-orange transition">{{nav.imprint}}</a>
+                <a href="/{{langPath}}privacy.html" class="text-gray-400 hover:text-orange transition">{{nav.privacy}}</a>
             </nav>
             
             <!-- Contact Icons -->
             <div class="mt-16 flex justify-center gap-x-10">
                 <!-- Email -->
-                <a href="mailto:info@edelmetallhandel-cham.de" class="text-gray-400 hover:text-gold transition">
+                <a href="mailto:info@edelmetallhandel-cham.de" class="text-gray-400 hover:text-orange transition">
                     <span class="sr-only">Email</span>
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -962,7 +962,7 @@
                 </a>
                 
                 <!-- Phone -->
-                <a href="tel:+4999717273" class="text-gray-400 hover:text-gold transition">
+                <a href="tel:+4999717273" class="text-gray-400 hover:text-orange transition">
                     <span class="sr-only">Phone</span>
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
@@ -975,8 +975,8 @@
                 <p class="mb-2">&copy; 2025 Edelmetall Cham · Franz Thums</p>
                 <p>Obere Regenstraße 9 · 93413 Cham · Germany</p>
                 <p class="mt-2">
-                    <a href="tel:+4999717273" class="hover:text-gold transition">+49 (0) 9971 7273</a> · 
-                    <a href="mailto:info@edelmetallhandel-cham.de" class="hover:text-gold transition">info@edelmetallhandel-cham.de</a>
+                    <a href="tel:+4999717273" class="hover:text-orange transition">+49 (0) 9971 7273</a> · 
+                    <a href="mailto:info@edelmetallhandel-cham.de" class="hover:text-orange transition">info@edelmetallhandel-cham.de</a>
                 </p>
             </div>
         </div>
@@ -1011,11 +1011,11 @@
             document.querySelectorAll('.tab-button').forEach(button => {
                 if (button.dataset.mode === mode) {
                     // Active tab - Gold background with white text
-                    button.classList.add('bg-gold', 'text-white', 'shadow-lg', 'transform', 'scale-105');
+                    button.classList.add('bg-orange', 'text-white', 'shadow-lg', 'transform', 'scale-105');
                     button.classList.remove('bg-transparent', 'text-gray-600', 'hover:text-gray-800');
                 } else {
                     // Inactive tab - Transparent with gray text
-                    button.classList.remove('bg-gold', 'text-white', 'shadow-lg', 'transform', 'scale-105');
+                    button.classList.remove('bg-orange', 'text-white', 'shadow-lg', 'transform', 'scale-105');
                     button.classList.add('bg-transparent', 'text-gray-600', 'hover:text-gray-800');
                 }
             });
@@ -1232,9 +1232,9 @@
                         <label class="block text-sm/6 font-medium text-gray-600">
                             ${isfrench ? 'Produit Supplémentaire' : 'Additional Commodity'} ${commodityCount + 1}
                         </label>
-                        <select name="commodities[${commodityCount}][type]" required class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                        <select name="commodities[${commodityCount}][type]" required class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                             <option value="">Select Commodity</option>
-                            <option value="gold">Gold</option>
+                            <option value="orange">Gold</option>
                             <option value="silver">Silver</option>
                             <option value="platinum">Platinum</option>
                             <option value="palladium">Palladium</option>
@@ -1251,7 +1251,7 @@
                             <label class="block text-sm/6 font-medium text-gray-900">
                                 Quantity <span class="text-red-500">*</span>
                             </label>
-                            <input type="number" name="commodities[${commodityCount}][quantity]" min="1" required placeholder="100" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                            <input type="number" name="commodities[${commodityCount}][quantity]" min="1" required placeholder="100" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                         </div>
 
                         <!-- Buyer Mode Min Quantity -->
@@ -1259,7 +1259,7 @@
                             <label class="block text-sm/6 font-medium text-gray-900">
                                 Min Qty <span class="text-red-500">*</span>
                             </label>
-                            <input type="number" name="commodities[${commodityCount}][quantityMin]" min="1" required placeholder="100" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                            <input type="number" name="commodities[${commodityCount}][quantityMin]" min="1" required placeholder="100" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                         </div>
 
                         <!-- Buyer Mode Max Quantity -->
@@ -1267,7 +1267,7 @@
                             <label class="block text-sm/6 font-medium text-gray-900">
                                 Max Qty
                             </label>
-                            <input type="number" name="commodities[${commodityCount}][quantityMax]" min="1" placeholder="500" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                            <input type="number" name="commodities[${commodityCount}][quantityMax]" min="1" placeholder="500" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                         </div>
 
                         <!-- Unit -->
@@ -1275,7 +1275,7 @@
                             <label class="block text-sm/6 font-medium text-gray-900">
                                 Unit <span class="text-red-500">*</span>
                             </label>
-                            <select name="commodities[${commodityCount}][unit]" required class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-gold sm:text-sm/6">
+                            <select name="commodities[${commodityCount}][unit]" required class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-200 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-orange sm:text-sm/6">
                                 <option value="kg">kg</option>
                                 <option value="g">g</option>
                                 <option value="oz">oz</option>
@@ -1409,19 +1409,19 @@
                 const indicator = document.getElementById(`step${i}-indicator`);
                 if (i < step) {
                     indicator.classList.add('text-green-600');
-                    indicator.classList.remove('text-gold', 'text-gray-400');
+                    indicator.classList.remove('text-orange', 'text-gray-400');
                     indicator.querySelector('span:first-child').classList.add('bg-green-600', 'border-green-600', 'text-white');
-                    indicator.querySelector('span:first-child').classList.remove('bg-gold', 'border-gold', 'border-gray-300');
+                    indicator.querySelector('span:first-child').classList.remove('bg-orange', 'border-orange', 'border-gray-300');
                 } else if (i === step) {
-                    indicator.classList.add('text-gold');
+                    indicator.classList.add('text-orange');
                     indicator.classList.remove('text-green-600', 'text-gray-400');
-                    indicator.querySelector('span:first-child').classList.add('bg-gold', 'border-gold', 'text-white');
+                    indicator.querySelector('span:first-child').classList.add('bg-orange', 'border-orange', 'text-white');
                     indicator.querySelector('span:first-child').classList.remove('bg-green-600', 'border-green-600', 'border-gray-300');
                 } else {
                     indicator.classList.add('text-gray-400');
-                    indicator.classList.remove('text-gold', 'text-green-600');
+                    indicator.classList.remove('text-orange', 'text-green-600');
                     indicator.querySelector('span:first-child').classList.add('border-gray-300');
-                    indicator.querySelector('span:first-child').classList.remove('bg-gold', 'bg-green-600', 'border-gold', 'border-green-600', 'text-white');
+                    indicator.querySelector('span:first-child').classList.remove('bg-orange', 'bg-green-600', 'border-orange', 'border-green-600', 'text-white');
                 }
             }
         }
