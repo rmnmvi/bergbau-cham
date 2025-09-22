@@ -1,93 +1,80 @@
 <!DOCTYPE html>
-<html lang="{{lang}}">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{meta.title}}</title>
-    <meta name="description" content="{{meta.description}}">
-    <meta name="keywords" content="{{meta.keywords}}">
-    
-    <!-- Search Engine Blocking -->
-    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
-    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
-    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
-    
+    <title>Bergbau Cham - Premium Mining Equipment & Machinery</title>
+    <meta name="description" content="Bergbau Cham - Your trusted partner for premium mining equipment, machinery, and technical solutions across Africa and Europe.">
+    <!-- CSS path fix -->
+    <meta name="keywords" content="Bergbau, mining, extraction, resources, international mining, Europe, Africa">
+
+    <!-- Search Engine Blocking (but allow social media previews) -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://edelmetall-cham.de/{{langPath}}">
-    <meta property="og:title" content="{{meta.title}}">
-    <meta property="og:description" content="{{meta.description}}">
-    <meta property="og:image" content="https://edelmetall-cham.de/assets/images/og/og-image.jpg">
+    <meta property="og:url" content="https://bergbau-cham.de/">
+    <meta property="og:title" content="Bergbau Cham - Premium Mining Equipment & Machinery">
+    <meta property="og:description" content="Your trusted partner for premium mining equipment, machinery, and technical solutions across Africa and Europe.">
+    <meta property="og:image" content="https://bergbau-cham.de/assets/images/og/og-image.jpg">
+    <meta property="og:image:secure_url" content="https://bergbau-cham.de/assets/images/og/og-image.jpg">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Edelmetall Cham">
-    <meta property="og:locale" content="{{#if isFrench}}fr_FR{{else}}en_US{{/if}}">
-    
+    <meta property="og:image:alt" content="Bergbau Cham - Trusted Partner in Mining Operations">
+    <meta property="og:site_name" content="Bergbau Cham">
+    <meta property="og:locale" content="de_DE">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://edelmetall-cham.de/{{langPath}}">
-    <meta property="twitter:title" content="{{meta.title}}">
-    <meta property="twitter:description" content="{{meta.description}}">
-    <meta property="twitter:image" content="https://edelmetall-cham.de/assets/images/og/og-image.jpg">
-    
-    <!-- Language alternates -->
-    <link rel="alternate" hreflang="en" href="https://edelmetall-cham.de/" />
-    <link rel="alternate" hreflang="fr" href="https://edelmetall-cham.de/fr/" />
-    <link rel="alternate" hreflang="x-default" href="https://edelmetall-cham.de/" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{rootPath}}assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="{{rootPath}}assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="{{rootPath}}assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{rootPath}}assets/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="{{rootPath}}assets/favicon/site.webmanifest" />
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N28M5RW6');</script>
-    <!-- End Google Tag Manager -->
+    <meta property="twitter:url" content="https://bergbau-cham.de/">
+    <meta property="twitter:title" content="Bergbau Cham - Premium Mining Equipment & Machinery">
+    <meta property="twitter:description" content="Your trusted partner for premium mining equipment, machinery, and technical solutions across Africa and Europe.">
+    <meta property="twitter:image" content="https://bergbau-cham.de/assets/images/og/og-image.jpg">
 
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="{{rootPath}}styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- Local Tailwind CSS with embedded fonts -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="font-sans-body text-gray-900">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N28M5RW6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    
+
     <!-- Header -->
     <header class="absolute w-full top-0 z-50">
         <nav class="container mx-auto px-8 lg:px-16 py-6 flex justify-between items-center">
             <a href="#home" class="flex items-center">
-                <img src="{{rootPath}}assets/images/logo/logo_white.svg" alt="Edelmetall Cham Logo" class="h-10 w-auto">
+                <img src="./assets/images/logo/logo_white.svg" alt="Bergbau Cham Logo" class="h-10 w-auto">
             </a>
             <div class="hidden md:flex items-center space-x-8">
                 <ul class="flex space-x-8">
-                    <li><a href="/{{langPath}}contact.html" class="text-white hover:text-gold transition">{{nav.contact}}</a></li>
+                    <li><a href="#contact" class="text-white hover:text-orange-500 transition">Contact</a></li>
                 </ul>
-                <a href="/{{langPath}}quote.html" class="ml-4 px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
-                    {{nav.quote}}
+                <a href="quote.html" class="ml-4 px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
+                    Quote
                 </a>
-                <!-- Language Dropdown -->
-                <div class="relative ml-4">
+
+                <!-- Language Switcher -->
+                <div class="relative ml-6">
                     <button onclick="toggleLanguageDropdown(event)" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
-                        <img src="{{rootPath}}assets/images/flags/{{#if isEnglish}}gb{{else}}fr{{/if}}.svg" alt="{{lang}}" class="w-5 h-auto">
+                        <img src="./assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
                         <svg id="langDropdownArrow" class="w-4 h-4 text-white transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                     <div id="langDropdown" class="absolute right-0 mt-2 w-24 bg-white rounded-lg shadow-lg hidden transition-all duration-200 z-50">
-                        <a href="{{#if isEnglish}}/{{else}}/{{/if}}" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50 {{#if isEnglish}}bg-gray-50{{/if}} rounded-t-lg">
-                            <img src="{{rootPath}}assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
+                        <a href="index.html" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50 bg-gray-50 rounded-t-lg">
+                            <img src="./assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
                             <span class="text-gray-700 font-medium">EN</span>
                         </a>
-                        <a href="{{#if isEnglish}}/fr/{{else}}/fr/{{/if}}" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50 {{#if isFrench}}bg-gray-50{{/if}} rounded-b-lg">
-                            <img src="{{rootPath}}assets/images/flags/fr.svg" alt="Français" class="w-5 h-auto">
+                        <a href="fr/index.html" class="flex items-center space-x-2 px-3 py-2.5 hover:bg-gray-50 rounded-b-lg">
+                            <img src="./assets/images/flags/fr.svg" alt="Français" class="w-5 h-auto">
                             <span class="text-gray-700 font-medium">FR</span>
                         </a>
                     </div>
@@ -103,24 +90,11 @@
         <!-- Mobile menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-sm">
             <ul class="px-6 py-4 space-y-2">
-                <li><a href="/{{langPath}}contact.html" class="block text-white hover:text-gold transition">{{nav.contact}}</a></li>
+                <li><a href="#contact" class="block text-white hover:text-orange-500 transition">Contact</a></li>
                 <li class="pt-2">
-                    <a href="/{{langPath}}quote.html" class="block w-full text-center px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
-                        {{nav.quote}}
+                    <a href="quote.html" class="block w-full text-center px-6 py-2 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition">
+                        Quote
                     </a>
-                </li>
-                <!-- Language switcher for mobile -->
-                <li class="pt-4 border-t border-gray-700">
-                    <div class="flex items-center justify-center space-x-4">
-                        <a href="{{#if isEnglish}}/{{else}}/{{/if}}" class="flex items-center space-x-2 px-3 py-2 {{#if isEnglish}}bg-white/20{{/if}} rounded-lg">
-                            <img src="{{rootPath}}assets/images/flags/gb.svg" alt="English" class="w-5 h-auto">
-                            <span class="text-white text-sm">EN</span>
-                        </a>
-                        <a href="{{#if isEnglish}}/fr/{{else}}/fr/{{/if}}" class="flex items-center space-x-2 px-3 py-2 {{#if isFrench}}bg-white/20{{/if}} rounded-lg">
-                            <img src="{{rootPath}}assets/images/flags/fr.svg" alt="Français" class="w-5 h-auto">
-                            <span class="text-white text-sm">FR</span>
-                        </a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -129,13 +103,13 @@
     <!-- Hero Section -->
     <section id="home" class="relative h-screen">
         <!-- Hero Background Image -->
-        <img class="absolute inset-0 w-full h-full object-cover" 
-             src="{{rootPath}}assets/images/hero/hero.jpg" 
-             alt="Edelmetall Cham Hero">
-        
+        <img class="absolute inset-0 w-full h-full object-cover"
+             src="./assets/images/hero/hero.jpg"
+             alt="Bergbau Cham Hero">
+
         <!-- Gradient Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80"></div>
-        
+
         <!-- Content Container -->
         <div class="relative h-full flex items-end">
             <div class="container mx-auto px-8 lg:px-16 pb-16 lg:pb-24">
@@ -143,18 +117,19 @@
                     <!-- Text Content -->
                     <div class="max-w-3xl">
                         <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-sans-body font-light mb-6">
-                            {{{hero.title}}}
+                            Trusted Partner in<br><span class="text-orange-500">Mining Equipment</span>
                         </h1>
                         <p class="text-white text-base md:text-lg font-sans-body font-light leading-relaxed max-w-2xl">
-                            {{hero.description}}
+                            For decades, Bergbau Cham has built lasting relationships across Africa and Europe.
+                            We operate with transparency, compliance, and a commitment to sustainable partnerships in international mining equipment trade.
                         </p>
                     </div>
-                    
+
                     <!-- CTA Button -->
                     <div class="md:mb-2">
-                        <a href="/{{langPath}}contact.html"
+                        <a href="#contact"
                            class="inline-block bg-white text-gray-900 font-sans-body font-semibold uppercase tracking-wider text-sm px-8 py-4 hover:bg-gray-100 transition-colors duration-300">
-                            {{hero.cta}}
+                            Get in touch
                         </a>
                     </div>
                 </div>
@@ -163,401 +138,324 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-32 bg-white overflow-hidden">
-        <!-- Content Container -->
-        <div class="container mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- Left Column - Text Content -->
-                <div class="max-w-xl">
-                    <div class="mb-6">
-                        <span class="text-gold font-medium text-sm uppercase tracking-wider">{{about.subtitle}}</span>
-                    </div>
-                    <h2 class="font-sans-body text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
-                        {{about.title}}
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-8 lg:px-16">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
+                        Excellence in Mining Equipment
                     </h2>
-                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
-                        {{about.paragraph1}}
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        With decades of experience in the mining equipment industry, Bergbau Cham has established itself as a trusted supplier of premium mining machinery and technical solutions across Africa and Europe. Our commitment to quality and reliability sets us apart.
                     </p>
-                    <p class="text-lg leading-relaxed text-gray-600 mb-8">
-                        {{about.paragraph2}}
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        We specialize in heavy mining equipment, excavators, crushers, drilling machinery, and comprehensive technical support that meets the highest industry standards while ensuring maximum operational efficiency.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#partners" class="inline-flex items-center justify-center px-6 py-3 bg-gold text-gray-900 font-semibold rounded-lg hover:bg-gold-light transition transform hover:scale-105">
-                            {{about.cta_partners}}
-                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                        <a href="/{{langPath}}contact.html" class="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-black text-black font-semibold rounded-lg hover:bg-black hover:text-white transition">
-                            {{about.cta_contact}}
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Right Column - Visual Element -->
-                <div class="relative">
-                    <div class="relative rounded-2xl overflow-hidden shadow-sm bg-gray-50">
-                        <div class="p-12">
-                            <div class="text-center">
-                                <div class="grid grid-cols-2 gap-6">
-                                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                                        <div class="text-3xl font-bold text-gold mb-2">{{about.stats.years}}</div>
-                                        <div class="text-sm text-gray-600">{{about.stats.years_label}}</div>
-                                    </div>
-                                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                                        <div class="text-3xl font-bold text-gold mb-2">{{about.stats.countries}}</div>
-                                        <div class="text-sm text-gray-600">{{about.stats.countries_label}}</div>
-                                    </div>
-                                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                                        <div class="text-3xl font-bold text-gold mb-2">{{about.stats.compliance}}</div>
-                                        <div class="text-sm text-gray-600">{{about.stats.compliance_label}}</div>
-                                    </div>
-                                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                                        <div class="text-3xl font-bold text-gold mb-2">{{about.stats.volume}}</div>
-                                        <div class="text-sm text-gray-600">{{about.stats.volume_label}}</div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <h3 class="text-3xl font-bold text-orange-500 mb-2">25+</h3>
+                            <p class="text-gray-600">Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-3xl font-bold text-orange-500 mb-2">500+</h3>
+                            <p class="text-gray-600">Equipment Supplied</p>
                         </div>
                     </div>
-                    <!-- Decorative elements -->
-                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-gold/10 rounded-full blur-3xl"></div>
-                    <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gold/5 rounded-full blur-3xl"></div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Our Mission Statement -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center">
-                <h3 class="text-sm font-semibold text-gold uppercase tracking-wider mb-4">{{mission.subtitle}}</h3>
-                <p class="text-2xl md:text-3xl font-sans-body text-gray-900 leading-relaxed">
-                    {{mission.text}}
-                </p>
+                <div>
+                    <img src="./assets/images/about/mining-operations.jpg" alt="Mining Operations" class="rounded-lg shadow-lg">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Values Section - Bento Grid -->
-    <section class="bg-gray-50 py-24 sm:py-32">
-        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-            <h2 class="text-center text-base font-semibold text-gold">{{values.subtitle}}</h2>
-            <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-sans-body font-bold tracking-tight text-gray-900 sm:text-5xl">{{values.title}}</p>
-            
-            <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-                <!-- Global Network - Large Left -->
-                <div class="relative lg:row-span-2">
-                    <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-2xl"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-lg lg:rounded-l-2xl">
-                        <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                            <div class="w-14 h-14 mb-4 bg-gold rounded-xl flex items-center justify-center">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="mt-2 text-lg font-semibold tracking-tight text-gray-900 max-lg:text-center">{{values.global_network.title}}</p>
-                            <p class="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">{{values.global_network.description}}</p>
-                        </div>
-                        <div class="relative min-h-[320px] w-full grow max-lg:mx-auto max-lg:max-w-sm p-8">
-                            <div class="relative h-full w-full rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 p-8 flex items-center justify-center">
-                                <div class="grid grid-cols-3 gap-4">
-                                    {{#each values.global_network.regions}}
-                                    <div class="w-20 h-20 {{#if (eq this 'HQ')}}bg-gold{{else}}bg-white{{/if}} rounded-lg shadow-sm flex items-center justify-center">
-                                        <span class="text-xs font-bold {{#if (eq this 'HQ')}}text-white{{else}}text-gray-700{{/if}}">{{this}}</span>
-                                    </div>
-                                    {{/each}}
-                                </div>
-                            </div>
-                        </div>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-8 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Our Equipment & Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Premium mining equipment and comprehensive technical support tailored to your operational needs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-16 h-16 bg-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 11.172V5l-1-1z"></path>
+                        </svg>
                     </div>
-                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-2xl"></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Heavy Machinery</h3>
+                    <p class="text-gray-600">
+                        Premium excavators, bulldozers, and earth-moving equipment for large-scale mining operations.
+                    </p>
                 </div>
-                
-                <!-- Transparency - Top Middle -->
-                <div class="relative max-lg:row-start-1">
-                    <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-2xl"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-lg max-lg:rounded-t-2xl">
-                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                            <div class="w-14 h-14 mb-4 bg-gold rounded-xl flex items-center justify-center mx-auto lg:mx-0">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="mt-2 text-lg font-semibold tracking-tight text-gray-900 max-lg:text-center">{{values.transparency.title}}</p>
-                            <p class="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">{{values.transparency.description}}</p>
-                        </div>
-                        <div class="flex flex-1 items-center justify-center px-8 pb-8 max-lg:pt-10 sm:px-10">
-                            <div class="relative">
-                                <div class="flex space-x-2">
-                                    <div class="w-16 h-20 bg-gray-100 rounded animate-pulse"></div>
-                                    <div class="w-16 h-20 bg-gray-100 rounded animate-pulse delay-75"></div>
-                                    <div class="w-16 h-20 bg-gray-100 rounded animate-pulse delay-150"></div>
-                                </div>
-                            </div>
-                        </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-16 h-16 bg-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-2xl"></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Drilling & Crushing</h3>
+                    <p class="text-gray-600">
+                        Advanced drilling rigs, crushers, and processing equipment for efficient mineral extraction.
+                    </p>
                 </div>
-                
-                <!-- Security - Bottom Middle -->
-                <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-                    <div class="absolute inset-px rounded-lg bg-white"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-lg">
-                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                            <div class="w-14 h-14 mb-4 bg-gold rounded-xl flex items-center justify-center mx-auto lg:mx-0">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                                </svg>
-                            </div>
-                            <p class="mt-2 text-lg font-semibold tracking-tight text-gray-900 max-lg:text-center">{{values.security.title}}</p>
-                            <p class="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">{{values.security.description}}</p>
-                        </div>
-                        <div class="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
-                            <div class="flex space-x-3">
-                                <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
-                                <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
-                                <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
-                            </div>
-                        </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-16 h-16 bg-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
                     </div>
-                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-                </div>
-                
-                <!-- Experience - Large Right -->
-                <div class="relative lg:row-span-2">
-                    <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-2xl lg:rounded-r-2xl"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-lg max-lg:rounded-b-2xl lg:rounded-r-2xl">
-                        <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                            <div class="w-14 h-14 mb-4 bg-gold rounded-xl flex items-center justify-center">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="mt-2 text-lg font-semibold tracking-tight text-gray-900 max-lg:text-center">{{values.experience.title}}</p>
-                            <p class="mt-2 max-w-lg text-sm text-gray-600 max-lg:text-center">{{values.experience.description}}</p>
-                        </div>
-                        <div class="relative min-h-[320px] w-full grow p-8">
-                            <div class="absolute top-10 right-8 bottom-8 left-8 overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-700 shadow-2xl">
-                                <div class="flex bg-gray-800/50 backdrop-blur">
-                                    <div class="flex text-sm font-medium text-gray-400 p-4">
-                                        <div class="text-gold">{{#if isFrench}}Routes Commerciales Établies{{else}}Established Trading Routes{{/if}}</div>
-                                    </div>
-                                </div>
-                                <div class="px-6 pt-6 pb-14 text-white">
-                                    <div class="space-y-3">
-                                        <div class="flex justify-between text-sm">
-                                            <span>{{values.experience.metrics.years}}</span>
-                                            <span class="text-gold font-bold">{{values.experience.metrics.years_value}}</span>
-                                        </div>
-                                        <div class="flex justify-between text-sm">
-                                            <span>{{values.experience.metrics.countries}}</span>
-                                            <span class="text-gold font-bold">{{values.experience.metrics.countries_value}}</span>
-                                        </div>
-                                        <div class="flex justify-between text-sm">
-                                            <span>{{values.experience.metrics.partners}}</span>
-                                            <span class="text-gold font-bold">{{values.experience.metrics.partners_value}}</span>
-                                        </div>
-                                        <div class="flex justify-between text-sm">
-                                            <span>{{values.experience.metrics.volume}}</span>
-                                            <span class="text-gold font-bold">{{values.experience.metrics.volume_value}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-2xl lg:rounded-r-2xl"></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Technical Support</h3>
+                    <p class="text-gray-600">
+                        Expert maintenance, repairs, and technical consulting for optimal equipment performance.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Partners Section -->
-    <section id="partners" class="py-24 sm:py-32 bg-gray-50">
-        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-            <h2 class="text-center text-base font-semibold text-gold">{{partners.subtitle}}</h2>
-            <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-sans-body font-bold tracking-tight text-gray-900 sm:text-5xl">{{partners.title}}</p>
-            <p class="text-center text-lg text-gray-600 mt-4 mb-12 max-w-3xl mx-auto">
-                {{partners.description}}
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                {{#each partners.list}}
-                <div class="bg-white rounded-xl p-6 shadow-sm ring-1 ring-black/5 hover:shadow-lg transition-all duration-300 min-h-[180px] flex flex-col items-center justify-center">
-                    <div class="text-center space-y-3">
-                        <div class="w-20 h-20 mx-auto flex items-center justify-center bg-gold rounded-full">
-                            <span class="text-white font-bold text-2xl">{{#if (eq @key 'munze_deutschland')}}MD{{else if (eq @key 'munze_osterreich')}}MÖ{{else if (eq @key 'royal_canadian')}}RCM{{else if (eq @key 'rand_refinery')}}RR{{else if (eq @key 'royal_mint')}}RM{{else if (eq @key 'deutsche_bank')}}DB{{else if (eq @key 'heimerle_meule')}}HM{{else}}{{lookup (lookup . 'name') 0}}{{/if}}</span>
-                        </div>
-                        <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wide">{{this.name}}</h3>
-                        <p class="text-xs text-gray-600">{{this.description}}</p>
-                    </div>
+    <section id="partners" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-8 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Our Equipment Partners</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Authorized dealer and service partner for leading mining equipment manufacturers worldwide
+                </p>
+            </div>
+
+            <!-- Partner Logos Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Caterpillar</span>
                 </div>
-                {{/each}}
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Sennebogen</span>
+                </div>
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Putzmeister</span>
+                </div>
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Komatsu</span>
+                </div>
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Liebherr</span>
+                </div>
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Sandvik</span>
+                </div>
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Epiroc</span>
+                </div>
+                <div class="bg-white rounded-lg p-6 flex items-center justify-center h-20">
+                    <span class="text-xl font-bold text-gray-800">Wirtgen</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-orange-500 mb-4">Africa</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Extensive network across African mining regions, supplying premium equipment and supporting local mining operations with authorized parts and service.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-orange-500 mb-4">Europe</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Strategic partnerships with European equipment manufacturers and technology providers for cutting-edge mining solutions and technical support.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="bg-white">
-        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-            <div class="mx-auto max-w-4xl">
-                <h2 class="text-4xl font-sans-body font-bold tracking-tight text-gray-900 sm:text-5xl">{{faq.title}}</h2>
-                <dl class="mt-16 divide-y divide-gray-900/10">
-                    {{#each faq.questions}}
-                    <div class="py-6 first:pt-0 last:pb-0">
-                        <dt>
-                            <button type="button" onclick="toggleFAQ('faq-{{@index}}')" class="flex w-full items-start justify-between text-left text-gray-900">
-                                <span class="text-base font-semibold">{{this.question}}</span>
-                                <span class="ml-6 flex h-7 items-center">
-                                    <svg id="faq-{{@index}}-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-6">
-                                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg id="faq-{{@index}}-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-6 hidden">
-                                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </dt>
-                        <dd id="faq-{{@index}}" class="hidden mt-2 pr-12">
-                            <p class="text-base text-gray-600">
-                                {{this.answer}}
-                            </p>
-                        </dd>
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-8 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Common questions about our mining equipment and services
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-gray-900">What types of mining equipment do you supply?</h3>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>We supply a comprehensive range of mining equipment including excavators, bulldozers, drilling rigs, crushers, conveyor systems, and specialized processing machinery. Our equipment is suitable for open-pit mining, underground operations, and various mineral processing applications.</p>
                     </div>
-                    {{/each}}
-                </dl>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-gray-900">Do you provide equipment maintenance and support?</h3>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Yes, we provide comprehensive maintenance and technical support services. Our team of certified technicians offers regular maintenance, emergency repairs, spare parts supply, and training programs to ensure optimal equipment performance and longevity.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-gray-900">What safety standards do you follow?</h3>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>We adhere to the highest international safety standards including ISO 45001 for occupational health and safety management. Our comprehensive safety protocols ensure the wellbeing of all personnel and compliance with local and international regulations.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <!-- CTA Section -->
-    <div class="relative isolate overflow-hidden bg-white">
-        <div class="px-6 py-24 sm:py-32 lg:px-8">
-            <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl font-sans-body">
-                    {{cta.headline}}
-                </h2>
-                <p class="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600">
-                    {{cta.description}}
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-8 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Get In Touch</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Ready to discuss your mining project? Contact us for a consultation.
                 </p>
-                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
-                    <a href="/{{langPath}}contact.html" class="w-full sm:w-auto rounded-md bg-gold px-6 py-3 text-base font-semibold text-gray-900 shadow-sm hover:bg-gold-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold transition-all duration-200">
-                        {{cta.contact_button}}
-                    </a>
-                    <a href="/{{langPath}}quote.html?mode=request" class="w-full sm:w-auto rounded-md bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 transition-all duration-200">
-                        {{cta.buy_button}}
-                    </a>
-                    <a href="/{{langPath}}quote.html?mode=submit" class="w-full sm:w-auto rounded-md bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 transition-all duration-200">
-                        {{cta.sell_button}}
-                    </a>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-8">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-orange-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span class="text-gray-300">Cham, Switzerland</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-orange-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-gray-300">+41 XX XXX XX XX</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-orange-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-gray-300">info@bergbau-cham.de</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Gold gradient background -->
-        <svg viewBox="0 0 1024 1024" aria-hidden="true" class="absolute top-1/2 left-1/2 -z-10 size-[64rem] -translate-x-1/2 -translate-y-1/2 opacity-20">
-            <circle r="512" cx="512" cy="512" fill="url(#gold-gradient)" fill-opacity="0.7" />
-            <defs>
-                <radialGradient id="gold-gradient">
-                    <stop stop-color="#D4AF37" />
-                    <stop offset="1" stop-color="#F4E4BC" />
-                </radialGradient>
-            </defs>
-        </svg>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-black">
-        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-            <!-- Navigation Links -->
-            <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm">
-                <a href="/{{langPath}}contact.html" class="text-gray-400 hover:text-gold transition">{{nav.contact}}</a>
-                <a href="/{{langPath}}imprint.html" class="text-gray-400 hover:text-gold transition">{{nav.imprint}}</a>
-                <a href="/{{langPath}}privacy.html" class="text-gray-400 hover:text-gold transition">{{nav.privacy}}</a>
-            </nav>
-            
-            <!-- Contact Icons -->
-            <div class="mt-16 flex justify-center gap-x-10">
-                <!-- Email -->
-                <a href="mailto:{{contact.info.email}}" class="text-gray-400 hover:text-gold transition">
-                    <span class="sr-only">Email</span>
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                </a>
-                
-                <!-- Phone -->
-                <a href="tel:{{contact.info.phone}}" class="text-gray-400 hover:text-gold transition">
-                    <span class="sr-only">Phone</span>
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                    </svg>
-                </a>
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-8 lg:px-16">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <img src="./assets/images/logo/logo_white.svg" alt="Bergbau Cham Logo" class="h-10 mb-4">
+                    <p class="text-gray-400">
+                        Your trusted partner for premium mining equipment across Africa and Europe.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Heavy Machinery</li>
+                        <li>Drilling & Crushing Equipment</li>
+                        <li>Technical Support</li>
+                        <li>Equipment Maintenance</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Obere Regenstraße 9 · 93413 Cham · Germany</li>
+                        <li>info@bergbautechnik-cham.de</li>
+                        <li>+49 (0) 9971 7273</li>
+                        <li><a href="imprint.html" class="hover:text-white transition">Imprint</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
             </div>
-            
-            <!-- Copyright & Address -->
-            <div class="mt-10 text-center text-sm text-gray-400">
-                <p class="mb-2">{{footer.copyright}}</p>
-                <p>{{footer.address}}</p>
-                <p class="mt-2">
-                    <a href="tel:{{contact.info.phone}}" class="hover:text-gold transition">{{contact.info.phone}}</a> · 
-                    <a href="mailto:{{contact.info.email}}" class="hover:text-gold transition">{{contact.info.email}}</a>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Edelmetall Cham · Franz Thums
                 </p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
         }
 
-        // Language dropdown toggle
-        function toggleLanguageDropdown(event) {
-            event.stopPropagation();
-            const dropdown = document.getElementById('langDropdown');
-            const arrow = document.getElementById('langDropdownArrow');
-            
-            if (dropdown.classList.contains('hidden')) {
-                dropdown.classList.remove('hidden');
-                arrow.classList.add('rotate-180');
-            } else {
-                dropdown.classList.add('hidden');
-                arrow.classList.remove('rotate-180');
-            }
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
         }
 
-        // Close dropdown when clicking outside
+        function toggleLanguageDropdown(event) {
+            event.preventDefault();
+            const dropdown = document.getElementById('langDropdown');
+            const arrow = document.getElementById('langDropdownArrow');
+
+            dropdown.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        // Close language dropdown when clicking outside
         document.addEventListener('click', function(event) {
             const dropdown = document.getElementById('langDropdown');
-            const arrow = document.getElementById('langDropdownArrow');
-            if (dropdown && !dropdown.contains(event.target) && !event.target.closest('button[onclick*="toggleLanguageDropdown"]')) {
+            const button = event.target.closest('button[onclick="toggleLanguageDropdown(event)"]');
+
+            if (!button && dropdown && !dropdown.classList.contains('hidden')) {
                 dropdown.classList.add('hidden');
-                if (arrow) arrow.classList.remove('rotate-180');
+                document.getElementById('langDropdownArrow').classList.remove('rotate-180');
             }
         });
-        
-        // FAQ accordion toggle
-        function toggleFAQ(faqId) {
-            const content = document.getElementById(faqId);
-            const plusIcon = document.getElementById(faqId + '-plus');
-            const minusIcon = document.getElementById(faqId + '-minus');
-            
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                plusIcon.classList.add('hidden');
-                minusIcon.classList.remove('hidden');
-            } else {
-                content.classList.add('hidden');
-                plusIcon.classList.remove('hidden');
-                minusIcon.classList.add('hidden');
-            }
-        }
 
-        // Smooth scrolling for anchor links
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -567,12 +465,9 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
-                    // Close mobile menu if open
-                    document.getElementById('mobileMenu').classList.add('hidden');
                 }
             });
         });
-
     </script>
 </body>
 </html>
