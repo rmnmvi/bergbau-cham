@@ -1,4 +1,5 @@
 {
-  "buildCommand": "",
-  "installCommand": "npm install"
+  "buildCommand": "npm run build:multilingual && npm run build:css",
+  "installCommand": "npm install",
+  "outputDirectory": "dist"
 }
