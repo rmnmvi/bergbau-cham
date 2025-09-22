@@ -13,7 +13,7 @@
     "build:multilingual": "node build-multilingual.js",
     "copy:assets": "cp -r assets dist/",
     "copy:html": "cp index.html privacy.html imprint.html dist/ && ls -la dist/",
-    "copy:to-root": "cp dist/*.html dist/*.css . 2>/dev/null || true && sed -i 's|\\./dist/assets/|./assets/|g' *.html 2>/dev/null || true",
+    "copy:to-root": "cp dist/*.html dist/*.css . 2>/dev/null || true && sed -i '' 's|\\./dist/assets/|./assets/|g' *.html 2>/dev/null || true && sed -i '' 's|\\./dist/styles\\.css|./styles.css|g' *.html 2>/dev/null || true",
     "serve": "npx serve dist",
     "preview": "npm run build && npm run serve"
   },
