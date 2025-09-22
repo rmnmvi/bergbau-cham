@@ -1,0 +1,29 @@
+# Edelmetall Cham - Block all search engine crawlers
+# This site should not be indexed by search engines
+
+User-agent: *
+Disallow: /
+
+# Block specific major search engines explicitly
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+# No sitemap provided - site should not be crawled
